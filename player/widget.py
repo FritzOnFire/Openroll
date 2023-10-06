@@ -1,14 +1,13 @@
 import mpv
-
 from PyQt5.QtWidgets import *
 
 from player.playlist import Playlist
 
 class Player:
-	player = None
-	counter = 0
+	player: mpv.MPV = None
+	counter: int = 0
 
-	def __init__(self, layout, crunchyroll, showName):
+	def __init__(self, layout: QBoxLayout, crunchyroll, showName: str):
 		self.info_container = QWidget()
 		self.info_label = QLabel('Hello World', self.info_container)
 
@@ -16,14 +15,16 @@ class Player:
 		self.player = mpv.MPV(
 			wid=str(int(self.mpv_container.winId())),
 			vo='x11', # You may not need this
-			ytdl=True)
+			ytdl=True,
+			log_handler=print,
+			loglevel='warn')
 
 		self.playlist = Playlist(self.player, crunchyroll)
 		self.playlist.setPlaylist(showName)
 		self.playlist.setCurrentEpisode()
 
-		layout.addWidget(self.info_container)
 		layout.addWidget(self.mpv_container)
+		layout.addWidget(self.info_container)
 
 	def __del__(self):
 		if self.player:
@@ -32,7 +33,7 @@ class Player:
 	def registerEvents(self):
 		self.player.observe_property('time-pos', self.update)
 
-	def update(self, name, value):
+	def update(self, name: str, value):
 		self.counter += 1
 		if self.counter % 50 != 0:
 			return

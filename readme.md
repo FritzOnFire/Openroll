@@ -3,6 +3,17 @@
 This project aims to create a `native` cruchyroll experience by embeding mpv
 player into a QT window sprinkled with everything else you need from crunchyroll
 
+# Disclaimer
+
+I am not associated with crunchyroll in anyway. This app is defintly going to
+cross some legal line because it is making use of the name/brand/IP, so I this
+repo might disapear one day. But I really hope they see the good that this app
+can do in giving there customers a better user experiance (no more buffering
+mainly).
+
+The above might change after I actually look at there offical documentation...
+Which I still have not done.
+
 ## Tasks
 
 ### Humble beginnings
