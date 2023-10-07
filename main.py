@@ -20,16 +20,17 @@ locale.setlocale(locale.LC_NUMERIC, 'C')
 
 g.init()
 
-loginW = LoginWindow()
-loginW.show()
+if g.cr_config.cookie == None:
+	loginW = LoginWindow()
+	loginW.show()
 
-print("Starting login")
-result = app.exec_()
-print("Done with login window")
+	print("Starting login")
+	result = app.exec_()
+	print("Done with login window")
 
-if g.crunchyroll.logged_in == False:
-	print("Not logged in, exiting")
-	sys.exit(result)
+	if g.crunchyroll.logged_in == False:
+		print("Not logged in, exiting")
+		sys.exit(result)
 
 mainW = MainWindow()
 mainW.show()

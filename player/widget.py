@@ -7,7 +7,7 @@ class Player:
 	player: mpv.MPV = None
 	counter: int = 0
 
-	def __init__(self, layout: QBoxLayout, crunchyroll, showName: str):
+	def __init__(self, layout: QBoxLayout, showName: str):
 		self.info_container = QWidget()
 		self.info_label = QLabel('Hello World', self.info_container)
 
@@ -19,7 +19,7 @@ class Player:
 			log_handler=print,
 			loglevel='warn')
 
-		self.playlist = Playlist(self.player, crunchyroll)
+		self.playlist = Playlist(self.player)
 		self.playlist.setPlaylist(showName)
 		self.playlist.setCurrentEpisode()
 

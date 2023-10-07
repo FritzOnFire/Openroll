@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 
+from watchlist.widget import WatchList
 from player.widget import Player
 from utils.layout import cleanLayout
 
@@ -9,7 +10,9 @@ class MainWindow(QMainWindow):
 		super().__init__(parent)
 
 		# Set the size of the main window
-		self.setGeometry(0, 0, 800, 600)
+		self.setGeometry(0, 0, 1280, 720)
+
+		self.setWindowTitle('Openroll')
 
 		# Center the window
 		qtRectangle = self.frameGeometry()
@@ -17,15 +20,29 @@ class MainWindow(QMainWindow):
 		qtRectangle.moveCenter(centerPoint)
 		self.move(qtRectangle.topLeft())
 
+		self.setStyleSheet("""
+			QMainWindow {
+				background-color: #000000;
+			}
+		""")
+
 		self.container = QWidget(self)
 		self.setCentralWidget(self.container)
 		self.container.setAttribute(Qt.WA_DontCreateNativeAncestors)
 		self.container.setAttribute(Qt.WA_NativeWindow)
 
 		self.top_layout = QBoxLayout(QBoxLayout.TopToBottom, self.container)
+		self.top_layout.setSpacing(0)
+		self.top_layout.setContentsMargins(0, 0, 0, 0)
 
 		# Set default widget
-		self.navigateToPlayer()
+		self.navigateToWatchList()
+
+	def navigateToWatchList(self):
+		cleanLayout(self.top_layout)
+
+		self.watchlist = WatchList(self.top_layout)
+		self.watchlist.createListWidget()
 
 	def navigateToPlayer(self):
 		cleanLayout(self.top_layout)

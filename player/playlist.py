@@ -1,9 +1,8 @@
 import mpv
 
 class Playlist:
-	def __init__(self, player: mpv.MPV, crunchyroll):
+	def __init__(self, player: mpv.MPV):
 		self.player = player
-		self.crunchyroll = crunchyroll
 
 	def setPlaylist(self, showName: str):
 		length = len(self.player.playlist)

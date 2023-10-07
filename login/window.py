@@ -1,4 +1,3 @@
-from PyQt5 import QtGui
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -19,7 +18,7 @@ class LoginWindow(QMainWindow):
 
 		self.setWindowTitle('Openroll')
 
-		# # Move window on drag
+		# Move window on drag
 		self.dragPos = QPoint()
 		def mousePressEvent(event):
 			self.dragPos = event.globalPos()
@@ -111,6 +110,7 @@ class LoginWindow(QMainWindow):
 
 		self.password_input = QLineEdit(container)
 		self.password_input.setPlaceholderText('Password')
+		self.password_input.setEchoMode(QLineEdit.Password)
 		self.password_input.setStyleSheet("""
 			QLineEdit {
 				color: #ffffff;
