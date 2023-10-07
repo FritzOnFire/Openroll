@@ -85,7 +85,51 @@ class LoginWindow(QMainWindow):
 		self.createLoginForm(self.form_container, self.form_layout)
 		self.top_layout.addWidget(self.form_container, 0, Qt.AlignHCenter | Qt.AlignTop)
 
-		self.login_button = QPushButton('LOG IN', self.container)
+		self.createLoginButton(self.container, self.top_layout)
+		self.loadAssets()
+		self.addCloseButton()
+
+	def createLoginForm(self, container: QWidget, layout: QBoxLayout):
+		self.user_name_input = QLineEdit(container)
+		self.user_name_input.setPlaceholderText('Email or Username')
+		self.user_name_input.setStyleSheet("""
+			QLineEdit {
+				color: #ffffff;
+				background-color: #141519;
+				max-height: 34px;
+				font-size: 18px;
+				border: none;
+				border-bottom: 2px solid #59595b;
+				padding-top: 4px;
+				padding-bottom: 2px;
+			}
+			QLineEdit:focus {
+				border-bottom: 2px solid #f47521;
+			}
+		""")
+		layout.addWidget(self.user_name_input)
+
+		self.password_input = QLineEdit(container)
+		self.password_input.setPlaceholderText('Password')
+		self.password_input.setStyleSheet("""
+			QLineEdit {
+				color: #ffffff;
+				background-color: #141519;
+				max-height: 34px;
+				font-size: 18px;
+				border: none;
+				border-bottom: 2px solid #59595b;
+				padding-top: 4px;
+				padding-bottom: 2px;
+			}
+			QLineEdit:focus {
+				border-bottom: 2px solid #f47521;
+			}
+		""")
+		layout.addWidget(self.password_input)
+
+	def createLoginButton(self, container: QWidget, layout: QBoxLayout):
+		self.login_button = QPushButton('LOG IN', container)
 		self.login_button.setStyleSheet("""
 			QPushButton {
 				background-color: #f47521;
@@ -109,50 +153,34 @@ class LoginWindow(QMainWindow):
 		self.login_button.enterEvent = enterEvent
 		self.login_button.leaveEvent = leaveEvent
 
-		self.top_layout.addWidget(self.login_button, 1, Qt.AlignHCenter | Qt.AlignTop)
+		layout.addWidget(self.login_button, 1, Qt.AlignHCenter | Qt.AlignTop)
 
-		self.loadAssets()
-		self.addCloseButton()
-
-	def createLoginForm(self, container: QWidget, layout: QBoxLayout):
-		self.user_name_input = QLineEdit(container)
-		self.user_name_input.setPlaceholderText('Email or Username')
-		self.user_name_input.setStyleSheet("""
-			QLineEdit {
-				color: #ffffff;
-				background-color: #141519;
-				max-height: 34px;
-				font-size: 18px;
-				border: none;
-				border-bottom: 2px solid #59595b;
-				padding-top: 4px;
-				padding-bottom: 2px;
-			}
-		""")
-		layout.addWidget(self.user_name_input)
-
-		self.password_input = QLineEdit(container)
-		self.password_input.setPlaceholderText('Password')
-		self.password_input.setStyleSheet("""
-			QLineEdit {
-				color: #ffffff;
-				background-color: #141519;
-				max-height: 34px;
-				font-size: 18px;
-				border: none;
-				border-bottom: 2px solid #59595b;
-				padding-top: 4px;
-				padding-bottom: 2px;
-			}
-		""")
-		layout.addWidget(self.password_input)
 
 	def login(self):
-		print('login')
-		g.cookie = "cookie"
+		# Check if username or password is empty
+		if self.user_name_input.text() == '':
+			self.user_name_input.setStyleSheet("""
+				QLabel {
+					color: #f47521;
+					border-color: #f47521;
+				}
+			""")
+			return
 
-		# Close the login window
-		self.close()
+		if self.password_input.text() == '':
+			self.password_input.setStyleSheet("""
+				QLabel {
+					color: #f47521;
+					border-color: #f47521;
+				}
+			""")
+			return
+
+		if g.crunchyroll.login(self.user_name_input.text(), self.password_input.text()) == True:
+			# Close the login window we are done
+			self.close()
+
+		print('Failed to login')
 
 	def addCloseButton(self):
 		self.close_button = QPushButton('×', self.container)
@@ -217,4 +245,5 @@ class LoginWindow(QMainWindow):
 				margin-left: 613px;
 			}
 		""")
+		# Make image clickthrough
 		self.yuzu_image.setAttribute(Qt.WA_TransparentForMouseEvents)

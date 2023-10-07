@@ -25,8 +25,8 @@ print("Starting login")
 result = app.exec_()
 print("Done with login window")
 
-if g.cookie == None:
-	print("No cookie, exiting")
+if g.crunchyroll.logged_in == False:
+	print("Not logged in, exiting")
 	sys.exit(result)
 
 mainW = MainWindow()
