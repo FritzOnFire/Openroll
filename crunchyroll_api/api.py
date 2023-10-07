@@ -2,20 +2,25 @@ import requests
 from datetime import datetime
 
 import crunchyroll_api.constants as c
+from crunchyroll_api.config import CRConfig
 
 class CrunchyrollAPI:
+	device_id: str = None
+	config: CRConfig = None
+	session: requests.Session = None
+
 	logged_in: bool = False
 	session_id: int = None
 	premium_user: bool = None
-	auth_key: str = None
-	auth_expires: datetime = None
 
-	# There needs to be a way to scrape this from some site
-	access_token: str = 'giKq5eY27ny3cqz'
-
-	def __init__(self, device_id: str):
+	def __init__(self, device_id: str, config: CRConfig):
 		self.device_id = device_id
+		self.config = config
 		self.session = requests.Session()
+
+		# Experamental
+		if self.config.cookie != None:
+			self.session.cookies.update(self.config.cookie)
 
 	def getSessionID(self):
 		if self.session_id != None:
@@ -24,7 +29,7 @@ class CrunchyrollAPI:
 		response = self.session.get(c.SESSION_URL, params={
 			'device_id': self.device_id,
 			'device_type': 'com.crunchyroll.static',
-			'access_token': self.access_token
+			'access_token': self.config.access_token
 		})
 		if response.ok == False or response.json()['error'] == True:
 			raise Exception('while hitting session endpoint: ' + response.text)
@@ -52,18 +57,25 @@ class CrunchyrollAPI:
 			raise Exception('while logging in: ' + response.text)
 		self.logged_in = True
 
-		self.parseAuth(response.json()['data'])
-		self.parseUser(response.json()['data']['user'])
+		json = response.json()
+
+		print(json)
+
+		self.parseAuth(json['data'])
+		self.parseUser(json['data']['user'])
+
+		# Not sure if I need this... or if this can even be used
+		self.config.cookie = self.session.cookies.get_dict()
 
 	def parseAuth(self, response):
-		self.auth_key = response['auth']
+		self.config.auth_key = response['auth']
 		if response['expires'].endswith(':00'):
 			response['expires'] = response['expires'][:-3] + '00'
-		self.auth_expires = datetime.strptime(response['expires'], '%y-%m-%dT%H:%M:%S%z')
+		self.config.auth_expires = datetime.strptime(response['expires'], c.EXPIRE_DATE_FORMAT)
 
 	def parseUser(self, user):
 		self.premium_user = user['premium'].find('anime') > 0
-		self.user_id = user['user_id']
+		self.config.user_id = user['user_id']
 
 	def retriveWatchList(self):
 		"""
@@ -71,12 +83,7 @@ class CrunchyrollAPI:
 			:return: List of anime
 		"""
 
-		try:
-			id = self.getAccountID()
-		except Exception as e:
-			raise Exception("while getting account id: " + str(e))
-
-		response = self.session.get(f'https://www.crunchyroll.com/content/v2/discover/{id}/watchlist?order=desc&n=100&locale=en-US')
+		response = self.session.get(f'https://www.crunchyroll.com/content/v2/discover/{self.config.etp_guid}/watchlist?order=desc&n=100&locale=en-US')
 		if response.ok == False:
 			raise Exception('while getting watch list: ' + response.text)
 		return response.json()

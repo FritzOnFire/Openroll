@@ -155,7 +155,6 @@ class LoginWindow(QMainWindow):
 
 		layout.addWidget(self.login_button, 1, Qt.AlignHCenter | Qt.AlignTop)
 
-
 	def login(self):
 		# Check if username or password is empty
 		if self.user_name_input.text() == '':
@@ -176,7 +175,16 @@ class LoginWindow(QMainWindow):
 			""")
 			return
 
-		if g.crunchyroll.login(self.user_name_input.text(), self.password_input.text()) == True:
+		try:
+			g.crunchyroll.login(self.user_name_input.text(), self.password_input.text())
+		except Exception as e:
+			print(e)
+			return
+
+		if g.crunchyroll.logged_in == True:
+			# Persist login info
+			g.cr_config.save()
+
 			# Close the login window we are done
 			self.close()
 
