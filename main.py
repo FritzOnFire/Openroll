@@ -18,6 +18,8 @@ app = QApplication(sys.argv)
 import locale
 locale.setlocale(locale.LC_NUMERIC, 'C')
 
+g.init()
+
 loginW = LoginWindow()
 loginW.show()
 

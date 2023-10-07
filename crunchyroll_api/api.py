@@ -1,70 +1,69 @@
 import requests
-from bs4 import BeautifulSoup
+from datetime import datetime
+
+import crunchyroll_api.constants as c
 
 class CrunchyrollAPI:
 	logged_in: bool = False
+	session_id: int = None
+	premium_user: bool = None
+	auth_key: str = None
+	auth_expires: datetime = None
 
-	def __init__(self):
+	# There needs to be a way to scrape this from some site
+	access_token: str = 'giKq5eY27ny3cqz'
+
+	def __init__(self, device_id: str):
+		self.device_id = device_id
 		self.session = requests.Session()
-		self.session.headers.update({
-			'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0'
+
+	def getSessionID(self):
+		if self.session_id != None:
+			return self.session_id
+
+		response = self.session.get(c.SESSION_URL, params={
+			'device_id': self.device_id,
+			'device_type': 'com.crunchyroll.static',
+			'access_token': self.access_token
 		})
+		if response.ok == False or response.json()['error'] == True:
+			raise Exception('while hitting session endpoint: ' + response.text)
+
+		self.session_id = response.json()['data']['session_id']
+		return self.session_id
 
 	def login(self, username: str, password: str):
 		"""
 			Login to Crunchyroll
 			:param username: Username or email
 			:param password: Password
-			:return: True if login was successful
 		"""
-		# Get the login page
-		response = self.session.get('https://www.crunchyroll.com/login')
-		# Get the login form
-		soup = BeautifulSoup(response.text, 'html.parser')
-		print(soup)
-		form = soup.find('form', {'id': 'login_form'})
-		# Get the login token
-		token = form.find('input', {'name': 'login_form[_token]'})['value']
-		# Login
-		response = self.session.post('https://www.crunchyroll.com/login', data={
-			'login_form[name]': username,
-			'login_form[password]': password,
-			'login_form[redirect_url]': '',
-			'login_form[_token]': token
+		try:
+			session_id = self.getSessionID()
+		except Exception as e:
+			raise Exception("while getting session id: " + str(e))
+
+		response = self.session.post(c.LOGIN_URL, data={
+			'account': username,
+			'password': password,
+			'session_id': session_id
 		})
-		# Check if login was successful
-		soup = BeautifulSoup(response.text, 'html.parser')
-		if soup.find('form', {'id': 'login_form'}) is not None:
-			return False
+		if response.ok == False or response.json()['error'] == True:
+			raise Exception('while logging in: ' + response.text)
 		self.logged_in = True
-		return True
 
-	def retriveToken(self):
-		"""
-			Retrieve the token
-			:return: Token
-		"""
-		response = self.session.post('https://www.crunchyroll.com/auth/v1/token', data={
-			'device_id': '0',
-			'device_type': 'Chrome on Linux',
-			'grant_type': 'etp_rt_cookie'
-		})
-		if response.ok == False:
-			raise Exception('while getting token: ' + response.text)
-		self.token = response.json()
+		self.parseAuth(response.json()['data'])
+		self.parseUser(response.json()['data']['user'])
 
-	def getAccountID(self):
-		"""
-			Get the account ID
-			:return: Account ID
-		"""
-		if self.token == None:
-			try:
-				self.retriveToken()
-			except Exception as e:
-				raise e
+	def parseAuth(self, response):
+		self.auth_key = response['auth']
+		if response['expires'].endswith(':00'):
+			response['expires'] = response['expires'][:-3] + '00'
+		self.auth_expires = datetime.strptime(response['expires'], '%y-%m-%dT%H:%M:%S%z')
 
-		return self.token['account_id']
+	def parseUser(self, user):
+		self.premium_user = user['premium'].find('anime') > 0
+		self.user_id = user['user_id']
 
 	def retriveWatchList(self):
 		"""
