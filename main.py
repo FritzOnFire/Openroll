@@ -20,7 +20,7 @@ locale.setlocale(locale.LC_NUMERIC, 'C')
 
 g.init()
 
-if g.cr_config.cookie == None:
+if g.cr_config.cookies == None:
 	loginW = LoginWindow()
 	loginW.show()
 

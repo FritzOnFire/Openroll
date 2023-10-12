@@ -1,6 +1,6 @@
 import requests
 import base64
-from datetime import datetime
+import json
 
 import crunchyroll_api.constants as c
 from crunchyroll_api.config import CRConfig
@@ -9,10 +9,12 @@ class CrunchyrollAPI:
 	device_id: str = None
 	config: CRConfig = None
 	session: requests.Session = None
+	session_id: str = None
 
 	logged_in: bool = False
-	session_id: int = None
 	premium_user: bool = None
+	account_id: str = None
+	access_token: str = None
 
 	def __init__(self, device_id: str, config: CRConfig):
 		self.device_id = device_id
@@ -22,12 +24,76 @@ class CrunchyrollAPI:
 		# Setting the user agent feels wrong, but I can's seem to find the `api`
 		# endpoint for watchlist, so I guess we are stuck doing it like this
 		self.session.headers.update({
-			'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+			'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0'
 		})
 
-		# Experamental
-		if self.config.cookie != None:
-			self.session.cookies.update(self.config.cookie)
+		# Set cookies if we have any
+		if self.config.cookies != None:
+			self.session.cookies.update(self.config.cookies)
+
+	def login(self, username: str, password: str):
+		"""
+			Login to Crunchyroll
+			:param username: Username or email
+			:param password: Password
+		"""
+		try:
+			token = self.getToken(username, password)
+		except Exception as e:
+			raise Exception("while getting token: " + str(e))
+
+		self.parseAuth(token)
+		self.parseUser(token)
+		self.logged_in = True
+
+		# Persist cookies
+		self.config.cookies = self.session.cookies.get_dict()
+
+	def parseAuth(self, token):
+		self.access_token = token['access_token']
+		self.config.refresh_token = token['refresh_token']
+
+	def parseUser(self, token):
+		# Pretty sure if you have offile_access you are premium
+		self.premium_user = token['scope'].find('offline_access') > 0
+		self.account_id = token['account_id']
+
+	def getToken(self, username: str, password: str):
+		headers = {
+			'authorization': 'Basic ' + 'aHJobzlxM2F3dnNrMjJ1LXRzNWE6cHROOURteXRBU2Z6QjZvbXVsSzh6cUxzYTczVE1TY1k=',
+			'content-type': 'application/x-www-form-urlencoded',
+			'connection': 'keep-alive',
+			'accept-encoding': 'gzip, deflate, br'
+		}
+		response = self.session.post(c.TOKEN_URL, data={
+			'username': username,
+			'password': password,
+			'grant_type': 'password',
+			'scope': 'offline_access'
+		}, headers=headers)
+		if response.ok == False:
+			raise Exception('while hitting token endpoint: ' + response.text[:100])
+		return response.json()
+
+	def getTokenViaETP(self, etp_rt_cookie: str):
+		"""
+			Get a new token
+			:return: Token
+		"""
+		self.session.cookies.set('etp_rt', etp_rt_cookie)
+
+		headers = {
+			'authorization': 'Basic ' + base64.b64encode(self.config.client_id.encode()).decode(),
+			'content-type': 'application/x-www-form-urlencoded',
+			'accept': 'application/json'
+		}
+		response = self.session.post(c.TOKEN_URL, data={
+			'grant_type': 'etp_rt_cookie',
+			'scope': 'offline_access'
+		}, headers=headers)
+		if response.ok == False:
+			raise Exception('while hitting token endpoint: ' + response.text)
+		return response.json()
 
 	def getSessionID(self):
 		if self.session_id != None:
@@ -44,77 +110,20 @@ class CrunchyrollAPI:
 		self.session_id = response.json()['data']['session_id']
 		return self.session_id
 
-	def login(self, username: str, password: str):
-		"""
-			Login to Crunchyroll
-			:param username: Username or email
-			:param password: Password
-		"""
-		try:
-			session_id = self.getSessionID()
-		except Exception as e:
-			raise Exception("while getting session id: " + str(e))
-
-		response = self.session.post(c.LOGIN_URL, data={
-			'account': username,
-			'password': password,
-			'session_id': session_id
-		})
-		if response.ok == False or response.json()['error'] == True:
-			raise Exception('while logging in: ' + response.text)
-		self.logged_in = True
-
-		json = response.json()
-		self.parseAuth(json['data'])
-		self.parseUser(json['data']['user'])
-
-		# Not sure if I need this... or if this can even be used
-		self.config.cookie = self.session.cookies.get_dict()
-
-	def parseAuth(self, response):
-		self.config.auth_key = response['auth']
-		if response['expires'].endswith(':00'):
-			response['expires'] = response['expires'][:-3] + '00'
-		self.config.auth_expires = datetime.strptime(response['expires'], c.EXPIRE_DATE_FORMAT)
-
-	def parseUser(self, user):
-		self.premium_user = user['premium'].find('anime') > 0
-		self.config.user_id = user['user_id']
-		self.config.etp_guid = user['etp_guid']
-
-	def getToken(self):
-		"""
-			Get a new token
-			:return: Token
-		"""
-		self.session.cookies.clear()
-		self.session.cookies.set('etp_rt', self.config.cookie['etp_rt'])
-		self.session.cookies.set('__cf_bm', self.config.cookie['__cf_bm'])
-
-		response = self.session.post(c.TOKEN_URL, data={
-			'device_id': self.device_id,
-			'device_type': 'com.crunchyroll.static',
-			'grant_type': 'etp_rt_cookie'
-		}, headers={
-			'authorization': 'Basic ' + base64.b64encode(f'{self.config.client_id}:'.encode()).decode(),
-		})
-		if response.ok == False:
-			raise Exception('while hitting token endpoint: ' + response.text)
-		return response.json()['access_token']
-
 	def retriveWatchList(self):
 		"""
 			Retrieve the watch list
 			:return: List of anime
 		"""
+		# Load example responce
+		example_file = open('crunchyroll_api/watchlist_example.json', 'r')
+		response = json.loads(example_file.read())
+		example_file.close()
 
-		try:
-			token = self.getToken()
-		except Exception as e:
-			raise Exception("while getting token: " + str(e))
+		return response
 
-		response = self.session.get(f'https://www.crunchyroll.com/content/v2/discover/{self.config.etp_guid}/watchlist?order=desc&n=100&locale=en-US', headers={
-			'authorization': f'Bearer {token}'
+		response = self.session.get(f'https://www.crunchyroll.com/content/v2/discover/{self.account_id}/watchlist?order=desc&n=100&locale=en-US', headers={
+			'authorization': f'Bearer {self.access_token}'
 		})
 		if response.ok == False:
 			raise Exception('while getting watch list: ' + response.text)
