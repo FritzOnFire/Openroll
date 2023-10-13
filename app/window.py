@@ -4,6 +4,7 @@ from PyQt5.QtCore import *
 from watchlist.widget import WatchList
 from player.widget import Player
 from utils.layout import cleanLayout
+from utils.layout import addCloseButton
 
 class MainWindow(QMainWindow):
 	def __init__(self, parent=None):
@@ -23,6 +24,7 @@ class MainWindow(QMainWindow):
 		self.setStyleSheet("""
 			QMainWindow {
 				background-color: #000000;
+				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 			}
 		""")
 
@@ -31,9 +33,11 @@ class MainWindow(QMainWindow):
 		self.container.setAttribute(Qt.WA_DontCreateNativeAncestors)
 		self.container.setAttribute(Qt.WA_NativeWindow)
 
-		self.top_layout = QBoxLayout(QBoxLayout.TopToBottom, self.container)
+		self.top_layout = QVBoxLayout(self.container)
 		self.top_layout.setSpacing(0)
 		self.top_layout.setContentsMargins(0, 0, 0, 0)
+
+		addCloseButton(self)
 
 		# Set default widget
 		self.navigateToWatchList()

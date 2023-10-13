@@ -4,6 +4,7 @@ import json
 
 import crunchyroll_api.constants as c
 from crunchyroll_api.config import CRConfig
+from crunchyroll_api.watchlist import WatchlistResponse
 
 class CrunchyrollAPI:
 	device_id: str = None
@@ -110,7 +111,7 @@ class CrunchyrollAPI:
 		self.session_id = response.json()['data']['session_id']
 		return self.session_id
 
-	def retriveWatchList(self):
+	def retriveWatchlist(self) -> WatchlistResponse:
 		"""
 			Retrieve the watch list
 			:return: List of anime
@@ -120,7 +121,7 @@ class CrunchyrollAPI:
 		response = json.loads(example_file.read())
 		example_file.close()
 
-		return response
+		return WatchlistResponse(response)
 
 		response = self.session.get(f'https://www.crunchyroll.com/content/v2/discover/{self.account_id}/watchlist?order=desc&n=100&locale=en-US', headers={
 			'authorization': f'Bearer {self.access_token}'

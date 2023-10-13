@@ -3,9 +3,11 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 
 import global_vars.vars as g
+from utils.layout import addCloseButton
 
 class LoginWindow(QMainWindow):
 	can_drag: bool = True
+	close_button: QPushButton = None
 
 	def __init__(self, parent=None):
 		super().__init__(parent)
@@ -86,7 +88,7 @@ class LoginWindow(QMainWindow):
 
 		self.createLoginButton(self.container, self.top_layout)
 		self.loadAssets()
-		self.addCloseButton()
+		addCloseButton(self)
 
 	def createLoginForm(self, container: QWidget, layout: QBoxLayout):
 		self.user_name_input = QLineEdit(container)
@@ -189,37 +191,6 @@ class LoginWindow(QMainWindow):
 			self.close()
 
 		print('Failed to login')
-
-	def addCloseButton(self):
-		self.close_button = QPushButton('×', self.container)
-		self.close_button.setStyleSheet("""
-			QPushButton {
-				color: #ffffff;
-				font-size: 20px;
-				border: none;
-				padding-bottom: 1px;
-				max-width: 21px;
-				min-width: 21px;
-				max-height: 21px;
-				min-height: 21px;
-				margin-left: 765px;
-				margin-top: 5px;
-			}
-			QPushButton:hover {
-				background-color: #f47521;
-			}
-		""")
-		self.close_button.clicked.connect(self.close)
-
-		# Disable can_drag when hovering over the close button
-		def enterEvent(event):
-			self.can_drag = False
-		def leaveEvent(event):
-			self.can_drag = True
-		self.close_button.enterEvent = enterEvent
-		self.close_button.leaveEvent = leaveEvent
-
-		self.setWindowFlag(Qt.FramelessWindowHint)
 
 	def loadAssets(self):
 		# Load hime over everything to the left of the login form
