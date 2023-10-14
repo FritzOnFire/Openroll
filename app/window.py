@@ -4,9 +4,11 @@ from PyQt5.QtCore import *
 from watchlist.widget import WatchList
 from player.widget import Player
 from utils.layout import cleanLayout
-from utils.layout import addCloseButton
+from utils.layout import addCloseButton, addMoveOnDrag
 
 class MainWindow(QMainWindow):
+	can_drag: bool = True
+
 	def __init__(self, parent=None):
 		super().__init__(parent)
 
@@ -14,6 +16,9 @@ class MainWindow(QMainWindow):
 		self.setGeometry(0, 0, 1280, 720)
 
 		self.setWindowTitle('Openroll')
+		self.setWindowFlag(Qt.FramelessWindowHint)
+
+		addMoveOnDrag(self)
 
 		# Center the window
 		qtRectangle = self.frameGeometry()
@@ -29,9 +34,8 @@ class MainWindow(QMainWindow):
 		""")
 
 		self.container = QWidget(self)
+		self.container.setContentsMargins(0, 0, 0, 0)
 		self.setCentralWidget(self.container)
-		self.container.setAttribute(Qt.WA_DontCreateNativeAncestors)
-		self.container.setAttribute(Qt.WA_NativeWindow)
 
 		self.top_layout = QVBoxLayout(self.container)
 		self.top_layout.setSpacing(0)
@@ -46,7 +50,6 @@ class MainWindow(QMainWindow):
 		cleanLayout(self.top_layout)
 
 		self.watchlist = WatchList(self.top_layout)
-		self.watchlist.createListWidget()
 
 	def navigateToPlayer(self):
 		cleanLayout(self.top_layout)

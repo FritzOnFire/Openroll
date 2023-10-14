@@ -6,4 +6,4 @@ sudo pacman -S yt-dlp \
 			   python-mpv \
 			   python-pyqt5 \
 			   python-requests \
-			   python-beautifulsoup4
+			   ttf-lato

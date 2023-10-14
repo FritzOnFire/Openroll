@@ -65,9 +65,11 @@ class EpisodeMetadata:
 	subtitle_locales: list[str] = None
 	tenant_categories: list[str] = None
 	upload_date: str = None
-	versions: list[EpisodeVersion] = []
+	versions: list[EpisodeVersion] = None
 
 	def __init__(self, json) -> None:
+		self.versions = []
+
 		if 'audio_locale' in json:
 			self.audio_locale = json['audio_locale']
 
@@ -177,6 +179,19 @@ class EpisodeMetadata:
 			for version in json['versions']:
 				self.versions.append(EpisodeVersion(version))
 
+	def seasonAndEpisodeShortHand(self) -> str:
+		return f"S{self.season_number} E{self.episode}"
+
+	def subAndDubComment(self) -> str:
+		if self.is_dubbed and self.is_subbed:
+			return "Sub | Dub"
+		elif self.is_dubbed:
+			return "Dub"
+		elif self.is_subbed:
+			return "Subtitled"
+		else:
+			return ""
+
 class Thumbnail:
 	height: int = None
 	source: str = None
@@ -197,12 +212,13 @@ class Thumbnail:
 			self.width = json['width']
 
 class Images:
-	thumbnail: list[list[Thumbnail]] = []
+	thumbnail: list[list[Thumbnail]] = None
 
 	def __init__(self, json) -> None:
+		self.thumbnail = []
 		if 'thumbnail' in json:
 			for thumbnail in json['thumbnail']:
-				sub = []
+				sub: list[Thumbnail] = []
 				for sub_thumbnail in thumbnail:
 					sub.append(Thumbnail(sub_thumbnail))
 				self.thumbnail.append(sub)
@@ -293,6 +309,15 @@ class Data:
 		if 'playhead' in json:
 			self.playhead = json['playhead']
 
+	def episodeComment(self) -> str:
+		comment = ""
+		if self.playhead == 0:
+			comment = "Up next"
+		else:
+			comment = "Continue"
+
+		return f"{comment}: {self.panel.episode_metadata.seasonAndEpisodeShortHand()}"
+
 class Meta:
 	total_before_filter: int = None
 
@@ -302,10 +327,11 @@ class Meta:
 
 class WatchlistResponse:
 	total: int = None
-	data: list[Data] = []
+	data: list[Data] = None
 	meta: Meta = None
 
 	def __init__(self, json) -> None:
+		self.data = []
 		if 'total' in json:
 			self.total = json['total']
 

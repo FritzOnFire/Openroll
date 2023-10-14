@@ -3,7 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 
 import global_vars.vars as g
-from utils.layout import addCloseButton
+from utils.layout import addCloseButton, addMoveOnDrag
 
 class LoginWindow(QMainWindow):
 	can_drag: bool = True
@@ -19,17 +19,9 @@ class LoginWindow(QMainWindow):
 		self.setFixedSize(self.size())
 
 		self.setWindowTitle('Openroll')
+		self.setWindowFlag(Qt.FramelessWindowHint)
 
-		# Move window on drag
-		self.dragPos = QPoint()
-		def mousePressEvent(event):
-			self.dragPos = event.globalPos()
-		def mouseMoveEvent(event):
-			if event.buttons() == Qt.LeftButton and self.can_drag:
-				self.move(self.pos() + event.globalPos() - self.dragPos)
-				self.dragPos = event.globalPos()
-		self.mousePressEvent = mousePressEvent
-		self.mouseMoveEvent = mouseMoveEvent
+		addMoveOnDrag(self)
 
 		# Center the window
 		qtRectangle = self.frameGeometry()

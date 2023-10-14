@@ -5,9 +5,30 @@ def cleanLayout(layout: QBoxLayout):
 	for i in reversed(range(layout.count())):
 		layout.itemAt(i).widget().setParent(None)
 
+def addMoveOnDrag(window: QMainWindow):
+	# Move window on drag
+	window.dragPos = QPoint()
+	def mousePressEvent(event):
+		window.dragPos = event.globalPos()
+	def mouseMoveEvent(event):
+		if event.buttons() == Qt.LeftButton and window.can_drag:
+			window.move(window.pos() + event.globalPos() - window.dragPos)
+			window.dragPos = event.globalPos()
+	window.mousePressEvent = mousePressEvent
+	window.mouseMoveEvent = mouseMoveEvent
+
 def addCloseButton(window: QMainWindow):
 	window.close_button = QPushButton('×', window.container)
 
+	setCloseButtonOffset(window)
+
+	window.close_button.setFixedSize(21, 21)
+
+	window.resizeEvent = lambda event: setCloseButtonOffset(window)
+
+	window.close_button.clicked.connect(window.close)
+
+def setCloseButtonOffset(window: QMainWindow):
 	offset = window.frameGeometry().width() - 21 - 5
 
 	window.close_button.setStyleSheet("""
@@ -29,14 +50,13 @@ def addCloseButton(window: QMainWindow):
 			background-color: #f47521;
 		}
 	""")
-	window.close_button.clicked.connect(window.close)
 
-	# Disable can_drag when hovering over the close button
-	def enterEvent(event):
-		window.can_drag = False
-	def leaveEvent(event):
-		window.can_drag = True
-	window.close_button.enterEvent = enterEvent
-	window.close_button.leaveEvent = leaveEvent
+def underLineLabel(label: QLabel):
+	f = label.font()
+	f.setUnderline(True)
+	label.setFont(f)
 
-	window.setWindowFlag(Qt.FramelessWindowHint)
+def removeUnderLineLabel(label: QLabel):
+	f = label.font()
+	f.setUnderline(False)
+	label.setFont(f)

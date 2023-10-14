@@ -2,12 +2,12 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 
-import crunchyroll_api.constants as c
 import crunchyroll_api.watchlist as WatchlistClasses
 
 import global_vars.vars as g
 
 from watchlist.tile import Tile
+import watchlist.constants as c
 
 WATCHLIST_TITLE_PER_ROW = 4
 
@@ -16,10 +16,8 @@ class WatchList:
 
 	def __init__(self, layout: QVBoxLayout):
 		layout.addWidget(self.createTitleWidget(), 0, Qt.AlignHCenter | Qt.AlignTop)
-		layout.addStretch(1)
 
-		layout.addWidget(self.createListWidget(), 0, Qt.AlignHCenter | Qt.AlignTop)
-		layout.addStretch(1)
+		layout.addWidget(self.createListWidget(), 1, Qt.AlignTop)
 
 	def createTitleWidget(self):
 		title_widget = QWidget()
@@ -51,10 +49,9 @@ class WatchList:
 			}
 		""")
 		title_layout.addWidget(self.title_label)
-		title_layout.addStretch(1)
 		return title_widget
 
-	def createListWidget(self) -> QWidget:
+	def createListWidget(self) -> QScrollArea:
 		try:
 			watchlist = g.crunchyroll.retriveWatchlist()
 		except Exception as e:
@@ -62,27 +59,60 @@ class WatchList:
 			return
 
 		list_widget = QWidget()
-		list_layout = QVBoxLayout(list_widget)
+		list_widget.setContentsMargins(0, 0, 0, 0)
+		list_widget.setStyleSheet("""
+			QWidget {
+				background-color: #000000;
+			}
+		""")
 
-		num_rows = int(watchlist.total / c.WATCHLIST_TITLE_PER_ROW)
+		list_layout = QVBoxLayout(list_widget)
+		list_layout.setContentsMargins(0, 0, 0, 0)
+		list_layout.setSpacing(c.TILE_GAP)
+
+		num_rows = int(watchlist.total / WATCHLIST_TITLE_PER_ROW)
 		# num_rows = 1
-		last_row = watchlist.total % c.WATCHLIST_TITLE_PER_ROW
+		last_row = watchlist.total % WATCHLIST_TITLE_PER_ROW
 
 		for i in range(num_rows):
-			start = i * c.WATCHLIST_TITLE_PER_ROW
-			end = start + c.WATCHLIST_TITLE_PER_ROW
-			list_layout.addWidget(self.createRowWidget(watchlist.data[start:end]), 0, Qt.AlignHCenter | Qt.AlignTop)
+			start = i * WATCHLIST_TITLE_PER_ROW
+			end = start + WATCHLIST_TITLE_PER_ROW
+			list_layout.addWidget(self.createRowWidget(watchlist.data[start:end]), 0, Qt.AlignTop)
 
-		return list_widget
+		scroll = QScrollArea()
+		scroll.setWidgetResizable(True)
+		scroll.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+		policy = scroll.sizePolicy()
+		policy.setVerticalStretch(1)
+		policy.setHorizontalStretch(1)
+
+		scroll.sizeHint = lambda: QSize(list_widget.size())
+
+		scroll.setStyleSheet("""
+			QScrollArea {
+				background-color: #000000;
+			}
+		""")
+
+		scroll.setWidget(list_widget)
+		return scroll
 
 	def createRowWidget(self, titles: list[WatchlistClasses.Data]) -> QWidget:
 		row_widget = QWidget()
+		row_widget.setContentsMargins(0, 0, 0, 0)
+
 		row_layout = QHBoxLayout(row_widget)
+		row_layout.setContentsMargins(0, 0, 0, 0)
+		row_layout.setSpacing(c.TILE_GAP)
+
+		row_layout.addStretch(1)
 
 		for title in titles:
 			# Keep tiles around to avoid garbage collection
 			tile = Tile(title)
 			self.tiles.append(tile)
 			row_layout.addWidget(tile.widget, 0, Qt.AlignLeft)
+
+		row_layout.addStretch(1)
 
 		return row_widget
