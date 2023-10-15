@@ -9,6 +9,7 @@ import crunchyroll_api.watchlist as WatchlistClasses
 import watchlist.constants as c
 
 from utils.layout import underLineLabel, removeUnderLineLabel
+from utils.thumbnail import getThumbnail
 
 class Tile:
 	widget: QWidget = None
@@ -191,15 +192,10 @@ class Tile:
 		if thumbnail_url == None:
 			return # Nothing to do
 
-		# Download the thumbnail
-		session = requests.Session()
-		responce = session.get(thumbnail_url)
-		if responce.ok == False:
-			print('while downloading thumbnail: ' + responce.text)
-			return
+		thumbnail_raw = getThumbnail(thumbnail_url)
 
 		qpm = QPixmap()
-		qpm.loadFromData(responce.content)
+		qpm.loadFromData(thumbnail_raw)
 		self.thumbnail.setPixmap(qpm)
 
 	def createEpisodeComment(self, parent: QWidget, title: WatchlistClasses.Data) -> QLabel:
