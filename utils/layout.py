@@ -60,3 +60,9 @@ def removeUnderLineLabel(label: QLabel):
 	f = label.font()
 	f.setUnderline(False)
 	label.setFont(f)
+
+def makeInvisible(label: QLabel):
+	label.setVisible(False)
+
+def makeVisible(label: QLabel):
+	label.setVisible(True)

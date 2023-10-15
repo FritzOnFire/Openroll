@@ -1,3 +1,5 @@
+from crunchyroll_api.common_responce_classes import Image
+
 class EpisodeVersion:
 	audio_locale: str = None
 	guid: str = None
@@ -192,35 +194,16 @@ class EpisodeMetadata:
 		else:
 			return ""
 
-class Thumbnail:
-	height: int = None
-	source: str = None
-	type: str = None
-	width: int = None
-
-	def __init__(self, json) -> None:
-		if 'height' in json:
-			self.height = json['height']
-
-		if 'source' in json:
-			self.source = json['source']
-
-		if 'type' in json:
-			self.type = json['type']
-
-		if 'width' in json:
-			self.width = json['width']
-
 class Images:
-	thumbnail: list[list[Thumbnail]] = None
+	thumbnail: list[list[Image]] = None
 
 	def __init__(self, json) -> None:
 		self.thumbnail = []
 		if 'thumbnail' in json:
-			for thumbnail in json['thumbnail']:
-				sub: list[Thumbnail] = []
-				for sub_thumbnail in thumbnail:
-					sub.append(Thumbnail(sub_thumbnail))
+			for image in json['thumbnail']:
+				sub: list[Image] = []
+				for sub_image in image:
+					sub.append(Image(sub_image))
 				self.thumbnail.append(sub)
 
 class Panel:
@@ -308,6 +291,24 @@ class Data:
 
 		if 'playhead' in json:
 			self.playhead = json['playhead']
+
+	def thumbnailURL(self) -> str:
+		if self.panel == None:
+			return ""
+
+		if self.panel.images == None:
+			return ""
+
+		if self.panel.images.thumbnail == None:
+			return ""
+
+		if len(self.panel.images.thumbnail) == 0:
+			return ""
+
+		if len(self.panel.images.thumbnail[0]) == 0:
+			return ""
+
+		return self.panel.images.thumbnail[0][0].source
 
 	def episodeComment(self) -> str:
 		comment = ""

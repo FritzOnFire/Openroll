@@ -6,9 +6,10 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 import crunchyroll_api.watchlist as WatchlistClasses
+import crunchyroll_api.series as SeriesClasses
 import watchlist.constants as c
 
-from utils.layout import underLineLabel, removeUnderLineLabel
+from utils.layout import underLineLabel, removeUnderLineLabel, makeInvisible, makeVisible
 from utils.thumbnail import getThumbnail
 
 class Tile:
@@ -16,11 +17,12 @@ class Tile:
 	layout: QVBoxLayout = None
 	thumbnail_widget: QWidget = None
 	thumbnail: QLabel = None
+	thumbnail_hover: QLabel = None
 	session: requests.Session = None
 
 	thumbnail_thread: threading.Thread = None
 
-	def __init__(self, title: WatchlistClasses.Data):
+	def __init__(self, title: WatchlistClasses.Data, series: SeriesClasses.Data):
 		self.session = requests.Session()
 
 		self.widget = QWidget()
@@ -36,8 +38,8 @@ class Tile:
 		self.layout.setSpacing(0)
 		self.layout.setContentsMargins(c.TILE_MARGIN, c.TILE_MARGIN, c.TILE_MARGIN, c.TILE_MARGIN)
 
-		self.createThumbnail(self.widget, title)
-		self.layout.addWidget(self.thumbnail, 0, Qt.AlignLeft)
+		self.createThumbnail(self.widget, title, series)
+		self.layout.addWidget(self.thumbnail_widget, 0, Qt.AlignLeft)
 
 		# Add the series title
 		title_label = QLabel(self.widget)
@@ -160,8 +162,34 @@ class Tile:
 
 		return footer
 
-	def createThumbnail(self, parent: QWidget, title: WatchlistClasses.Data):
-		self.thumbnail = QLabel(parent)
+	def createThumbnail(self, parent: QWidget, title: WatchlistClasses.Data, series: SeriesClasses.Data):
+		self.thumbnail_widget = QWidget(parent)
+		self.thumbnail_widget.setStyleSheet("""
+			QLabel {
+				max-width: 240px;
+				min-width: 240px;
+				max-height: 135px;
+				min-height: 135px;
+				background-color: #323232;
+			}
+		""")
+		self.thumbnail_widget.setFixedSize(c.THUMB_WIDTH, c.THUMB_HEIGHT)
+
+		# Create hover first as it needs to be behind the thumbnail
+		self.thumbnail_hover = QLabel(self.thumbnail_widget)
+		self.thumbnail_hover.setFixedSize(c.THUMB_WIDTH, c.THUMB_HEIGHT)
+		self.thumbnail_hover.setStyleSheet("""
+			QLabel {
+				max-width: 240px;
+				min-width: 240px;
+				max-height: 135px;
+				min-height: 135px;
+				background-color: #323232;
+			}
+		""")
+		self.thumbnail_hover.setScaledContents(True)
+
+		self.thumbnail = QLabel(self.thumbnail_widget)
 		self.thumbnail.setFixedSize(c.THUMB_WIDTH, c.THUMB_HEIGHT)
 		self.thumbnail.setStyleSheet("""
 			QLabel {
@@ -174,29 +202,32 @@ class Tile:
 		""")
 		self.thumbnail.setScaledContents(True)
 
-		# Update thumbnail with the real one in a new thread
-		self.thumbnail_thread = threading.Thread(target=self.downloadThumbnail, args=(title,))
+		# Make thumbnail invisible when mouse is over it
+		self.widget.setMouseTracking(True)
+		self.widget.enterEvent = lambda event: makeInvisible(self.thumbnail)
+		self.widget.leaveEvent = lambda event: makeVisible(self.thumbnail)
+
+		# Update thumbnails with the real ones in a new threads
+
+		self.thumbnail_thread = threading.Thread(target=self.downloadThumbnail, args=(series, title))
 		self.thumbnail_thread.start()
 
-	def downloadThumbnail(self, title: WatchlistClasses.Data):
-		thumbnail_arr_arr = title.panel.images.thumbnail
-		thumbnail_arr = []
-		if len(thumbnail_arr_arr) == 0:
-			return # Nothing to do
+	def downloadThumbnail(self, series: SeriesClasses.Data,  title: WatchlistClasses.Data):
+		thumbnail_url = series.thumbnailURL()
+		if len(thumbnail_url) > 0:
+			thumbnail_raw = getThumbnail(thumbnail_url)
 
-		thumbnail_arr = thumbnail_arr_arr[0]
-		if len(thumbnail_arr) == 0:
-			return # Nothing to do
+			qpm = QPixmap()
+			qpm.loadFromData(thumbnail_raw)
+			self.thumbnail.setPixmap(qpm)
 
-		thumbnail_url = thumbnail_arr[0].source
-		if thumbnail_url == None:
-			return # Nothing to do
+		thumbnail_url = title.thumbnailURL()
+		if len(thumbnail_url) > 0:
+			thumbnail_raw = getThumbnail(thumbnail_url)
 
-		thumbnail_raw = getThumbnail(thumbnail_url)
-
-		qpm = QPixmap()
-		qpm.loadFromData(thumbnail_raw)
-		self.thumbnail.setPixmap(qpm)
+			qpm = QPixmap()
+			qpm.loadFromData(thumbnail_raw)
+			self.thumbnail_hover.setPixmap(qpm)
 
 	def createEpisodeComment(self, parent: QWidget, title: WatchlistClasses.Data) -> QLabel:
 		comment_label = QLabel(title.episodeComment(), parent)

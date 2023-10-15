@@ -3,6 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 
 import crunchyroll_api.watchlist as WatchlistClasses
+import crunchyroll_api.series as SeriesClasses
 
 import global_vars.vars as g
 
@@ -58,6 +59,12 @@ class WatchList:
 			print(e)
 			return
 
+		try:
+			series = g.crunchyroll.retrieveSeriesFromWatchlist(watchlist)
+		except Exception as e:
+			print(e)
+			return
+
 		list_widget = QWidget()
 		list_widget.setContentsMargins(0, 0, 0, 0)
 		list_widget.setStyleSheet("""
@@ -77,7 +84,7 @@ class WatchList:
 		for i in range(num_rows):
 			start = i * WATCHLIST_TITLE_PER_ROW
 			end = start + WATCHLIST_TITLE_PER_ROW
-			list_layout.addWidget(self.createRowWidget(watchlist.data[start:end]), 0, Qt.AlignTop)
+			list_layout.addWidget(self.createRowWidget(watchlist.data[start:end], series), 0, Qt.AlignTop)
 
 		scroll = QScrollArea()
 		scroll.setWidgetResizable(True)
@@ -113,7 +120,7 @@ class WatchList:
 		scroll.setWidget(list_widget)
 		return scroll
 
-	def createRowWidget(self, titles: list[WatchlistClasses.Data]) -> QWidget:
+	def createRowWidget(self, titles: list[WatchlistClasses.Data], series: SeriesClasses.SeriesResponse) -> QWidget:
 		row_widget = QWidget()
 		row_widget.setContentsMargins(0, 0, 0, 0)
 
@@ -124,8 +131,10 @@ class WatchList:
 		row_layout.addStretch(1)
 
 		for title in titles:
+			s = series.dataDict[title.panel.episode_metadata.series_id]
+
 			# Keep tiles around to avoid garbage collection
-			tile = Tile(title)
+			tile = Tile(title, s)
 			self.tiles.append(tile)
 			row_layout.addWidget(tile.widget, 0, Qt.AlignLeft)
 

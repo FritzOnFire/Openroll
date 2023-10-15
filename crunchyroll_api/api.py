@@ -5,6 +5,7 @@ import json
 import crunchyroll_api.constants as c
 from crunchyroll_api.config import CRConfig
 from crunchyroll_api.watchlist import WatchlistResponse
+from crunchyroll_api.series import SeriesResponse
 
 class CrunchyrollAPI:
 	device_id: str = None
@@ -128,4 +129,21 @@ class CrunchyrollAPI:
 		})
 		if response.ok == False:
 			raise Exception('while getting watch list: ' + response.text)
+		return response.json()
+
+	def retrieveSeriesFromWatchlist(self, watchlist: WatchlistResponse) -> SeriesResponse:
+		# Load example responce
+		example_file = open('crunchyroll_api/series_example.json', 'r')
+		response = json.loads(example_file.read())
+		example_file.close()
+
+		return SeriesResponse(response)
+
+		series_ids = ','.join([str(title.panel.episode_metadata.series_id) for title in watchlist.data])
+
+		response = self.session.get(f'https://www.crunchyroll.com/content/v2/cms/objects/{series_ids}?ratings=true&preferred_audio_language=ja-JP&locale=en-US', headers={
+			'authorization': f'Bearer {self.access_token}'
+		})
+		if response.ok == False:
+			raise Exception('while getting series list: ' + response.text)
 		return response.json()
