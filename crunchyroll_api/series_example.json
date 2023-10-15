@@ -1,10 +1,389 @@
 {
-    "total": 24,
+    "total": 26,
     "data": [
         {
-            "description": "Why would an overworked woman get summoned to a magical new world? To live her ideal life of leisure, of course! For Sei, it’s truly a dream: studying spells and perfecting potions while helping people. Can she hide away in this fantasy forever?",
-            "id": "G1XHJV3P3",
+            "title": "Eureka Seven Hi-Evolution",
+            "slug": "",
+            "rating": {
+                "4s": {
+                    "displayed": "23",
+                    "percentage": 9,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "206",
+                    "percentage": 79,
+                    "unit": ""
+                },
+                "average": "4.6",
+                "total": 262,
+                "1s": {
+                    "displayed": "10",
+                    "percentage": 4,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "7",
+                    "percentage": 3,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "16",
+                    "percentage": 7,
+                    "unit": ""
+                }
+            },
+            "images": {
+                "poster_tall": [
+                    [
+                        {
+                            "height": 90,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 60
+                        },
+                        {
+                            "height": 180,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 120
+                        },
+                        {
+                            "height": 360,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 240
+                        },
+                        {
+                            "height": 720,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 480
+                        },
+                        {
+                            "height": 1125,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 750
+                        },
+                        {
+                            "height": 1440,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 960
+                        },
+                        {
+                            "height": 1688,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 1125
+                        },
+                        {
+                            "height": 1800,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 1200
+                        },
+                        {
+                            "height": 2340,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/746b034da499628d178f5f33e21bda10.jpe",
+                            "type": "poster_tall",
+                            "width": 1560
+                        }
+                    ]
+                ],
+                "poster_wide": [
+                    [
+                        {
+                            "height": 180,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 320
+                        },
+                        {
+                            "height": 338,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 600
+                        },
+                        {
+                            "height": 360,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 640
+                        },
+                        {
+                            "height": 450,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 800
+                        },
+                        {
+                            "height": 675,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 1200
+                        },
+                        {
+                            "height": 810,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 1440
+                        },
+                        {
+                            "height": 900,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 1600
+                        },
+                        {
+                            "height": 1080,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/6c3b9f08024de42501d2105a92887d4f.jpe",
+                            "type": "poster_wide",
+                            "width": 1920
+                        }
+                    ]
+                ]
+            },
+            "series_metadata": {
+                "audio_locales": [
+                    "ja-JP",
+                    "en-US"
+                ],
+                "availability_notes": "",
+                "episode_count": 3,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": true,
+                "is_mature": false,
+                "is_simulcast": false,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 1,
+                "series_launch_year": 2023,
+                "subtitle_locales": [
+                    "en-US",
+                    "pt-BR",
+                    "es-419"
+                ],
+                "tenant_categories": [
+                    "Drama",
+                    "Sci-Fi"
+                ]
+            },
+            "slug_title": "eureka-seven-hi-evolution",
+            "type": "series",
+            "description": "The groundbreaking anime mecha returns with the untold story: the sensational incident in which Renton's father disappeared.",
+            "external_id": "SRZ.283425",
+            "linked_resource_key": "cms:/series/GQWH0MP75",
             "promo_title": "",
+            "id": "GQWH0MP75",
+            "promo_description": "",
+            "channel_id": "crunchyroll"
+        },
+        {
+            "external_id": "SRZ.281937",
+            "id": "GEXH3W8G1",
+            "slug_title": "the-faraway-paladin",
+            "channel_id": "crunchyroll",
+            "linked_resource_key": "cms:/series/GEXH3W8G1",
+            "title": "The Faraway Paladin",
+            "promo_title": "",
+            "series_metadata": {
+                "audio_locales": [
+                    "fr-FR",
+                    "en-US",
+                    "ja-JP",
+                    "pt-BR",
+                    "es-419",
+                    "de-DE"
+                ],
+                "availability_notes": "",
+                "episode_count": 15,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": true,
+                "is_mature": false,
+                "is_simulcast": true,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 2,
+                "series_launch_year": 2023,
+                "subtitle_locales": [
+                    "pt-BR",
+                    "es-ES",
+                    "fr-FR",
+                    "es-419",
+                    "ar-SA",
+                    "en-US",
+                    "de-DE",
+                    "it-IT",
+                    "ru-RU"
+                ],
+                "tenant_categories": [
+                    "Adventure",
+                    "Drama",
+                    "Fantasy"
+                ]
+            },
+            "slug": "",
+            "rating": {
+                "average": "4.6",
+                "total": 22186,
+                "1s": {
+                    "displayed": "389",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "398",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "1.2",
+                    "percentage": 6,
+                    "unit": "K"
+                },
+                "4s": {
+                    "displayed": "3.5",
+                    "percentage": 16,
+                    "unit": "K"
+                },
+                "5s": {
+                    "displayed": "16.7",
+                    "percentage": 76,
+                    "unit": "K"
+                }
+            },
+            "promo_description": "",
+            "description": "In the ruined city of the dead far from human civilization lives a single child named Will. He is raised by three undead: Blood the heroic skeleton warrior, Mary the ladylike mummy priestess, and Gus the crotchety ghost wizard. The three of them teach the boy what they know and pour their love into him. One day, the boy begins to wonder, \"Who am I?\" Will uncovers the mysteries of the undead hidden in this faraway land. He learns of the love and mercy of good gods, as well as the paranoia and madness of evil gods. And once he learns it all, the boy embarks on the path to becoming a Paladin.",
+            "type": "series",
+            "images": {
+                "poster_tall": [
+                    [
+                        {
+                            "height": 90,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/60x90/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 60
+                        },
+                        {
+                            "height": 180,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/120x180/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 120
+                        },
+                        {
+                            "height": 360,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 240
+                        },
+                        {
+                            "height": 720,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 480
+                        },
+                        {
+                            "height": 1125,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/750x1125/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 750
+                        },
+                        {
+                            "height": 1440,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/960x1440/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 960
+                        },
+                        {
+                            "height": 1688,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1125x1688/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 1125
+                        },
+                        {
+                            "height": 1800,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x1800/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 1200
+                        },
+                        {
+                            "height": 2340,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1560x2340/catalog/crunchyroll/3b166f7f535823589980641210b88e69.jpe",
+                            "type": "poster_tall",
+                            "width": 1560
+                        }
+                    ]
+                ],
+                "poster_wide": [
+                    [
+                        {
+                            "height": 180,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 320
+                        },
+                        {
+                            "height": 338,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 600
+                        },
+                        {
+                            "height": 360,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 640
+                        },
+                        {
+                            "height": 450,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 800
+                        },
+                        {
+                            "height": 675,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 1200
+                        },
+                        {
+                            "height": 810,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 1440
+                        },
+                        {
+                            "height": 900,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 1600
+                        },
+                        {
+                            "height": 1080,
+                            "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpe",
+                            "type": "poster_wide",
+                            "width": 1920
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "external_id": "SRZ.281257",
+            "promo_title": "",
+            "channel_id": "crunchyroll",
+            "description": "Why would an overworked woman get summoned to a magical new world? To live her ideal life of leisure, of course! For Sei, it’s truly a dream: studying spells and perfecting potions while helping people. Can she hide away in this fantasy forever?",
+            "linked_resource_key": "cms:/series/G1XHJV3P3",
             "title": "The Saint's Magic Power is Omnipotent",
             "series_metadata": {
                 "audio_locales": [
@@ -43,40 +422,8 @@
                     "Isekai"
                 ]
             },
-            "channel_id": "crunchyroll",
-            "external_id": "SRZ.281257",
-            "promo_description": "",
-            "slug_title": "the-saints-magic-power-is-omnipotent",
-            "linked_resource_key": "cms:/series/G1XHJV3P3",
-            "rating": {
-                "1s": {
-                    "displayed": "132",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "97",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "386",
-                    "percentage": 3,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "1.4",
-                    "percentage": 11,
-                    "unit": "K"
-                },
-                "5s": {
-                    "displayed": "12",
-                    "percentage": 86,
-                    "unit": "K"
-                },
-                "average": "4.8",
-                "total": 14025
-            },
+            "id": "G1XHJV3P3",
+            "type": "series",
             "images": {
                 "poster_tall": [
                     [
@@ -189,75 +536,40 @@
                     ]
                 ]
             },
-            "slug": "",
-            "type": "series"
-        },
-        {
-            "description": "In the near future, a meteorite carrying a foreign virus crashes in Japan, leading to a devastating nation-wide infection and total anarchy. Several years later, Shu—a teen with a special ability awakened by the Apocalypse Virus—meets a strange girl who incites him to join the struggle against a government organization’s robotic forces and a secret society whose goal remains shrouded in mystery.",
+            "promo_description": "",
             "rating": {
-                "total": 1711,
                 "1s": {
-                    "displayed": "69",
-                    "percentage": 5,
+                    "displayed": "132",
+                    "percentage": 1,
                     "unit": ""
                 },
                 "2s": {
-                    "displayed": "46",
-                    "percentage": 3,
+                    "displayed": "97",
+                    "percentage": 1,
                     "unit": ""
                 },
                 "3s": {
-                    "displayed": "93",
-                    "percentage": 6,
+                    "displayed": "386",
+                    "percentage": 3,
                     "unit": ""
                 },
                 "4s": {
-                    "displayed": "228",
-                    "percentage": 14,
-                    "unit": ""
-                },
-                "5s": {
-                    "displayed": "1.3",
-                    "percentage": 75,
+                    "displayed": "1.4",
+                    "percentage": 11,
                     "unit": "K"
                 },
-                "average": "4.5"
+                "5s": {
+                    "displayed": "12",
+                    "percentage": 86,
+                    "unit": "K"
+                },
+                "average": "4.8",
+                "total": 14025
             },
-            "slug_title": "guilty-crown",
-            "type": "series",
-            "series_metadata": {
-                "audio_locales": [
-                    "en-US",
-                    "ja-JP"
-                ],
-                "availability_notes": "",
-                "episode_count": 22,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": true,
-                "is_mature": false,
-                "is_simulcast": false,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 1,
-                "series_launch_year": 2023,
-                "subtitle_locales": [
-                    "en-US"
-                ],
-                "tenant_categories": [
-                    "Drama",
-                    "Sci-Fi"
-                ]
-            },
-            "promo_description": "",
-            "linked_resource_key": "cms:/series/GZJH3D0N5",
-            "external_id": "SRZ.283322",
             "slug": "",
-            "channel_id": "crunchyroll",
-            "id": "GZJH3D0N5",
+            "slug_title": "the-saints-magic-power-is-omnipotent"
+        },
+        {
             "images": {
                 "poster_tall": [
                     [
@@ -370,53 +682,81 @@
                     ]
                 ]
             },
-            "title": "Guilty Crown",
-            "promo_title": ""
-        },
-        {
-            "linked_resource_key": "cms:/series/GR2420096",
-            "slug": "",
-            "slug_title": "wataten-an-angel-flew-down-to-me",
-            "id": "GR2420096",
             "series_metadata": {
                 "audio_locales": [
+                    "en-US",
                     "ja-JP"
                 ],
                 "availability_notes": "",
-                "episode_count": 14,
+                "episode_count": 22,
                 "extended_description": "",
                 "extended_maturity_rating": {},
-                "is_dubbed": false,
+                "is_dubbed": true,
                 "is_mature": false,
-                "is_simulcast": true,
+                "is_simulcast": false,
                 "is_subbed": true,
                 "mature_blocked": false,
                 "maturity_ratings": [
                     "TV-14"
                 ],
-                "season_count": 2,
-                "series_launch_year": 2019,
+                "season_count": 1,
+                "series_launch_year": 2023,
                 "subtitle_locales": [
-                    "fr-FR",
-                    "ru-RU",
-                    "it-IT",
-                    "es-419",
-                    "pt-BR",
-                    "de-DE",
-                    "es-ES",
                     "en-US"
                 ],
                 "tenant_categories": [
-                    "Comedy",
-                    "Slice of Life"
+                    "Drama",
+                    "Sci-Fi"
                 ]
             },
-            "channel_id": "crunchyroll",
-            "type": "series",
+            "slug_title": "guilty-crown",
+            "description": "In the near future, a meteorite carrying a foreign virus crashes in Japan, leading to a devastating nation-wide infection and total anarchy. Several years later, Shu—a teen with a special ability awakened by the Apocalypse Virus—meets a strange girl who incites him to join the struggle against a government organization’s robotic forces and a secret society whose goal remains shrouded in mystery.",
+            "linked_resource_key": "cms:/series/GZJH3D0N5",
             "promo_title": "",
+            "rating": {
+                "2s": {
+                    "displayed": "46",
+                    "percentage": 3,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "93",
+                    "percentage": 6,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "229",
+                    "percentage": 14,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "1.3",
+                    "percentage": 75,
+                    "unit": "K"
+                },
+                "average": "4.5",
+                "total": 1714,
+                "1s": {
+                    "displayed": "69",
+                    "percentage": 5,
+                    "unit": ""
+                }
+            },
+            "slug": "",
+            "title": "Guilty Crown",
+            "id": "GZJH3D0N5",
             "promo_description": "",
+            "external_id": "SRZ.283322",
+            "type": "series",
+            "channel_id": "crunchyroll"
+        },
+        {
             "title": "WATATEN!: an Angel Flew Down to Me",
-            "external_id": "SRZ.277368",
+            "id": "GR2420096",
+            "description": "Miyako is a shy college student who is also an otaku. One day she happens to meet some angelic grade school kids! When Miyako sees her little sister's new friend Hana-chan, Miyako's heart won't stop racing! Miyako tries to get along with them but struggles... A sketch comedy all about trying to get along with the super cute girl is about to begin!",
+            "promo_description": "",
+            "slug_title": "wataten-an-angel-flew-down-to-me",
+            "slug": "",
             "images": {
                 "poster_tall": [
                     [
@@ -529,19 +869,9 @@
                     ]
                 ]
             },
+            "channel_id": "crunchyroll",
+            "promo_title": "",
             "rating": {
-                "4s": {
-                    "displayed": "172",
-                    "percentage": 12,
-                    "unit": ""
-                },
-                "5s": {
-                    "displayed": "1.1",
-                    "percentage": 76,
-                    "unit": "K"
-                },
-                "average": "4.5",
-                "total": 1469,
                 "1s": {
                     "displayed": "78",
                     "percentage": 6,
@@ -556,14 +886,58 @@
                     "displayed": "75",
                     "percentage": 6,
                     "unit": ""
-                }
+                },
+                "4s": {
+                    "displayed": "172",
+                    "percentage": 12,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "1.1",
+                    "percentage": 77,
+                    "unit": "K"
+                },
+                "average": "4.5",
+                "total": 1471
             },
-            "description": "Miyako is a shy college student who is also an otaku. One day she happens to meet some angelic grade school kids! When Miyako sees her little sister's new friend Hana-chan, Miyako's heart won't stop racing! Miyako tries to get along with them but struggles... A sketch comedy all about trying to get along with the super cute girl is about to begin!"
+            "type": "series",
+            "external_id": "SRZ.277368",
+            "linked_resource_key": "cms:/series/GR2420096",
+            "series_metadata": {
+                "audio_locales": [
+                    "ja-JP"
+                ],
+                "availability_notes": "",
+                "episode_count": 14,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": false,
+                "is_mature": false,
+                "is_simulcast": true,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 2,
+                "series_launch_year": 2019,
+                "subtitle_locales": [
+                    "fr-FR",
+                    "ru-RU",
+                    "it-IT",
+                    "es-419",
+                    "pt-BR",
+                    "de-DE",
+                    "es-ES",
+                    "en-US"
+                ],
+                "tenant_categories": [
+                    "Comedy",
+                    "Slice of Life"
+                ]
+            }
         },
         {
-            "id": "GRWMGGQ86",
-            "channel_id": "crunchyroll",
-            "description": "Nasa Yuzaki falls in love at first sight after an encounter with the mysterious Tsukasa. When Nasa earnestly confesses his feelings, she replies, \"I'll date you, but only if we're married.\" Nasa and Tsukasa's cute and precious newlywed life of love is about to begin!",
             "images": {
                 "poster_tall": [
                     [
@@ -676,18 +1050,15 @@
                     ]
                 ]
             },
+            "slug": "",
             "promo_description": "",
+            "slug_title": "tonikawa-over-the-moon-for-you",
+            "description": "Nasa Yuzaki falls in love at first sight after an encounter with the mysterious Tsukasa. When Nasa earnestly confesses his feelings, she replies, \"I'll date you, but only if we're married.\" Nasa and Tsukasa's cute and precious newlywed life of love is about to begin!",
+            "id": "GRWMGGQ86",
+            "title": "TONIKAWA: Over The Moon For You",
+            "channel_id": "crunchyroll",
+            "linked_resource_key": "cms:/series/GRWMGGQ86",
             "rating": {
-                "2s": {
-                    "displayed": "258",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "731",
-                    "percentage": 2,
-                    "unit": ""
-                },
                 "4s": {
                     "displayed": "2.6",
                     "percentage": 7,
@@ -704,15 +1075,19 @@
                     "displayed": "496",
                     "percentage": 2,
                     "unit": ""
+                },
+                "2s": {
+                    "displayed": "258",
+                    "percentage": 1,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "731",
+                    "percentage": 2,
+                    "unit": ""
                 }
             },
-            "type": "series",
-            "linked_resource_key": "cms:/series/GRWMGGQ86",
             "external_id": "SRZ.279974",
-            "title": "TONIKAWA: Over The Moon For You",
-            "slug_title": "tonikawa-over-the-moon-for-you",
-            "promo_title": "",
-            "slug": "",
             "series_metadata": {
                 "audio_locales": [
                     "fr-FR",
@@ -752,45 +1127,12 @@
                     "Romance",
                     "Slice of Life"
                 ]
-            }
+            },
+            "type": "series",
+            "promo_title": ""
         },
         {
             "external_id": "SRZ.282175",
-            "slug": "",
-            "slug_title": "cue",
-            "rating": {
-                "1s": {
-                    "displayed": "53",
-                    "percentage": 6,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "37",
-                    "percentage": 4,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "80",
-                    "percentage": 8,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "183",
-                    "percentage": 19,
-                    "unit": ""
-                },
-                "5s": {
-                    "displayed": "659",
-                    "percentage": 66,
-                    "unit": ""
-                },
-                "average": "4.3",
-                "total": 1012
-            },
-            "id": "G8DHV7W3N",
-            "channel_id": "crunchyroll",
-            "linked_resource_key": "cms:/series/G8DHV7W3N",
-            "type": "series",
             "images": {
                 "poster_tall": [
                     [
@@ -903,9 +1245,45 @@
                     ]
                 ]
             },
+            "type": "series",
+            "slug_title": "cue",
             "description": "The brand-new voice acting talent agency AiRBLUE has neither seasoned pros nor famous stars. What it does have is a group of trainee voice actresses whose individualism and personality shines through their inexperience. Each one is looking for a way to harness her talents and make her dreams come true!\n\nHowever, sooner or later, all these dreams will run up against the harshness of reality. No matter how devotedly they practice, not all the candidates can pass every audition.\nCan they endure through anguish, setbacks, and discord? If the hurdles all trainees must face trip them up, can they recover and rise again?\n\nThe story of these fledgling voice actresses is now ready for the director to call “action!”",
+            "promo_description": "",
             "promo_title": "",
             "title": "CUE!",
+            "id": "G8DHV7W3N",
+            "rating": {
+                "1s": {
+                    "displayed": "53",
+                    "percentage": 6,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "37",
+                    "percentage": 4,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "80",
+                    "percentage": 8,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "183",
+                    "percentage": 19,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "659",
+                    "percentage": 66,
+                    "unit": ""
+                },
+                "average": "4.3",
+                "total": 1012
+            },
+            "slug": "",
+            "channel_id": "crunchyroll",
+            "linked_resource_key": "cms:/series/G8DHV7W3N",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP"
@@ -938,14 +1316,60 @@
                 "tenant_categories": [
                     "Slice of Life"
                 ]
-            },
-            "promo_description": ""
+            }
         },
         {
-            "external_id": "SRZ.277768",
-            "promo_title": "",
             "slug": "",
+            "description": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself.\n\nThough devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+            "id": "GY5P48XEY",
+            "slug_title": "demon-slayer-kimetsu-no-yaiba",
+            "external_id": "SRZ.277768",
+            "series_metadata": {
+                "audio_locales": [
+                    "de-DE",
+                    "pt-BR",
+                    "es-419",
+                    "en-US",
+                    "it-IT",
+                    "fr-FR",
+                    "ja-JP",
+                    "hi-IN"
+                ],
+                "availability_notes": "",
+                "episode_count": 29,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": true,
+                "is_mature": false,
+                "is_simulcast": true,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 3,
+                "series_launch_year": 2019,
+                "subtitle_locales": [
+                    "ar-SA",
+                    "de-DE",
+                    "en-US",
+                    "es-ES",
+                    "ru-RU",
+                    "es-419",
+                    "fr-FR",
+                    "pt-BR",
+                    "hi-IN",
+                    "it-IT"
+                ],
+                "tenant_categories": [
+                    "Action",
+                    "Fantasy",
+                    "Shonen"
+                ]
+            },
+            "channel_id": "crunchyroll",
             "linked_resource_key": "cms:/series/GY5P48XEY",
+            "promo_description": "",
             "images": {
                 "poster_tall": [
                     [
@@ -1058,55 +1482,6 @@
                     ]
                 ]
             },
-            "channel_id": "crunchyroll",
-            "id": "GY5P48XEY",
-            "series_metadata": {
-                "audio_locales": [
-                    "de-DE",
-                    "pt-BR",
-                    "es-419",
-                    "en-US",
-                    "it-IT",
-                    "fr-FR",
-                    "ja-JP",
-                    "hi-IN"
-                ],
-                "availability_notes": "",
-                "episode_count": 29,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": true,
-                "is_mature": false,
-                "is_simulcast": true,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 3,
-                "series_launch_year": 2019,
-                "subtitle_locales": [
-                    "ar-SA",
-                    "de-DE",
-                    "en-US",
-                    "es-ES",
-                    "ru-RU",
-                    "es-419",
-                    "fr-FR",
-                    "pt-BR",
-                    "hi-IN",
-                    "it-IT"
-                ],
-                "tenant_categories": [
-                    "Action",
-                    "Fantasy",
-                    "Shonen"
-                ]
-            },
-            "promo_description": "",
-            "slug_title": "demon-slayer-kimetsu-no-yaiba",
-            "type": "series",
-            "description": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself.\n\nThough devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
             "rating": {
                 "3s": {
                     "displayed": "2.8",
@@ -1136,25 +1511,46 @@
                     "unit": "K"
                 }
             },
-            "title": "Demon Slayer: Kimetsu no Yaiba"
+            "promo_title": "",
+            "title": "Demon Slayer: Kimetsu no Yaiba",
+            "type": "series"
         },
         {
-            "promo_title": "",
-            "title": "YuruYuri",
-            "promo_description": "",
-            "type": "series",
-            "description": "YURUYURI follows four students who decide to occupy the room of defunct tea ceremony club, dubbing it the ‘Amusment Club.’ While the Student Council does its best to eliminate this club, their endless energy, happiness and comedy will keep audiences smiling all season long!",
+            "series_metadata": {
+                "audio_locales": [
+                    "ja-JP"
+                ],
+                "availability_notes": "",
+                "episode_count": 37,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": false,
+                "is_mature": false,
+                "is_simulcast": false,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 3,
+                "series_launch_year": 2011,
+                "subtitle_locales": [
+                    "pt-BR",
+                    "es-419",
+                    "fr-FR",
+                    "it-IT",
+                    "ar-SA",
+                    "de-DE",
+                    "en-US",
+                    "es-ES"
+                ],
+                "tenant_categories": [
+                    "Comedy",
+                    "Romance",
+                    "Slice of Life"
+                ]
+            },
             "rating": {
-                "1s": {
-                    "displayed": "37",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "31",
-                    "percentage": 2,
-                    "unit": ""
-                },
                 "3s": {
                     "displayed": "116",
                     "percentage": 6,
@@ -1171,8 +1567,21 @@
                     "unit": "K"
                 },
                 "average": "4.6",
-                "total": 1979
+                "total": 1979,
+                "1s": {
+                    "displayed": "37",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "31",
+                    "percentage": 2,
+                    "unit": ""
+                }
             },
+            "description": "YURUYURI follows four students who decide to occupy the room of defunct tea ceremony club, dubbing it the ‘Amusment Club.’ While the Student Council does its best to eliminate this club, their endless energy, happiness and comedy will keep audiences smiling all season long!",
+            "promo_description": "",
+            "title": "YuruYuri",
             "images": {
                 "poster_tall": [
                     [
@@ -1285,13 +1694,22 @@
                     ]
                 ]
             },
+            "slug": "",
+            "slug_title": "yuruyuri",
+            "id": "GY19XDNQR",
+            "type": "series",
             "linked_resource_key": "cms:/series/GY19XDNQR",
+            "promo_title": "",
+            "channel_id": "crunchyroll",
+            "external_id": "SRZ.234145"
+        },
+        {
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP"
                 ],
                 "availability_notes": "",
-                "episode_count": 37,
+                "episode_count": 12,
                 "extended_description": "",
                 "extended_maturity_rating": {},
                 "is_dubbed": false,
@@ -1302,36 +1720,60 @@
                 "maturity_ratings": [
                     "TV-14"
                 ],
-                "season_count": 3,
-                "series_launch_year": 2011,
+                "season_count": 1,
+                "series_launch_year": 2023,
                 "subtitle_locales": [
-                    "pt-BR",
-                    "es-419",
                     "fr-FR",
                     "it-IT",
-                    "ar-SA",
                     "de-DE",
                     "en-US",
+                    "ru-RU",
+                    "ar-SA",
+                    "es-419",
+                    "pt-BR",
                     "es-ES"
                 ],
                 "tenant_categories": [
-                    "Comedy",
-                    "Romance",
-                    "Slice of Life"
+                    "Fantasy"
                 ]
             },
-            "slug": "",
-            "external_id": "SRZ.234145",
-            "slug_title": "yuruyuri",
-            "channel_id": "crunchyroll",
-            "id": "GY19XDNQR"
-        },
-        {
-            "external_id": "SRZ.283374",
+            "rating": {
+                "total": 22113,
+                "1s": {
+                    "displayed": "387",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "270",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "790",
+                    "percentage": 4,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "2.8",
+                    "percentage": 13,
+                    "unit": "K"
+                },
+                "5s": {
+                    "displayed": "17.9",
+                    "percentage": 81,
+                    "unit": "K"
+                },
+                "average": "4.7"
+            },
             "type": "series",
+            "channel_id": "crunchyroll",
+            "promo_title": "",
             "slug": "",
+            "id": "G79H23XWZ",
             "promo_description": "",
-            "title": "Chillin' in My 30s after Getting Fired from the Demon King's Army",
+            "description": "After losing his job as a Dark Soldier of the Demon King’s Army for his lack of magic ability, 30-ish-year-old Dariel has found himself in a village of humans to spend his early forced retirement. But this unemployed magic-less demon has found a new calling as an adventurer! His second life might just be not so bad after all, as long the villagers don’t find out he’s not human.",
+            "external_id": "SRZ.283374",
             "images": {
                 "poster_tall": [
                     [
@@ -1444,130 +1886,15 @@
                     ]
                 ]
             },
-            "linked_resource_key": "cms:/series/G79H23XWZ",
-            "description": "After losing his job as a Dark Soldier of the Demon King’s Army for his lack of magic ability, 30-ish-year-old Dariel has found himself in a village of humans to spend his early forced retirement. But this unemployed magic-less demon has found a new calling as an adventurer! His second life might just be not so bad after all, as long the villagers don’t find out he’s not human.",
             "slug_title": "chillin-in-my-30s-after-getting-fired-from-the-demon-kings-army",
-            "series_metadata": {
-                "audio_locales": [
-                    "ja-JP"
-                ],
-                "availability_notes": "",
-                "episode_count": 12,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": false,
-                "is_mature": false,
-                "is_simulcast": false,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 1,
-                "series_launch_year": 2023,
-                "subtitle_locales": [
-                    "fr-FR",
-                    "it-IT",
-                    "de-DE",
-                    "en-US",
-                    "ru-RU",
-                    "ar-SA",
-                    "es-419",
-                    "pt-BR",
-                    "es-ES"
-                ],
-                "tenant_categories": [
-                    "Fantasy"
-                ]
-            },
-            "rating": {
-                "1s": {
-                    "displayed": "387",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "269",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "789",
-                    "percentage": 4,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "2.8",
-                    "percentage": 13,
-                    "unit": "K"
-                },
-                "5s": {
-                    "displayed": "17.9",
-                    "percentage": 82,
-                    "unit": "K"
-                },
-                "average": "4.7",
-                "total": 22110
-            },
-            "promo_title": "",
-            "id": "G79H23XWZ",
-            "channel_id": "crunchyroll"
+            "title": "Chillin' in My 30s after Getting Fired from the Demon King's Army",
+            "linked_resource_key": "cms:/series/G79H23XWZ"
         },
         {
-            "promo_title": "",
             "slug": "",
-            "linked_resource_key": "cms:/series/GYX02P3MR",
-            "type": "series",
-            "promo_description": "",
-            "channel_id": "crunchyroll",
-            "external_id": "SRZ.272171",
-            "title": "Masamune-kun's Revenge",
-            "series_metadata": {
-                "audio_locales": [
-                    "ja-JP",
-                    "es-ES",
-                    "en-US",
-                    "pt-BR",
-                    "hi-IN",
-                    "es-419",
-                    "it-IT",
-                    "de-DE",
-                    "fr-FR"
-                ],
-                "availability_notes": "",
-                "episode_count": 25,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": true,
-                "is_mature": false,
-                "is_simulcast": true,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 2,
-                "series_launch_year": 2017,
-                "subtitle_locales": [
-                    "pt-BR",
-                    "es-419",
-                    "ar-SA",
-                    "it-IT",
-                    "fr-FR",
-                    "en-US",
-                    "es-ES",
-                    "ru-RU",
-                    "de-DE",
-                    "hi-IN"
-                ],
-                "tenant_categories": [
-                    "Comedy",
-                    "Drama",
-                    "Romance"
-                ]
-            },
-            "description": "\"I've returned to this town for revenge!\" Eight years ago, Makabe Masamune, a weak and chubby boy, was harshly rejected by the beautiful Adagaki Aki. Now, he's lost a ton of weight, changed his name, and returned as a handsome teenage boy... all to make the \"Brutal Princess\" Aki fall in love with him so that he can reject her just as harshly as she did.",
             "slug_title": "masamune-kuns-revenge",
+            "linked_resource_key": "cms:/series/GYX02P3MR",
+            "description": "\"I've returned to this town for revenge!\" Eight years ago, Makabe Masamune, a weak and chubby boy, was harshly rejected by the beautiful Adagaki Aki. Now, he's lost a ton of weight, changed his name, and returned as a handsome teenage boy... all to make the \"Brutal Princess\" Aki fall in love with him so that he can reject her just as harshly as she did.",
             "rating": {
                 "1s": {
                     "displayed": "1.5",
@@ -1597,7 +1924,7 @@
                 "average": "4.3",
                 "total": 26901
             },
-            "id": "GYX02P3MR",
+            "title": "Masamune-kun's Revenge",
             "images": {
                 "poster_tall": [
                     [
@@ -1709,10 +2036,94 @@
                         }
                     ]
                 ]
-            }
+            },
+            "id": "GYX02P3MR",
+            "series_metadata": {
+                "audio_locales": [
+                    "ja-JP",
+                    "es-ES",
+                    "en-US",
+                    "pt-BR",
+                    "hi-IN",
+                    "es-419",
+                    "it-IT",
+                    "de-DE",
+                    "fr-FR"
+                ],
+                "availability_notes": "",
+                "episode_count": 25,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": true,
+                "is_mature": false,
+                "is_simulcast": true,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 2,
+                "series_launch_year": 2017,
+                "subtitle_locales": [
+                    "pt-BR",
+                    "es-419",
+                    "ar-SA",
+                    "it-IT",
+                    "fr-FR",
+                    "en-US",
+                    "es-ES",
+                    "ru-RU",
+                    "de-DE",
+                    "hi-IN"
+                ],
+                "tenant_categories": [
+                    "Comedy",
+                    "Drama",
+                    "Romance"
+                ]
+            },
+            "external_id": "SRZ.272171",
+            "channel_id": "crunchyroll",
+            "promo_description": "",
+            "promo_title": "",
+            "type": "series"
         },
         {
-            "description": "Haise Sasaki has been tasked with teaching Qs Squad how to be outstanding investigators, but his assignment is complicated by the troublesome personalities of his students and his own uncertain grasp of his Ghoul powers. Can he pull them together as a team, or will Qs Squad first assignment be their last?",
+            "promo_description": "",
+            "type": "series",
+            "rating": {
+                "1s": {
+                    "displayed": "793",
+                    "percentage": 3,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "519",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "1.7",
+                    "percentage": 7,
+                    "unit": "K"
+                },
+                "4s": {
+                    "displayed": "4.5",
+                    "percentage": 17,
+                    "unit": "K"
+                },
+                "5s": {
+                    "displayed": "19.6",
+                    "percentage": 73,
+                    "unit": "K"
+                },
+                "average": "4.5",
+                "total": 27146
+            },
+            "channel_id": "crunchyroll",
+            "slug_title": "tokyo-ghoul",
+            "promo_title": "",
+            "title": "Tokyo Ghoul",
             "external_id": "SRZ.276013",
             "linked_resource_key": "cms:/series/G6NV7Z50Y",
             "series_metadata": {
@@ -1751,11 +2162,8 @@
                     "Thriller"
                 ]
             },
-            "id": "G6NV7Z50Y",
+            "description": "Haise Sasaki has been tasked with teaching Qs Squad how to be outstanding investigators, but his assignment is complicated by the troublesome personalities of his students and his own uncertain grasp of his Ghoul powers. Can he pull them together as a team, or will Qs Squad first assignment be their last?",
             "slug": "",
-            "channel_id": "crunchyroll",
-            "type": "series",
-            "title": "Tokyo Ghoul",
             "images": {
                 "poster_tall": [
                     [
@@ -1878,42 +2286,9 @@
                     ]
                 ]
             },
-            "slug_title": "tokyo-ghoul",
-            "promo_title": "",
-            "rating": {
-                "total": 27146,
-                "1s": {
-                    "displayed": "793",
-                    "percentage": 3,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "519",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "1.7",
-                    "percentage": 7,
-                    "unit": "K"
-                },
-                "4s": {
-                    "displayed": "4.5",
-                    "percentage": 17,
-                    "unit": "K"
-                },
-                "5s": {
-                    "displayed": "19.6",
-                    "percentage": 73,
-                    "unit": "K"
-                },
-                "average": "4.5"
-            },
-            "promo_description": ""
+            "id": "G6NV7Z50Y"
         },
         {
-            "slug": "",
-            "slug_title": "food-wars-shokugeki-no-soma",
             "images": {
                 "poster_tall": [
                     [
@@ -2026,6 +2401,46 @@
                     ]
                 ]
             },
+            "slug": "",
+            "promo_description": "",
+            "channel_id": "crunchyroll",
+            "rating": {
+                "1s": {
+                    "displayed": "512",
+                    "percentage": 3,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "230",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "667",
+                    "percentage": 3,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "2.5",
+                    "percentage": 11,
+                    "unit": "K"
+                },
+                "5s": {
+                    "displayed": "18.9",
+                    "percentage": 83,
+                    "unit": "K"
+                },
+                "average": "4.7",
+                "total": 22760
+            },
+            "promo_title": "",
+            "slug_title": "food-wars-shokugeki-no-soma",
+            "linked_resource_key": "cms:/series/G6GG91P26",
+            "description": "Shokugeki no Soma centers on Yukihira Soma, a middle school student who is determined to surpass his father’s culinary skills. One day, his father decides to close down their family restaurant and hone his skills in Europe. Before leaving he enrolls Soma in an elite culinary school that is extremely difficult to enter with a graduation rate of only 10 percent. Will Soma be able to improve his skills, or will the kitchen prove to be too hot?",
+            "title": "Food Wars! Shokugeki no Soma",
+            "type": "series",
+            "external_id": "SRZ.265649",
+            "id": "G6GG91P26",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
@@ -2061,48 +2476,9 @@
                     "Comedy",
                     "Shonen"
                 ]
-            },
-            "promo_description": "",
-            "rating": {
-                "3s": {
-                    "displayed": "667",
-                    "percentage": 3,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "2.5",
-                    "percentage": 11,
-                    "unit": "K"
-                },
-                "5s": {
-                    "displayed": "18.9",
-                    "percentage": 83,
-                    "unit": "K"
-                },
-                "average": "4.7",
-                "total": 22760,
-                "1s": {
-                    "displayed": "512",
-                    "percentage": 3,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "230",
-                    "percentage": 2,
-                    "unit": ""
-                }
-            },
-            "description": "Shokugeki no Soma centers on Yukihira Soma, a middle school student who is determined to surpass his father’s culinary skills. One day, his father decides to close down their family restaurant and hone his skills in Europe. Before leaving he enrolls Soma in an elite culinary school that is extremely difficult to enter with a graduation rate of only 10 percent. Will Soma be able to improve his skills, or will the kitchen prove to be too hot?",
-            "id": "G6GG91P26",
-            "promo_title": "",
-            "title": "Food Wars! Shokugeki no Soma",
-            "channel_id": "crunchyroll",
-            "external_id": "SRZ.265649",
-            "linked_resource_key": "cms:/series/G6GG91P26",
-            "type": "series"
+            }
         },
         {
-            "promo_description": "",
             "images": {
                 "poster_tall": [
                     [
@@ -2215,10 +2591,13 @@
                     ]
                 ]
             },
-            "title": "Love After World Domination",
-            "type": "series",
+            "channel_id": "crunchyroll",
             "linked_resource_key": "cms:/series/GEXH3WG78",
-            "slug_title": "love-after-world-domination",
+            "type": "series",
+            "promo_title": "",
+            "slug": "",
+            "description": "It’s love at first sight for Fudo and Desumi, except it was during a battle of life and death. Fudo, leader of the hero squad Gelato 5, and Desumi, the Death Queen of the evil society Gekko, have found themselves caught in a forbidden love—and it’s their first relationship! Moving in secrecy, they live holding hands with one weapon in the other, finding out what’s truly fair in love and war.",
+            "external_id": "SRZ.282644",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
@@ -2257,20 +2636,7 @@
                     "Romance"
                 ]
             },
-            "slug": "",
-            "id": "GEXH3WG78",
-            "promo_title": "",
             "rating": {
-                "1s": {
-                    "displayed": "358",
-                    "percentage": 3,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "231",
-                    "percentage": 2,
-                    "unit": ""
-                },
                 "3s": {
                     "displayed": "698",
                     "percentage": 5,
@@ -2287,13 +2653,26 @@
                     "unit": "K"
                 },
                 "average": "4.7",
-                "total": 17309
+                "total": 17309,
+                "1s": {
+                    "displayed": "358",
+                    "percentage": 3,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "231",
+                    "percentage": 2,
+                    "unit": ""
+                }
             },
-            "channel_id": "crunchyroll",
-            "external_id": "SRZ.282644",
-            "description": "It’s love at first sight for Fudo and Desumi, except it was during a battle of life and death. Fudo, leader of the hero squad Gelato 5, and Desumi, the Death Queen of the evil society Gekko, have found themselves caught in a forbidden love—and it’s their first relationship! Moving in secrecy, they live holding hands with one weapon in the other, finding out what’s truly fair in love and war."
+            "title": "Love After World Domination",
+            "id": "GEXH3WG78",
+            "promo_description": "",
+            "slug_title": "love-after-world-domination"
         },
         {
+            "id": "GY8V1ED9Y",
+            "channel_id": "crunchyroll",
             "images": {
                 "poster_tall": [
                     [
@@ -2406,7 +2785,10 @@
                     ]
                 ]
             },
+            "external_id": "SRZ.263427",
+            "linked_resource_key": "cms:/series/GY8V1ED9Y",
             "description": "Set several years after the previous Yu-Gi-Oh! series, GX follows a new generation of duelists at the prestigious Duel Academy—a highly competitive boarding school where pencils and books have been replaced by Duel Disks and monster cards!  Still, it’s not just about making the grade for these up and coming students –  it’s about becoming the next King of Games!",
+            "title": "Yu-Gi-Oh! GX",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
@@ -2437,12 +2819,16 @@
                     "Supernatural"
                 ]
             },
-            "slug": "",
             "slug_title": "yu-gi-oh-gx",
-            "id": "GY8V1ED9Y",
-            "linked_resource_key": "cms:/series/GY8V1ED9Y",
-            "external_id": "SRZ.263427",
+            "promo_description": "",
+            "type": "series",
             "rating": {
+                "total": 2280,
+                "1s": {
+                    "displayed": "216",
+                    "percentage": 10,
+                    "unit": ""
+                },
                 "2s": {
                     "displayed": "53",
                     "percentage": 3,
@@ -2463,60 +2849,43 @@
                     "percentage": 70,
                     "unit": "K"
                 },
-                "average": "4.3",
-                "total": 2279,
-                "1s": {
-                    "displayed": "216",
-                    "percentage": 10,
-                    "unit": ""
-                }
+                "average": "4.3"
             },
-            "title": "Yu-Gi-Oh! GX",
-            "type": "series",
-            "promo_title": "",
-            "channel_id": "crunchyroll",
-            "promo_description": ""
+            "slug": "",
+            "promo_title": ""
         },
         {
-            "id": "G6WEK0026",
-            "slug_title": "samurai-champloo",
-            "linked_resource_key": "cms:/series/G6WEK0026",
-            "promo_description": "",
-            "slug": "",
             "external_id": "SRZ.272069",
-            "description": "Mugen is a ferocious, animalistic warrior with a fighting style inspired by break-dancing. Jin is a ronin samurai who wanders the countryside alone. They may not be friends, but their paths continually cross. And when ditzy waitress Fuu gets them out of hot water with the local magistrate, they agree to join her search for the samurai who smells like sunflowers.",
+            "promo_description": "",
             "promo_title": "",
-            "type": "series",
-            "rating": {
-                "1s": {
-                    "displayed": "124",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "29",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "121",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "518",
-                    "percentage": 6,
-                    "unit": ""
-                },
-                "5s": {
-                    "displayed": "9.5",
-                    "percentage": 93,
-                    "unit": "K"
-                },
-                "average": "4.9",
-                "total": 10254
+            "series_metadata": {
+                "audio_locales": [
+                    "en-US",
+                    "ja-JP"
+                ],
+                "availability_notes": "",
+                "episode_count": 26,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": true,
+                "is_mature": false,
+                "is_simulcast": false,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 1,
+                "series_launch_year": 2016,
+                "subtitle_locales": [
+                    "ar-SA",
+                    "en-US"
+                ]
             },
+            "slug_title": "samurai-champloo",
             "title": "Samurai Champloo",
+            "slug": "",
+            "id": "G6WEK0026",
             "images": {
                 "poster_tall": [
                     [
@@ -2639,67 +3008,45 @@
                     ]
                 ]
             },
-            "channel_id": "crunchyroll",
-            "series_metadata": {
-                "audio_locales": [
-                    "en-US",
-                    "ja-JP"
-                ],
-                "availability_notes": "",
-                "episode_count": 26,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": true,
-                "is_mature": false,
-                "is_simulcast": false,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 1,
-                "series_launch_year": 2016,
-                "subtitle_locales": [
-                    "ar-SA",
-                    "en-US"
-                ]
-            }
-        },
-        {
-            "linked_resource_key": "cms:/series/GRMG8ZQZR",
-            "external_id": "SRZ.257631",
+            "linked_resource_key": "cms:/series/G6WEK0026",
+            "description": "Mugen is a ferocious, animalistic warrior with a fighting style inspired by break-dancing. Jin is a ronin samurai who wanders the countryside alone. They may not be friends, but their paths continually cross. And when ditzy waitress Fuu gets them out of hot water with the local magistrate, they agree to join her search for the samurai who smells like sunflowers.",
             "rating": {
-                "total": 281872,
                 "1s": {
-                    "displayed": "6",
-                    "percentage": 3,
-                    "unit": "K"
+                    "displayed": "124",
+                    "percentage": 2,
+                    "unit": ""
                 },
                 "2s": {
-                    "displayed": "1.4",
+                    "displayed": "29",
                     "percentage": 1,
-                    "unit": "K"
+                    "unit": ""
                 },
                 "3s": {
-                    "displayed": "2.2",
-                    "percentage": 1,
-                    "unit": "K"
+                    "displayed": "121",
+                    "percentage": 2,
+                    "unit": ""
                 },
                 "4s": {
-                    "displayed": "5.7",
-                    "percentage": 3,
-                    "unit": "K"
+                    "displayed": "518",
+                    "percentage": 6,
+                    "unit": ""
                 },
                 "5s": {
-                    "displayed": "266.5",
-                    "percentage": 95,
+                    "displayed": "9.5",
+                    "percentage": 93,
                     "unit": "K"
                 },
-                "average": "4.9"
+                "average": "4.9",
+                "total": 10254
             },
-            "id": "GRMG8ZQZR",
+            "channel_id": "crunchyroll",
+            "type": "series"
+        },
+        {
+            "slug_title": "one-piece",
             "title": "One Piece",
-            "promo_title": "",
+            "promo_description": "",
+            "linked_resource_key": "cms:/series/GRMG8ZQZR",
             "images": {
                 "poster_tall": [
                     [
@@ -2822,14 +3169,47 @@
                     ]
                 ]
             },
+            "id": "GRMG8ZQZR",
+            "promo_title": "",
+            "rating": {
+                "2s": {
+                    "displayed": "1.4",
+                    "percentage": 1,
+                    "unit": "K"
+                },
+                "3s": {
+                    "displayed": "2.2",
+                    "percentage": 1,
+                    "unit": "K"
+                },
+                "4s": {
+                    "displayed": "5.7",
+                    "percentage": 3,
+                    "unit": "K"
+                },
+                "5s": {
+                    "displayed": "266.5",
+                    "percentage": 95,
+                    "unit": "K"
+                },
+                "average": "4.9",
+                "total": 281872,
+                "1s": {
+                    "displayed": "6",
+                    "percentage": 3,
+                    "unit": "K"
+                }
+            },
             "description": "Monkey. D. Luffy refuses to let anyone or anything stand in the way of his quest to become the king of all pirates. With a course charted for the treacherous waters of the Grand Line and beyond, this is one captain who'll never give up until he's claimed the greatest treasure on Earth: the Legendary One Piece!",
+            "slug": "",
+            "channel_id": "crunchyroll",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
                     "en-US"
                 ],
                 "availability_notes": "",
-                "episode_count": 1301,
+                "episode_count": 1302,
                 "extended_description": "",
                 "extended_maturity_rating": {},
                 "is_dubbed": true,
@@ -2841,11 +3221,11 @@
                     "TV-14"
                 ],
                 "season_count": 24,
-                "series_launch_year": 2020,
+                "series_launch_year": 2023,
                 "subtitle_locales": [
-                    "pt-BR",
                     "en-US",
                     "es-419",
+                    "pt-BR",
                     "es-ES"
                 ],
                 "tenant_categories": [
@@ -2855,49 +3235,16 @@
                     "Shonen"
                 ]
             },
-            "promo_description": "",
-            "type": "series",
-            "channel_id": "crunchyroll",
-            "slug": "",
-            "slug_title": "one-piece"
+            "external_id": "SRZ.257631",
+            "type": "series"
         },
         {
-            "promo_description": "",
-            "external_id": "SRZ.229060",
-            "type": "series",
-            "description": "At Kaimei High School, the Living Assistance Club (aka the Sket Brigade) was organized to help students with problems big or small. Most of the time, though, they hang out in their club room, bored, with only a few trivial problems floating in every once in a while. In spite of this, they still throw all their energy into solving these worries.",
-            "rating": {
-                "5s": {
-                    "displayed": "1.4",
-                    "percentage": 74,
-                    "unit": "K"
-                },
-                "average": "4.6",
-                "total": 1841,
-                "1s": {
-                    "displayed": "20",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "18",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "95",
-                    "percentage": 6,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "346",
-                    "percentage": 19,
-                    "unit": ""
-                }
-            },
-            "title": "SKET Dance",
-            "channel_id": "crunchyroll",
+            "id": "GR2P497KR",
             "promo_title": "",
+            "title": "SKET Dance",
+            "promo_description": "",
+            "slug_title": "sket-dance",
+            "channel_id": "crunchyroll",
             "images": {
                 "poster_tall": [
                     [
@@ -3010,6 +3357,9 @@
                     ]
                 ]
             },
+            "slug": "",
+            "linked_resource_key": "cms:/series/GR2P497KR",
+            "type": "series",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP"
@@ -3040,16 +3390,39 @@
                     "Slice of Life"
                 ]
             },
-            "id": "GR2P497KR",
-            "slug_title": "sket-dance",
-            "linked_resource_key": "cms:/series/GR2P497KR",
-            "slug": ""
+            "rating": {
+                "2s": {
+                    "displayed": "18",
+                    "percentage": 1,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "95",
+                    "percentage": 6,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "346",
+                    "percentage": 19,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "1.4",
+                    "percentage": 74,
+                    "unit": "K"
+                },
+                "average": "4.6",
+                "total": 1842,
+                "1s": {
+                    "displayed": "20",
+                    "percentage": 2,
+                    "unit": ""
+                }
+            },
+            "description": "At Kaimei High School, the Living Assistance Club (aka the Sket Brigade) was organized to help students with problems big or small. Most of the time, though, they hang out in their club room, bored, with only a few trivial problems floating in every once in a while. In spite of this, they still throw all their energy into solving these worries.",
+            "external_id": "SRZ.229060"
         },
         {
-            "promo_title": "",
-            "linked_resource_key": "cms:/series/G6ZJMGEXY",
-            "type": "series",
-            "slug_title": "fruits-basket",
             "images": {
                 "poster_tall": [
                     [
@@ -3162,40 +3535,14 @@
                     ]
                 ]
             },
-            "rating": {
-                "2s": {
-                    "displayed": "153",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "400",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "1.5",
-                    "percentage": 5,
-                    "unit": "K"
-                },
-                "5s": {
-                    "displayed": "31.2",
-                    "percentage": 93,
-                    "unit": "K"
-                },
-                "average": "4.9",
-                "total": 33580,
-                "1s": {
-                    "displayed": "379",
-                    "percentage": 2,
-                    "unit": ""
-                }
-            },
-            "slug": "",
-            "title": "Fruits Basket",
-            "promo_description": "",
             "id": "G6ZJMGEXY",
-            "external_id": "SRZ.277778",
+            "linked_resource_key": "cms:/series/G6ZJMGEXY",
+            "promo_description": "",
+            "description": "Tohru Honda thought her life was headed for misfortune when a family tragedy left her living in a tent. When her small home is discovered by the mysterious Soma clan, she suddenly finds herself living with Yuki, Kyo, and Shigure Soma. But she quickly learns their family has a bizarre secret of their own: when hugged by the opposite sex, they turn into the animals of the Zodiac!",
+            "slug_title": "fruits-basket",
+            "title": "Fruits Basket",
+            "promo_title": "",
+            "slug": "",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
@@ -3236,86 +3583,43 @@
                 ]
             },
             "channel_id": "crunchyroll",
-            "description": "Tohru Honda thought her life was headed for misfortune when a family tragedy left her living in a tent. When her small home is discovered by the mysterious Soma clan, she suddenly finds herself living with Yuki, Kyo, and Shigure Soma. But she quickly learns their family has a bizarre secret of their own: when hugged by the opposite sex, they turn into the animals of the Zodiac!"
-        },
-        {
-            "description": "Part 1 - Phantom Blood\n\nIn ancient Mexico, people of Aztec had prospered. They had historic and strange \"Stone Mask\". It was a miraculous mask which brings eternal life and the power of authentic ruler. But the mask suddenly disappeared.\n\nA long time after that, in late 19th centuries when the thought and life of people were suddenly changing, Jonathan Joestar met with Dio Brando―. They spend time together through boyhood to youth, and the \"Stone Mask\" brings curious fate to them―.",
-            "linked_resource_key": "cms:/series/GYP8DP1MY",
+            "type": "series",
             "rating": {
+                "2s": {
+                    "displayed": "153",
+                    "percentage": 1,
+                    "unit": ""
+                },
                 "3s": {
-                    "displayed": "633",
+                    "displayed": "400",
                     "percentage": 2,
                     "unit": ""
                 },
                 "4s": {
-                    "displayed": "1.9",
-                    "percentage": 6,
+                    "displayed": "1.5",
+                    "percentage": 5,
                     "unit": "K"
                 },
                 "5s": {
-                    "displayed": "34.5",
-                    "percentage": 90,
+                    "displayed": "31.2",
+                    "percentage": 93,
                     "unit": "K"
                 },
-                "average": "4.8",
-                "total": 38591,
+                "average": "4.9",
+                "total": 33580,
                 "1s": {
-                    "displayed": "1.3",
-                    "percentage": 4,
-                    "unit": "K"
-                },
-                "2s": {
-                    "displayed": "283",
-                    "percentage": 1,
+                    "displayed": "379",
+                    "percentage": 2,
                     "unit": ""
                 }
             },
-            "title": "JoJo's Bizarre Adventure",
-            "slug": "",
-            "series_metadata": {
-                "audio_locales": [
-                    "ja-JP"
-                ],
-                "availability_notes": "",
-                "episode_count": 158,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": false,
-                "is_mature": false,
-                "is_simulcast": false,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 6,
-                "series_launch_year": 2021,
-                "subtitle_locales": [
-                    "es-ES",
-                    "de-DE",
-                    "es-419",
-                    "fr-FR",
-                    "ar-SA",
-                    "pt-BR",
-                    "en-US",
-                    "it-IT",
-                    "ru-RU"
-                ],
-                "tenant_categories": [
-                    "Action",
-                    "Adventure",
-                    "Shonen",
-                    "Supernatural",
-                    "Thriller"
-                ]
-            },
-            "external_id": "SRZ.260407",
-            "type": "series",
-            "id": "GYP8DP1MY",
-            "channel_id": "crunchyroll",
-            "promo_title": "",
-            "promo_description": "",
+            "external_id": "SRZ.277778"
+        },
+        {
             "slug_title": "jojos-bizarre-adventure",
+            "linked_resource_key": "cms:/series/GYP8DP1MY",
+            "description": "Part 1 - Phantom Blood\n\nIn ancient Mexico, people of Aztec had prospered. They had historic and strange \"Stone Mask\". It was a miraculous mask which brings eternal life and the power of authentic ruler. But the mask suddenly disappeared.\n\nA long time after that, in late 19th centuries when the thought and life of people were suddenly changing, Jonathan Joestar met with Dio Brando―. They spend time together through boyhood to youth, and the \"Stone Mask\" brings curious fate to them―.",
+            "channel_id": "crunchyroll",
             "images": {
                 "poster_tall": [
                     [
@@ -3427,39 +3731,82 @@
                         }
                     ]
                 ]
-            }
-        },
-        {
+            },
+            "series_metadata": {
+                "audio_locales": [
+                    "ja-JP"
+                ],
+                "availability_notes": "",
+                "episode_count": 158,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": false,
+                "is_mature": false,
+                "is_simulcast": false,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 6,
+                "series_launch_year": 2021,
+                "subtitle_locales": [
+                    "es-ES",
+                    "de-DE",
+                    "es-419",
+                    "fr-FR",
+                    "ar-SA",
+                    "pt-BR",
+                    "en-US",
+                    "it-IT",
+                    "ru-RU"
+                ],
+                "tenant_categories": [
+                    "Action",
+                    "Adventure",
+                    "Shonen",
+                    "Supernatural",
+                    "Thriller"
+                ]
+            },
+            "title": "JoJo's Bizarre Adventure",
             "type": "series",
             "rating": {
-                "2s": {
-                    "displayed": "38",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "121",
-                    "percentage": 4,
-                    "unit": ""
-                },
                 "4s": {
-                    "displayed": "346",
-                    "percentage": 10,
-                    "unit": ""
+                    "displayed": "1.9",
+                    "percentage": 6,
+                    "unit": "K"
                 },
                 "5s": {
-                    "displayed": "3.1",
-                    "percentage": 86,
+                    "displayed": "34.5",
+                    "percentage": 90,
                     "unit": "K"
                 },
                 "average": "4.8",
-                "total": 3672,
+                "total": 38591,
                 "1s": {
-                    "displayed": "43",
+                    "displayed": "1.3",
+                    "percentage": 4,
+                    "unit": "K"
+                },
+                "2s": {
+                    "displayed": "283",
+                    "percentage": 1,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "633",
                     "percentage": 2,
                     "unit": ""
                 }
             },
+            "promo_description": "",
+            "slug": "",
+            "promo_title": "",
+            "external_id": "SRZ.260407",
+            "id": "GYP8DP1MY"
+        },
+        {
             "images": {
                 "poster_tall": [
                     [
@@ -3572,8 +3919,45 @@
                     ]
                 ]
             },
-            "title": "The Helpful Fox Senko-san",
+            "rating": {
+                "4s": {
+                    "displayed": "346",
+                    "percentage": 10,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "3.1",
+                    "percentage": 86,
+                    "unit": "K"
+                },
+                "average": "4.8",
+                "total": 3673,
+                "1s": {
+                    "displayed": "43",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "38",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "121",
+                    "percentage": 4,
+                    "unit": ""
+                }
+            },
+            "channel_id": "crunchyroll",
+            "type": "series",
+            "external_id": "SRZ.277891",
+            "slug": "",
+            "promo_title": "",
             "description": "Sometimes the cure to a hard day’s work is the tender love and care of…a fox girl?! Salaryman Nakano’s stressful life is suddenly intruded upon by the fox, Senko-san, who is eager to help him heal his exhaustion. Whether she’s cooking, cleaning, or finding other ways to care for Nakano, she’s there to take away his stress!",
+            "id": "GR4PXWK1Y",
+            "linked_resource_key": "cms:/series/GR4PXWK1Y",
+            "slug_title": "the-helpful-fox-senko-san",
+            "title": "The Helpful Fox Senko-san",
             "series_metadata": {
                 "audio_locales": [],
                 "availability_notes": "",
@@ -3597,49 +3981,49 @@
                     "Supernatural"
                 ]
             },
-            "promo_title": "",
-            "id": "GR4PXWK1Y",
-            "channel_id": "crunchyroll",
-            "slug": "",
-            "slug_title": "the-helpful-fox-senko-san",
-            "external_id": "SRZ.277891",
-            "linked_resource_key": "cms:/series/GR4PXWK1Y",
             "promo_description": ""
         },
         {
+            "linked_resource_key": "cms:/series/G6JQKWZ4R",
+            "promo_description": "",
             "slug_title": "kotoura-san",
+            "promo_title": "",
+            "slug": "",
+            "type": "series",
+            "description": "This fantasy romantic comedy depicts the school lives of Kotoura Haruka, a girl who can read minds; Manabe Yoshihisa, a classmate who admires her; and the friends surrounding them. A staff that excels in portraying the comical daily lives of young girls - director Ohta Masahiko, scriptwriter Aoshima Takashi, character designer and chief art director Ohkuma Takaharu - bring you a heartfelt tale packed with laughter, tears, and even a little sex appeal.",
             "external_id": "SRZ.251591",
-            "series_metadata": {
-                "audio_locales": [
-                    "ja-JP"
-                ],
-                "availability_notes": "",
-                "episode_count": 12,
-                "extended_description": "",
-                "extended_maturity_rating": {},
-                "is_dubbed": false,
-                "is_mature": false,
-                "is_simulcast": false,
-                "is_subbed": true,
-                "mature_blocked": false,
-                "maturity_ratings": [
-                    "TV-14"
-                ],
-                "season_count": 1,
-                "series_launch_year": 2013,
-                "subtitle_locales": [
-                    "en-US",
-                    "es-ES",
-                    "pt-BR",
-                    "es-419"
-                ],
-                "tenant_categories": [
-                    "Comedy",
-                    "Drama",
-                    "Romance",
-                    "Supernatural"
-                ]
+            "rating": {
+                "2s": {
+                    "displayed": "39",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "133",
+                    "percentage": 5,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "428",
+                    "percentage": 15,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "2.3",
+                    "percentage": 78,
+                    "unit": "K"
+                },
+                "average": "4.7",
+                "total": 2920,
+                "1s": {
+                    "displayed": "44",
+                    "percentage": 2,
+                    "unit": ""
+                }
             },
+            "channel_id": "crunchyroll",
+            "id": "G6JQKWZ4R",
+            "title": "Kotoura-San",
             "images": {
                 "poster_tall": [
                     [
@@ -3752,51 +4136,76 @@
                     ]
                 ]
             },
-            "description": "This fantasy romantic comedy depicts the school lives of Kotoura Haruka, a girl who can read minds; Manabe Yoshihisa, a classmate who admires her; and the friends surrounding them. A staff that excels in portraying the comical daily lives of young girls - director Ohta Masahiko, scriptwriter Aoshima Takashi, character designer and chief art director Ohkuma Takaharu - bring you a heartfelt tale packed with laughter, tears, and even a little sex appeal.",
-            "channel_id": "crunchyroll",
-            "promo_description": "",
+            "series_metadata": {
+                "audio_locales": [
+                    "ja-JP"
+                ],
+                "availability_notes": "",
+                "episode_count": 12,
+                "extended_description": "",
+                "extended_maturity_rating": {},
+                "is_dubbed": false,
+                "is_mature": false,
+                "is_simulcast": false,
+                "is_subbed": true,
+                "mature_blocked": false,
+                "maturity_ratings": [
+                    "TV-14"
+                ],
+                "season_count": 1,
+                "series_launch_year": 2013,
+                "subtitle_locales": [
+                    "en-US",
+                    "es-ES",
+                    "pt-BR",
+                    "es-419"
+                ],
+                "tenant_categories": [
+                    "Comedy",
+                    "Drama",
+                    "Romance",
+                    "Supernatural"
+                ]
+            }
+        },
+        {
+            "external_id": "SRZ.272937",
+            "title": "Tsukigakirei",
             "rating": {
-                "5s": {
-                    "displayed": "2.3",
-                    "percentage": 78,
-                    "unit": "K"
-                },
-                "average": "4.7",
-                "total": 2915,
-                "1s": {
-                    "displayed": "44",
-                    "percentage": 2,
-                    "unit": ""
-                },
                 "2s": {
-                    "displayed": "39",
+                    "displayed": "62",
                     "percentage": 2,
                     "unit": ""
                 },
                 "3s": {
-                    "displayed": "133",
-                    "percentage": 5,
+                    "displayed": "144",
+                    "percentage": 3,
                     "unit": ""
                 },
                 "4s": {
-                    "displayed": "426",
-                    "percentage": 15,
+                    "displayed": "623",
+                    "percentage": 12,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "4.6",
+                    "percentage": 84,
+                    "unit": "K"
+                },
+                "average": "4.8",
+                "total": 5457,
+                "1s": {
+                    "displayed": "66",
+                    "percentage": 2,
                     "unit": ""
                 }
             },
-            "slug": "",
-            "promo_title": "",
-            "linked_resource_key": "cms:/series/G6JQKWZ4R",
-            "title": "Kotoura-San",
+            "linked_resource_key": "cms:/series/G6X0QPK8Y",
             "type": "series",
-            "id": "G6JQKWZ4R"
-        },
-        {
-            "type": "series",
-            "description": "It’s the third year of middle school. Kotaro, a bookish boy aspiring to become a novelist, and Akane, a track girl who loves to run, meet in the same class together for the first time. They’re put in charge of the equipment for the sports festival, and slowly grow closer via LINE. How does Kotaro deal with his growing feelings for her?\n\nMeanwhile, Takumi has been in love with Akane since first year, and Akane’s friend, Chinatsu, becomes interested in Kotaro.\n\nA refreshing story of young love set in Kawagoe.",
-            "title": "Tsukigakirei",
-            "promo_title": "",
+            "channel_id": "crunchyroll",
+            "promo_description": "",
             "slug_title": "tsukigakirei",
+            "description": "It’s the third year of middle school. Kotaro, a bookish boy aspiring to become a novelist, and Akane, a track girl who loves to run, meet in the same class together for the first time. They’re put in charge of the equipment for the sports festival, and slowly grow closer via LINE. How does Kotaro deal with his growing feelings for her?\n\nMeanwhile, Takumi has been in love with Akane since first year, and Akane’s friend, Chinatsu, becomes interested in Kotaro.\n\nA refreshing story of young love set in Kawagoe.",
             "images": {
                 "poster_tall": [
                     [
@@ -3910,6 +4319,8 @@
                 ]
             },
             "id": "G6X0QPK8Y",
+            "slug": "",
+            "promo_title": "",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
@@ -3944,77 +4355,11 @@
                     "Romance",
                     "Slice of Life"
                 ]
-            },
-            "promo_description": "",
-            "linked_resource_key": "cms:/series/G6X0QPK8Y",
-            "external_id": "SRZ.272937",
-            "channel_id": "crunchyroll",
-            "rating": {
-                "total": 5453,
-                "1s": {
-                    "displayed": "66",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "62",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "144",
-                    "percentage": 3,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "623",
-                    "percentage": 12,
-                    "unit": ""
-                },
-                "5s": {
-                    "displayed": "4.6",
-                    "percentage": 84,
-                    "unit": "K"
-                },
-                "average": "4.8"
-            },
-            "slug": ""
+            }
         },
         {
-            "id": "GYMGD89VY",
-            "type": "series",
-            "title": "Barakamon",
+            "slug_title": "barakamon",
             "description": "BARAKAMON follows the story of Seishu Handa- a calligrapher, who as a punishment from punching another famous calligrapher is outlawed to a small island. As a city boy will Seishu be able to adapt to his new environment?",
-            "linked_resource_key": "cms:/series/GYMGD89VY",
-            "rating": {
-                "1s": {
-                    "displayed": "41",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "2s": {
-                    "displayed": "11",
-                    "percentage": 1,
-                    "unit": ""
-                },
-                "3s": {
-                    "displayed": "48",
-                    "percentage": 2,
-                    "unit": ""
-                },
-                "4s": {
-                    "displayed": "299",
-                    "percentage": 7,
-                    "unit": ""
-                },
-                "5s": {
-                    "displayed": "3.9",
-                    "percentage": 91,
-                    "unit": "K"
-                },
-                "average": "4.9",
-                "total": 4336
-            },
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP",
@@ -4047,9 +4392,6 @@
                     "Slice of Life"
                 ]
             },
-            "promo_title": "",
-            "slug_title": "barakamon",
-            "promo_description": "",
             "images": {
                 "poster_tall": [
                     [
@@ -4162,17 +4504,51 @@
                     ]
                 ]
             },
-            "external_id": "SRZ.261685",
+            "linked_resource_key": "cms:/series/GYMGD89VY",
+            "id": "GYMGD89VY",
+            "slug": "",
             "channel_id": "crunchyroll",
-            "slug": ""
+            "promo_title": "",
+            "type": "series",
+            "external_id": "SRZ.261685",
+            "rating": {
+                "average": "4.9",
+                "total": 4336,
+                "1s": {
+                    "displayed": "41",
+                    "percentage": 1,
+                    "unit": ""
+                },
+                "2s": {
+                    "displayed": "11",
+                    "percentage": 1,
+                    "unit": ""
+                },
+                "3s": {
+                    "displayed": "48",
+                    "percentage": 2,
+                    "unit": ""
+                },
+                "4s": {
+                    "displayed": "299",
+                    "percentage": 7,
+                    "unit": ""
+                },
+                "5s": {
+                    "displayed": "3.9",
+                    "percentage": 91,
+                    "unit": "K"
+                }
+            },
+            "promo_description": "",
+            "title": "Barakamon"
         },
         {
-            "id": "GY8VJKNGY",
             "external_id": "SRZ.58164",
-            "type": "series",
-            "promo_description": "",
-            "channel_id": "crunchyroll",
             "slug": "",
+            "type": "series",
+            "description": "Takuma Hirose, an emotionally wounded boy becomes blind after his mother died in his childhood.",
+            "channel_id": "crunchyroll",
             "series_metadata": {
                 "audio_locales": [
                     "ja-JP"
@@ -4202,11 +4578,6 @@
                     "Slice of Life"
                 ]
             },
-            "promo_title": "",
-            "description": "Takuma Hirose, an emotionally wounded boy becomes blind after his mother died in his childhood.",
-            "slug_title": "h2o-footprints-in-the-sand",
-            "title": "H2O: Footprints in the Sand",
-            "linked_resource_key": "cms:/series/GY8VJKNGY",
             "images": {
                 "poster_tall": [
                     [
@@ -4319,19 +4690,8 @@
                     ]
                 ]
             },
+            "slug_title": "h2o-footprints-in-the-sand",
             "rating": {
-                "5s": {
-                    "displayed": "1.5",
-                    "percentage": 71,
-                    "unit": "K"
-                },
-                "average": "4.5",
-                "total": 2090,
-                "1s": {
-                    "displayed": "56",
-                    "percentage": 3,
-                    "unit": ""
-                },
                 "2s": {
                     "displayed": "33",
                     "percentage": 2,
@@ -4346,15 +4706,28 @@
                     "displayed": "401",
                     "percentage": 20,
                     "unit": ""
+                },
+                "5s": {
+                    "displayed": "1.5",
+                    "percentage": 71,
+                    "unit": "K"
+                },
+                "average": "4.5",
+                "total": 2090,
+                "1s": {
+                    "displayed": "56",
+                    "percentage": 3,
+                    "unit": ""
                 }
-            }
+            },
+            "promo_title": "",
+            "id": "GY8VJKNGY",
+            "title": "H2O: Footprints in the Sand",
+            "linked_resource_key": "cms:/series/GY8VJKNGY",
+            "promo_description": ""
         },
         {
-            "title": "Love Live! School Idol Project",
-            "type": "series",
-            "linked_resource_key": "cms:/series/GRZX4X5MY",
-            "channel_id": "crunchyroll",
-            "slug_title": "love-live-school-idol-project",
+            "id": "GRZX4X5MY",
             "images": {
                 "poster_tall": [
                     [
@@ -4467,11 +4840,9 @@
                     ]
                 ]
             },
-            "external_id": "SRZ.251705",
-            "description": "Otonokizaka High School is planning to close within three years. However, nine female students come together with one thing in mind—form a pop idol group to revive the school’s popularity and keep it from shutting down. ‘In order to protect our beloved school, there’s only one thing we can do...become pop stars!’",
+            "linked_resource_key": "cms:/series/GRZX4X5MY",
             "promo_description": "",
             "rating": {
-                "total": 1038,
                 "1s": {
                     "displayed": "20",
                     "percentage": 2,
@@ -4497,11 +4868,17 @@
                     "percentage": 89,
                     "unit": ""
                 },
-                "average": "4.8"
+                "average": "4.8",
+                "total": 1038
             },
-            "slug": "",
-            "id": "GRZX4X5MY",
+            "type": "series",
             "promo_title": "",
+            "channel_id": "crunchyroll",
+            "description": "Otonokizaka High School is planning to close within three years. However, nine female students come together with one thing in mind—form a pop idol group to revive the school’s popularity and keep it from shutting down. ‘In order to protect our beloved school, there’s only one thing we can do...become pop stars!’",
+            "external_id": "SRZ.251705",
+            "slug": "",
+            "slug_title": "love-live-school-idol-project",
+            "title": "Love Live! School Idol Project",
             "series_metadata": {
                 "audio_locales": [
                     "en-US",

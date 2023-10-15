@@ -1,17 +1,343 @@
 {
-    "total": 24,
+    "total": 26,
     "data": [
         {
             "panel": {
-                "promo_description": "",
                 "slug": "",
-                "streams_link": "/content/v2/cms/videos/G8MFNGE12/streams",
-                "type": "episode",
-                "external_id": "EPI.911338",
-                "id": "G31UXWQ47",
-                "channel_id": "crunchyroll",
+                "id": "G9DUE3733",
                 "promo_title": "",
-                "title": "The Trading Company",
+                "streams_link": "/content/v2/cms/videos/G1QF4M2MM/streams",
+                "promo_description": "",
+                "episode_metadata": {
+                    "audio_locale": "ja-JP",
+                    "availability_ends": "9998-11-30T08:00:00Z",
+                    "availability_notes": "",
+                    "availability_starts": "2023-02-03T01:00:00Z",
+                    "available_date": null,
+                    "available_offline": true,
+                    "closed_captions_available": false,
+                    "duration_ms": 5565569,
+                    "eligible_region": "ZA",
+                    "episode": "1",
+                    "episode_air_date": "2023-02-02T17:00:00Z",
+                    "episode_number": 1,
+                    "extended_maturity_rating": {},
+                    "free_available_date": "9998-11-30T08:00:00Z",
+                    "identifier": "GQWH0MP75|M|E1",
+                    "is_clip": false,
+                    "is_dubbed": true,
+                    "is_mature": false,
+                    "is_premium_only": true,
+                    "is_subbed": true,
+                    "mature_blocked": false,
+                    "maturity_ratings": [
+                        "TV-14"
+                    ],
+                    "premium_available_date": "2023-02-03T01:00:00Z",
+                    "premium_date": null,
+                    "season_id": "G65VCD79N",
+                    "season_number": 1,
+                    "season_slug_title": "eureka-seven-hi-evolution",
+                    "season_title": "Eureka Seven Hi-Evolution",
+                    "sequence_number": 1,
+                    "series_id": "GQWH0MP75",
+                    "series_slug_title": "eureka-seven-hi-evolution",
+                    "series_title": "Eureka Seven Hi-Evolution",
+                    "subtitle_locales": [
+                        "en-US",
+                        "es-419",
+                        "pt-BR"
+                    ],
+                    "upload_date": "2023-02-02T17:00:00Z",
+                    "versions": [
+                        {
+                            "audio_locale": "ja-JP",
+                            "guid": "G9DUE3733",
+                            "is_premium_only": true,
+                            "media_guid": "G1QF4M2MM",
+                            "original": true,
+                            "season_guid": "G65VCD79N",
+                            "variant": ""
+                        },
+                        {
+                            "audio_locale": "en-US",
+                            "guid": "G4VUQ2Z21",
+                            "is_premium_only": true,
+                            "media_guid": "GNJFD4G42",
+                            "original": false,
+                            "season_guid": "GYWEC35W3",
+                            "variant": ""
+                        }
+                    ]
+                },
+                "type": "episode",
+                "description": "Renton dreams of joining up with a daredevil group of pilots known as Gekkostate and following in his father’s heroic footsteps.",
+                "external_id": "EPI.889983",
+                "title": "EUREKA SEVEN HI-EVOLUTION 1",
+                "linked_resource_key": "cms:/episodes/G9DUE3733",
+                "slug_title": "eureka-seven-hi-evolution-1",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/65f7c6f6bf201c4a7ac1a2f33c0d6236.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "channel_id": "crunchyroll"
+            },
+            "new": false,
+            "is_favorite": false,
+            "fully_watched": false,
+            "never_watched": false,
+            "playhead": 3
+        },
+        {
+            "panel": {
+                "channel_id": "crunchyroll",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/c37f9d222b1d63f01be4d62f6c0f252b.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "episode_metadata": {
+                    "audio_locale": "ja-JP",
+                    "availability_ends": "9998-11-30T08:00:00Z",
+                    "availability_notes": "",
+                    "availability_starts": "2023-10-14T13:30:00Z",
+                    "available_date": null,
+                    "available_offline": true,
+                    "closed_captions_available": false,
+                    "duration_ms": 1420004,
+                    "eligible_region": "ZA",
+                    "episode": "2",
+                    "episode_air_date": "2023-10-14T22:00:00+09:00",
+                    "episode_number": 2,
+                    "extended_maturity_rating": {},
+                    "free_available_date": "9998-11-30T08:00:00Z",
+                    "identifier": "GEXH3W8G1|S2|E2",
+                    "is_clip": false,
+                    "is_dubbed": false,
+                    "is_mature": false,
+                    "is_premium_only": true,
+                    "is_subbed": true,
+                    "mature_blocked": false,
+                    "maturity_ratings": [
+                        "TV-14"
+                    ],
+                    "premium_available_date": "2023-10-14T13:30:00Z",
+                    "premium_date": null,
+                    "season_id": "GRGGCV9XP",
+                    "season_number": 2,
+                    "season_slug_title": "the-faraway-paladin-the-lord-of-the-rust-mountains",
+                    "season_title": "The Faraway Paladin The Lord Of The Rust Mountains",
+                    "sequence_number": 2,
+                    "series_id": "GEXH3W8G1",
+                    "series_slug_title": "the-faraway-paladin",
+                    "series_title": "The Faraway Paladin",
+                    "subtitle_locales": [
+                        "en-US",
+                        "es-419",
+                        "es-ES",
+                        "fr-FR",
+                        "pt-BR",
+                        "ar-SA",
+                        "it-IT",
+                        "de-DE",
+                        "ru-RU"
+                    ],
+                    "tenant_categories": [
+                        "Adventure",
+                        "Drama",
+                        "Fantasy"
+                    ],
+                    "upload_date": "2023-10-14T22:00:00+09:00",
+                    "versions": [
+                        {
+                            "audio_locale": "ja-JP",
+                            "guid": "GK9U3M51N",
+                            "is_premium_only": true,
+                            "media_guid": "G3WFXW0G2",
+                            "original": true,
+                            "season_guid": "GRGGCV9XP",
+                            "variant": ""
+                        }
+                    ]
+                },
+                "promo_title": "",
+                "type": "episode",
+                "slug_title": "the-mad-forest",
+                "id": "GK9U3M51N",
+                "external_id": "EPI.911726",
+                "description": "",
+                "slug": "",
+                "linked_resource_key": "cms:/episodes/GK9U3M51N",
+                "title": "The Mad Forest",
+                "promo_description": "",
+                "streams_link": "/content/v2/cms/videos/G3WFXW0G2/streams"
+            },
+            "new": true,
+            "is_favorite": false,
+            "fully_watched": false,
+            "never_watched": false,
+            "playhead": 0
+        },
+        {
+            "panel": {
+                "type": "episode",
+                "promo_title": "",
+                "description": "Sei greets her second summer in this world. Now that the miasma is under control and she has a bit of free time to do a little exploring...",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "slug": "",
+                "linked_resource_key": "cms:/episodes/G31UXWQ47",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -74,63 +400,13 @@
                         }
                     ]
                 },
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/52c4b473301b9e7adc494ba45d1897f5.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
+                "channel_id": "crunchyroll",
+                "title": "The Trading Company",
                 "slug_title": "the-trading-company",
-                "linked_resource_key": "cms:/episodes/G31UXWQ47",
-                "description": "Sei greets her second summer in this world. Now that the miasma is under control and she has a bit of free time to do a little exploring..."
+                "streams_link": "/content/v2/cms/videos/G8MFNGE12/streams",
+                "id": "G31UXWQ47",
+                "external_id": "EPI.911338",
+                "promo_description": ""
             },
             "new": false,
             "is_favorite": false,
@@ -140,12 +416,7 @@
         },
         {
             "panel": {
-                "type": "episode",
-                "promo_description": "",
-                "slug": "",
-                "channel_id": "crunchyroll",
-                "id": "G14U4MVD9",
-                "streams_link": "/content/v2/cms/videos/GKKF3XGJM/streams",
+                "promo_title": "",
                 "images": {
                     "thumbnail": [
                         [
@@ -200,8 +471,14 @@
                         ]
                     ]
                 },
-                "external_id": "EPI.886069",
+                "slug": "",
+                "streams_link": "/content/v2/cms/videos/GKKF3XGJM/streams",
+                "title": "retraction (Degeneration)",
+                "id": "G14U4MVD9",
+                "channel_id": "crunchyroll",
                 "slug_title": "retraction-degeneration",
+                "promo_description": "",
+                "type": "episode",
                 "description": "Shu's having horrible flashbacks, both to images of his battle with Jun and to other, even more upsetting images that soon have him quitting Funeral Parlor and alienating the people in his life.",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
@@ -263,9 +540,8 @@
                         }
                     ]
                 },
-                "title": "retraction (Degeneration)",
-                "linked_resource_key": "cms:/episodes/G14U4MVD9",
-                "promo_title": ""
+                "external_id": "EPI.886069",
+                "linked_resource_key": "cms:/episodes/G14U4MVD9"
             },
             "new": false,
             "is_favorite": false,
@@ -275,11 +551,12 @@
         },
         {
             "panel": {
-                "external_id": "EPI.780989",
+                "title": "Imprinting",
+                "promo_description": "",
+                "type": "episode",
                 "recent_audio_locale": "ja-JP",
-                "id": "GRZJGP186",
-                "channel_id": "crunchyroll",
-                "slug": "",
+                "external_id": "EPI.780989",
+                "description": "At school, Hinata and the others are told to make an original board game for class, and the theme they choose is nothing other than \"Mya-nee\"! Miyako can't hide her anxiety when confronted with a board game designed to help her be less shy, but then she realizes it's a chance to get closer to Hana-chan. She gladly joins in, and what awaits her is...",
                 "slug_title": "imprinting",
                 "images": {
                     "thumbnail": [
@@ -335,6 +612,12 @@
                         ]
                     ]
                 },
+                "recent_variant": "",
+                "streams_link": "/content/v2/cms/videos/GPPFK3315/streams",
+                "id": "GRZJGP186",
+                "channel_id": "crunchyroll",
+                "promo_title": "",
+                "slug": "",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -397,14 +680,7 @@
                         }
                     ]
                 },
-                "linked_resource_key": "cms:/episodes/GRZJGP186",
-                "recent_variant": "",
-                "description": "At school, Hinata and the others are told to make an original board game for class, and the theme they choose is nothing other than \"Mya-nee\"! Miyako can't hide her anxiety when confronted with a board game designed to help her be less shy, but then she realizes it's a chance to get closer to Hana-chan. She gladly joins in, and what awaits her is...",
-                "promo_title": "",
-                "title": "Imprinting",
-                "promo_description": "",
-                "type": "episode",
-                "streams_link": "/content/v2/cms/videos/GPPFK3315/streams"
+                "linked_resource_key": "cms:/episodes/GRZJGP186"
             },
             "new": false,
             "is_favorite": false,
@@ -414,14 +690,74 @@
         },
         {
             "panel": {
-                "description": "Tsukasa and Nasa head to a big-name theme park, where they have a run-in with Nasa's old teacher, who might be in the middle of her own romantic encounter.",
-                "promo_title": "",
-                "promo_description": "",
-                "type": "episode",
-                "slug_title": "before-the-fireworks-go-out",
-                "channel_id": "crunchyroll",
-                "recent_audio_locale": "ja-JP",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
                 "external_id": "EPI.895383",
+                "slug_title": "before-the-fireworks-go-out",
+                "linked_resource_key": "cms:/episodes/G8WUN0VJ5",
+                "streams_link": "/content/v2/cms/videos/GQ9FGQ05W/streams",
+                "id": "G8WUN0VJ5",
+                "channel_id": "crunchyroll",
+                "description": "Tsukasa and Nasa head to a big-name theme park, where they have a run-in with Nasa's old teacher, who might be in the middle of her own romantic encounter.",
+                "slug": "",
+                "promo_title": "",
+                "type": "episode",
+                "recent_audio_locale": "ja-JP",
+                "recent_variant": "",
+                "title": "Before the Fireworks Go Out",
+                "promo_description": "",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -530,67 +866,7 @@
                             "variant": ""
                         }
                     ]
-                },
-                "linked_resource_key": "cms:/episodes/G8WUN0VJ5",
-                "slug": "",
-                "recent_variant": "",
-                "id": "G8WUN0VJ5",
-                "title": "Before the Fireworks Go Out",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/8a76ef0e0f39aa9054fdf94c98185fbc.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "streams_link": "/content/v2/cms/videos/GQ9FGQ05W/streams"
+                }
             },
             "new": false,
             "is_favorite": false,
@@ -600,14 +876,7 @@
         },
         {
             "panel": {
-                "slug": "",
-                "slug_title": "the-beginning-of-the-beginning",
-                "external_id": "EPI.823700",
-                "type": "episode",
-                "promo_title": "",
-                "channel_id": "crunchyroll",
-                "description": "Mutsuishi Haruna has signed on to AiRBLUE, a brand-new voice actress agency with no achievements or experience.\r\nOn the first day, right after introductions, the 15 voice actresses in the making already have to do a scene from Hamlet for the CEO, Otori Masaki.\r\nStarting with former child actress Miyaji Mahoro, everybody puts their own personal touch on Hamlet and Ophelia, but Haruna is too nervous to step forward...",
-                "title": "The Beginning of the Beginning",
+                "id": "GWDU8K4QJ",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -667,6 +936,12 @@
                         }
                     ]
                 },
+                "streams_link": "/content/v2/cms/videos/GEMFZG1ND/streams",
+                "type": "episode",
+                "promo_title": "",
+                "slug": "",
+                "description": "Mutsuishi Haruna has signed on to AiRBLUE, a brand-new voice actress agency with no achievements or experience.\r\nOn the first day, right after introductions, the 15 voice actresses in the making already have to do a scene from Hamlet for the CEO, Otori Masaki.\r\nStarting with former child actress Miyaji Mahoro, everybody puts their own personal touch on Hamlet and Ophelia, but Haruna is too nervous to step forward...",
+                "title": "The Beginning of the Beginning",
                 "images": {
                     "thumbnail": [
                         [
@@ -721,10 +996,11 @@
                         ]
                     ]
                 },
+                "slug_title": "the-beginning-of-the-beginning",
                 "promo_description": "",
-                "streams_link": "/content/v2/cms/videos/GEMFZG1ND/streams",
-                "linked_resource_key": "cms:/episodes/GWDU8K4QJ",
-                "id": "GWDU8K4QJ"
+                "external_id": "EPI.823700",
+                "channel_id": "crunchyroll",
+                "linked_resource_key": "cms:/episodes/GWDU8K4QJ"
             },
             "new": false,
             "is_favorite": false,
@@ -734,72 +1010,16 @@
         },
         {
             "panel": {
+                "title": "A Connected Bond: Daybreak and First Light",
+                "streams_link": "/content/v2/cms/videos/GWMF8Q3PK/streams",
+                "promo_description": "",
+                "slug_title": "a-connected-bond-daybreak-and-first-light",
                 "id": "GD9UV8G2W",
                 "external_id": "EPI.895631",
+                "description": "",
                 "promo_title": "",
-                "promo_description": "",
-                "linked_resource_key": "cms:/episodes/GD9UV8G2W",
-                "recent_audio_locale": "ja-JP",
-                "recent_variant": "",
-                "slug": "",
-                "slug_title": "a-connected-bond-daybreak-and-first-light",
-                "streams_link": "/content/v2/cms/videos/GWMF8Q3PK/streams",
                 "channel_id": "crunchyroll",
-                "type": "episode",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
+                "slug": "",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -892,8 +1112,64 @@
                         }
                     ]
                 },
-                "title": "A Connected Bond: Daybreak and First Light",
-                "description": ""
+                "recent_variant": "",
+                "type": "episode",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/d8fac42abdf05f57fe00994af96b84ac.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "linked_resource_key": "cms:/episodes/GD9UV8G2W",
+                "recent_audio_locale": "ja-JP"
             },
             "new": false,
             "is_favorite": false,
@@ -903,8 +1179,6 @@
         },
         {
             "panel": {
-                "promo_title": "",
-                "promo_description": "",
                 "images": {
                     "thumbnail": [
                         [
@@ -959,15 +1233,13 @@
                         ]
                     ]
                 },
-                "linked_resource_key": "cms:/episodes/GRWE45Z0R",
-                "title": "Me and You and the Student Council",
-                "slug": "",
-                "recent_audio_locale": "ja-JP",
                 "recent_variant": "",
-                "id": "GRWE45Z0R",
                 "channel_id": "crunchyroll",
-                "type": "episode",
-                "slug_title": "me-and-you-and-the-student-council",
+                "promo_description": "",
+                "slug": "",
+                "title": "Me and You and the Student Council",
+                "recent_audio_locale": "ja-JP",
+                "streams_link": "/content/v2/cms/videos/G07FX90K7/streams",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1022,9 +1294,13 @@
                         }
                     ]
                 },
+                "linked_resource_key": "cms:/episodes/GRWE45Z0R",
                 "external_id": "EPI.580772",
                 "description": "Hey, I'm president of the Amusement Club, Toshino Kyoko!\r\nJust kidding. (Snap, wink)\r\nNow that we're finally an anime, I thought I should establish my character!\r\n(You don't need to do that. by Yui)\r\nThe second episode goes in a different direction. The student council that quietly supports the school is on the move. We'll take on the student council like any good school anime! Come with me, Yui and Akari!\r\nAnd Chinatsu-chan, leap into my arms!",
-                "streams_link": "/content/v2/cms/videos/G07FX90K7/streams"
+                "slug_title": "me-and-you-and-the-student-council",
+                "id": "GRWE45Z0R",
+                "promo_title": "",
+                "type": "episode"
             },
             "new": false,
             "is_favorite": false,
@@ -1034,74 +1310,7 @@
         },
         {
             "panel": {
-                "channel_id": "crunchyroll",
-                "description": "The General of Wind, Zebiantes, arrives in Lux Village with certain demands after hearing rumors of mythril. Even after Dariel manages to settle things with her, he realizes he has another problem—he can’t let Laidy and Zebiantes clash!",
-                "slug": "",
-                "slug_title": "dariel-tends-to-many-matters",
-                "recent_variant": "",
-                "title": "Dariel Tends to Many Matters.",
-                "promo_title": "",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "recent_audio_locale": "ja-JP",
-                "streams_link": "/content/v2/cms/videos/G5JFZ5GVX/streams",
-                "linked_resource_key": "cms:/episodes/GZ7UV49E2",
-                "id": "GZ7UV49E2",
                 "external_id": "EPI.886663",
-                "promo_description": "",
-                "type": "episode",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1163,7 +1372,74 @@
                             "variant": ""
                         }
                     ]
-                }
+                },
+                "recent_audio_locale": "ja-JP",
+                "id": "GZ7UV49E2",
+                "title": "Dariel Tends to Many Matters.",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/faf1baa5e7181ee9d5c6c1c9275d02dc.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "linked_resource_key": "cms:/episodes/GZ7UV49E2",
+                "recent_variant": "",
+                "type": "episode",
+                "slug": "",
+                "streams_link": "/content/v2/cms/videos/G5JFZ5GVX/streams",
+                "slug_title": "dariel-tends-to-many-matters",
+                "channel_id": "crunchyroll",
+                "description": "The General of Wind, Zebiantes, arrives in Lux Village with certain demands after hearing rumors of mythril. Even after Dariel manages to settle things with her, he realizes he has another problem—he can’t let Laidy and Zebiantes clash!",
+                "promo_title": "",
+                "promo_description": ""
             },
             "new": false,
             "is_favorite": false,
@@ -1173,17 +1449,11 @@
         },
         {
             "panel": {
-                "external_id": "EPI.787916",
                 "promo_title": "",
-                "promo_description": "",
-                "id": "G63KNEPV6",
-                "title": "",
-                "linked_resource_key": "cms:/episodes/G63KNEPV6",
-                "description": "",
-                "type": "episode",
                 "channel_id": "crunchyroll",
+                "streams_link": "/content/v2/cms/videos/G8MFNKJ19/streams",
+                "description": "",
                 "slug": "",
-                "slug_title": "",
                 "images": {
                     "thumbnail": [
                         [
@@ -1238,7 +1508,11 @@
                         ]
                     ]
                 },
-                "streams_link": "/content/v2/cms/videos/G8MFNKJ19/streams",
+                "external_id": "EPI.787916",
+                "type": "episode",
+                "linked_resource_key": "cms:/episodes/G63KNEPV6",
+                "title": "",
+                "promo_description": "",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1336,7 +1610,9 @@
                             "variant": ""
                         }
                     ]
-                }
+                },
+                "id": "G63KNEPV6",
+                "slug_title": ""
             },
             "new": false,
             "is_favorite": false,
@@ -1346,6 +1622,67 @@
         },
         {
             "panel": {
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "linked_resource_key": "cms:/episodes/GZ7UV7XZ5",
+                "recent_variant": "",
+                "id": "GZ7UV7XZ5",
+                "external_id": "EPI.804282",
+                "slug_title": "jack",
+                "channel_id": "crunchyroll",
+                "description": "A ghoul known as The Lantern attacks a young Fura. Arima steps in to save Fura's life and they, along with Minami, start to hunt ghouls together in an effort to get revenge on The Lantern.",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1426,74 +1763,13 @@
                         }
                     ]
                 },
-                "id": "GZ7UV7XZ5",
-                "slug": "",
-                "linked_resource_key": "cms:/episodes/GZ7UV7XZ5",
-                "promo_description": "",
-                "channel_id": "crunchyroll",
-                "description": "A ghoul known as The Lantern attacks a young Fura. Arima steps in to save Fura's life and they, along with Minami, start to hunt ghouls together in an effort to get revenge on The Lantern.",
-                "external_id": "EPI.804282",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/db5393776a07a44d381f0ecd0a399822.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "promo_title": "",
-                "slug_title": "jack",
-                "title": "Jack",
                 "type": "episode",
-                "recent_audio_locale": "ja-JP",
-                "recent_variant": "",
-                "streams_link": "/content/v2/cms/videos/G5JFZ24Q3/streams"
+                "slug": "",
+                "streams_link": "/content/v2/cms/videos/G5JFZ24Q3/streams",
+                "title": "Jack",
+                "promo_title": "",
+                "promo_description": "",
+                "recent_audio_locale": "ja-JP"
             },
             "new": false,
             "is_favorite": false,
@@ -1503,68 +1779,13 @@
         },
         {
             "panel": {
-                "linked_resource_key": "cms:/episodes/GR79EQ4M6",
-                "promo_title": "",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "streams_link": "/content/v2/cms/videos/GGVF27GEP/streams",
                 "title": "The Last Supper",
-                "slug": "",
-                "external_id": "EPI.796428",
-                "channel_id": "crunchyroll",
+                "id": "GR79EQ4M6",
+                "promo_title": "",
                 "description": "The first day of the BLUE has arrived. There are many young talented chefs at the venue, including the Noirs led by Asahi. The culinary competition begins and Soma, Megumi, Takumi and Erina head to the designated venue. The first challenge given to Soma is “The Last Supper.” How will he tackle this task?!",
+                "promo_description": "",
+                "slug_title": "the-last-supper",
+                "linked_resource_key": "cms:/episodes/GR79EQ4M6",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1629,10 +1850,65 @@
                         }
                     ]
                 },
-                "id": "GR79EQ4M6",
-                "slug_title": "the-last-supper",
-                "promo_description": "",
-                "type": "episode"
+                "channel_id": "crunchyroll",
+                "slug": "",
+                "external_id": "EPI.796428",
+                "type": "episode",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/1908201d98059b80a4f2d674d4603c44.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "streams_link": "/content/v2/cms/videos/GGVF27GEP/streams"
             },
             "new": false,
             "is_favorite": false,
@@ -1642,15 +1918,71 @@
         },
         {
             "panel": {
-                "title": "Eternal Rivals",
-                "promo_title": "",
-                "linked_resource_key": "cms:/episodes/GEVUZ4Z09",
-                "slug_title": "eternal-rivals",
-                "slug": "",
-                "streams_link": "/content/v2/cms/videos/GXMFQPQ25/streams",
-                "description": "Deep in Gekko headquarters, the birth of the Ultimate Phantom approaches. Meanwhile, a commercial opportunity for Fudo earns him Desumi's ire. When Gekko's ambitions lead to a world-threatening crisis, can the couple make up in time to fight back?!",
                 "channel_id": "crunchyroll",
+                "id": "GEVUZ4Z09",
+                "slug": "",
+                "slug_title": "eternal-rivals",
+                "description": "Deep in Gekko headquarters, the birth of the Ultimate Phantom approaches. Meanwhile, a commercial opportunity for Fudo earns him Desumi's ire. When Gekko's ambitions lead to a world-threatening crisis, can the couple make up in time to fight back?!",
+                "linked_resource_key": "cms:/episodes/GEVUZ4Z09",
                 "promo_description": "",
+                "promo_title": "",
+                "title": "Eternal Rivals",
+                "streams_link": "/content/v2/cms/videos/GXMFQPQ25/streams",
+                "external_id": "EPI.842770",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1750,63 +2082,7 @@
                         }
                     ]
                 },
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/25d9a5f6822243effbb238cb3c9f5f16.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "type": "episode",
-                "external_id": "EPI.842770",
-                "id": "GEVUZ4Z09"
+                "type": "episode"
             },
             "new": false,
             "is_favorite": false,
@@ -1816,7 +2092,12 @@
         },
         {
             "panel": {
-                "type": "episode",
+                "channel_id": "crunchyroll",
+                "promo_title": "",
+                "slug": "",
+                "linked_resource_key": "cms:/episodes/GRWEZ71KR",
+                "recent_variant": "",
+                "streams_link": "/content/v2/cms/videos/G3WFXE7M1/streams",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -1868,6 +2149,7 @@
                         }
                     ]
                 },
+                "id": "GRWEZ71KR",
                 "slug_title": "the-graduation-duels-begin-neos-versus-horus-the-black-flame-dragon",
                 "images": {
                     "thumbnail": [
@@ -1923,18 +2205,12 @@
                         ]
                     ]
                 },
-                "recent_variant": "",
-                "id": "GRWEZ71KR",
-                "external_id": "EPI.718447",
                 "title": "The Graduation Duels Begin! Neos Versus Horus the Black Flame Dragon",
+                "type": "episode",
+                "recent_audio_locale": "ja-JP",
+                "external_id": "EPI.718447",
                 "description": "At last, Duel Academy's graduation duels begin. Juudai is ready to enjoy the duels, but there's a line of students with Duel requests for him. There's a second-year student named Sorano in the Blue Dorm who is said to be quite skilled, and things end up with Juudai dueling him. On his first turn, Sorano raises his Horus Black Flame Dragon from level 4 to level 8.",
-                "streams_link": "/content/v2/cms/videos/G3WFXE7M1/streams",
-                "promo_title": "",
-                "linked_resource_key": "cms:/episodes/GRWEZ71KR",
-                "channel_id": "crunchyroll",
-                "promo_description": "",
-                "slug": "",
-                "recent_audio_locale": "ja-JP"
+                "promo_description": ""
             },
             "new": false,
             "is_favorite": false,
@@ -1944,21 +2220,30 @@
         },
         {
             "panel": {
+                "id": "GJWU28DQG",
+                "promo_title": "",
+                "promo_description": "",
+                "type": "episode",
+                "title": "Tempestuous Temperaments",
+                "slug": "",
+                "streams_link": "/content/v2/cms/videos/GM8FXWDE7/streams",
+                "description": "Fuu is a part-time teahouse worker whose life changes forever when two vagabond warriors, Mugen and Jin, stumble into her place of business and end up in hot water with the local magistrate.",
+                "slug_title": "tempestuous-temperaments",
                 "episode_metadata": {
-                    "audio_locale": "ja-JP",
+                    "audio_locale": "en-US",
                     "availability_ends": "9998-11-30T08:00:00Z",
                     "availability_notes": "",
-                    "availability_starts": "2016-12-17T03:00:00Z",
+                    "availability_starts": "2022-03-22T16:00:00Z",
                     "available_date": null,
                     "available_offline": true,
                     "closed_captions_available": false,
-                    "duration_ms": 1405640,
+                    "duration_ms": 1401501,
                     "eligible_region": "ZA",
                     "episode": "1",
-                    "episode_air_date": "2016-12-16T19:00:00Z",
+                    "episode_air_date": "2022-03-22T09:00:00Z",
                     "episode_number": 1,
                     "extended_maturity_rating": {},
-                    "free_available_date": "2016-12-17T03:00:00Z",
+                    "free_available_date": "9998-11-30T08:00:00Z",
                     "identifier": "G6WEK0026|S1|E1",
                     "is_clip": false,
                     "is_dubbed": true,
@@ -1969,21 +2254,20 @@
                     "maturity_ratings": [
                         "TV-14"
                     ],
-                    "premium_available_date": "2016-12-17T03:00:00Z",
+                    "premium_available_date": "2022-03-22T16:00:00Z",
                     "premium_date": null,
-                    "season_id": "G6GGK00P6",
+                    "season_id": "GYGGCVD1V",
                     "season_number": 1,
-                    "season_slug_title": "samurai-champloo",
-                    "season_title": "Samurai Champloo",
+                    "season_slug_title": "samurai-champloo-english-dub",
+                    "season_title": "Samurai Champloo (English Dub)",
                     "sequence_number": 1,
                     "series_id": "G6WEK0026",
                     "series_slug_title": "samurai-champloo",
                     "series_title": "Samurai Champloo",
                     "subtitle_locales": [
-                        "en-US",
-                        "ar-SA"
+                        "en-US"
                     ],
-                    "upload_date": "2016-12-16T19:00:00Z",
+                    "upload_date": "2022-03-22T09:00:00Z",
                     "versions": [
                         {
                             "audio_locale": "ja-JP",
@@ -2005,14 +2289,7 @@
                         }
                     ]
                 },
-                "channel_id": "crunchyroll",
-                "title": "Tempestuous Temperaments",
-                "slug": "",
-                "slug_title": "tempestuous-temperaments",
-                "id": "GY09WMMMY",
-                "external_id": "EPI.726415",
-                "type": "episode",
-                "description": "Fuu is a part-time teahouse worker whose life changes forever when two vagabond warriors, Mugen and Jin, stumble into her place of business and end up in hot water with the local magistrate.",
+                "external_id": "EPI.833550",
                 "images": {
                     "thumbnail": [
                         [
@@ -2067,10 +2344,8 @@
                         ]
                     ]
                 },
-                "linked_resource_key": "cms:/episodes/GY09WMMMY",
-                "streams_link": "/content/v2/cms/videos/GEMFZQWNX/streams",
-                "promo_title": "",
-                "promo_description": ""
+                "linked_resource_key": "cms:/episodes/GJWU28DQG",
+                "channel_id": "crunchyroll"
             },
             "new": false,
             "is_favorite": false,
@@ -2080,71 +2355,9 @@
         },
         {
             "panel": {
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "external_id": "EPI.662653",
-                "type": "episode",
-                "slug": "",
-                "channel_id": "crunchyroll",
-                "description": "Diamante's unique abilities and the presence of special Fighting Fish add a deadly wrinkle to the tournament's final round. Elsewhere, Luffy spoils any chance of sneaking up on Doflamingo!",
-                "linked_resource_key": "cms:/episodes/GRQ49D5ZY",
-                "id": "GRQ49D5ZY",
-                "streams_link": "/content/v2/cms/videos/G4GF78D7E/streams",
                 "promo_description": "",
-                "slug_title": "the-final-round-starts-diamante-the-hero-shows-up",
-                "title": "The Final Round Starts! Diamante the Hero Shows Up!",
+                "streams_link": "/content/v2/cms/videos/G4GF78D7E/streams",
+                "type": "episode",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -2208,7 +2421,69 @@
                         }
                     ]
                 },
-                "promo_title": ""
+                "linked_resource_key": "cms:/episodes/GRQ49D5ZY",
+                "id": "GRQ49D5ZY",
+                "slug_title": "the-final-round-starts-diamante-the-hero-shows-up",
+                "channel_id": "crunchyroll",
+                "promo_title": "",
+                "slug": "",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/664b286580867370ac5a3e3a6e828e0d.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "description": "Diamante's unique abilities and the presence of special Fighting Fish add a deadly wrinkle to the tournament's final round. Elsewhere, Luffy spoils any chance of sneaking up on Doflamingo!",
+                "external_id": "EPI.662653",
+                "title": "The Final Round Starts! Diamante the Hero Shows Up!"
             },
             "new": false,
             "is_favorite": false,
@@ -2218,72 +2493,15 @@
         },
         {
             "panel": {
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "slug_title": "romantic-finding-the-hilltop-pelolin",
-                "promo_description": "",
-                "id": "GYE5XZ49R",
-                "slug": "",
                 "promo_title": "",
-                "type": "episode",
-                "streams_link": "/content/v2/cms/videos/GKKFNZD9D/streams",
-                "linked_resource_key": "cms:/episodes/GYE5XZ49R",
+                "slug_title": "romantic-finding-the-hilltop-pelolin",
+                "slug": "",
                 "external_id": "EPI.573228",
+                "type": "episode",
+                "id": "GYE5XZ49R",
+                "channel_id": "crunchyroll",
                 "title": "Romantic! Finding the Hilltop Pelolin!",
                 "description": "Saotome Roman, member of the Manga Club, runs into her \"prince\" on a hill road on her way back from school in the rain. In order to meet her prince once again, Roman comes to the Sket-dan to ask their help, but...",
-                "channel_id": "crunchyroll",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -2337,6 +2555,63 @@
                             "variant": ""
                         }
                     ]
+                },
+                "linked_resource_key": "cms:/episodes/GYE5XZ49R",
+                "streams_link": "/content/v2/cms/videos/GKKFNZD9D/streams",
+                "promo_description": "",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/f0586776207801e8a6e31e04a31e6334.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
                 }
             },
             "new": false,
@@ -2347,72 +2622,13 @@
         },
         {
             "panel": {
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
-                "slug_title": "summer-will-be-here-soon",
-                "channel_id": "crunchyroll",
-                "promo_description": "",
                 "type": "episode",
-                "description": "Kazuma leaves without a word to Kyo while Yuki and Kagura fight their own battles. Then, Shigure gathers everybody for dinner at his house.",
-                "streams_link": "/content/v2/cms/videos/G9XFEK50M/streams",
                 "promo_title": "",
-                "slug": "",
                 "external_id": "EPI.786982",
-                "linked_resource_key": "cms:/episodes/GYG5MWK8Y",
                 "title": "Summer Will Be Here Soon",
-                "id": "GYG5MWK8Y",
+                "promo_description": "",
+                "channel_id": "crunchyroll",
+                "slug": "",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -2502,7 +2718,66 @@
                             "variant": ""
                         }
                     ]
-                }
+                },
+                "slug_title": "summer-will-be-here-soon",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/904b21e18d3384ade65a5a7e8b2b0585.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "linked_resource_key": "cms:/episodes/GYG5MWK8Y",
+                "description": "Kazuma leaves without a word to Kyo while Yuki and Kagura fight their own battles. Then, Shigure gathers everybody for dinner at his house.",
+                "id": "GYG5MWK8Y",
+                "streams_link": "/content/v2/cms/videos/G9XFEK50M/streams"
             },
             "new": false,
             "is_favorite": false,
@@ -2512,11 +2787,6 @@
         },
         {
             "panel": {
-                "slug_title": "six-bullets-appears-part-2",
-                "description": "Giorno and Mista arrive at Capri and find Zucchero's partner, Sale. Mista uses his Stand Six Bullets to fight Sale, but Sale's Arts \u0026 Crafts proves to be a formidable enemy. Mista manages to fight back but then realizes he's left with only four bullets...",
-                "slug": "",
-                "linked_resource_key": "cms:/episodes/G6P51PQ96",
-                "streams_link": "/content/v2/cms/videos/GM8FXNX8X/streams",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -2576,8 +2846,17 @@
                         }
                     ]
                 },
-                "title": "Six Bullets Appears, Part 2",
+                "slug_title": "six-bullets-appears-part-2",
+                "streams_link": "/content/v2/cms/videos/GM8FXNX8X/streams",
+                "description": "Giorno and Mista arrive at Capri and find Zucchero's partner, Sale. Mista uses his Stand Six Bullets to fight Sale, but Sale's Arts \u0026 Crafts proves to be a formidable enemy. Mista manages to fight back but then realizes he's left with only four bullets...",
                 "external_id": "EPI.779045",
+                "type": "episode",
+                "title": "Six Bullets Appears, Part 2",
+                "channel_id": "crunchyroll",
+                "promo_title": "",
+                "slug": "",
+                "promo_description": "",
+                "id": "G6P51PQ96",
                 "images": {
                     "thumbnail": [
                         [
@@ -2632,11 +2911,7 @@
                         ]
                     ]
                 },
-                "type": "episode",
-                "id": "G6P51PQ96",
-                "promo_description": "",
-                "promo_title": "",
-                "channel_id": "crunchyroll"
+                "linked_resource_key": "cms:/episodes/G6P51PQ96"
             },
             "new": false,
             "is_favorite": false,
@@ -2646,9 +2921,11 @@
         },
         {
             "panel": {
-                "type": "episode",
-                "slug": "",
                 "recent_audio_locale": "ja-JP",
+                "description": "Shiro does her best to please Nakano, but gets a little more than she bargained for. Later, Senko scrubs Nakano's back for him.",
+                "promo_description": "",
+                "type": "episode",
+                "slug_title": "ive-got-a-tail-too-you-know",
                 "images": {
                     "thumbnail": [
                         [
@@ -2703,9 +2980,13 @@
                         ]
                     ]
                 },
-                "linked_resource_key": "cms:/episodes/GYQWE1W7Y",
+                "external_id": "EPI.783540",
+                "channel_id": "crunchyroll",
+                "streams_link": "/content/v2/cms/videos/GDVFV1DQ2/streams",
+                "slug": "",
+                "id": "GYQWE1W7Y",
                 "title": "I've got a tail, too, you know?",
-                "description": "Shiro does her best to please Nakano, but gets a little more than she bargained for. Later, Senko scrubs Nakano's back for him.",
+                "promo_title": "",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -2770,14 +3051,8 @@
                         }
                     ]
                 },
-                "recent_variant": "",
-                "id": "GYQWE1W7Y",
-                "external_id": "EPI.783540",
-                "promo_title": "",
-                "promo_description": "",
-                "channel_id": "crunchyroll",
-                "slug_title": "ive-got-a-tail-too-you-know",
-                "streams_link": "/content/v2/cms/videos/GDVFV1DQ2/streams"
+                "linked_resource_key": "cms:/episodes/GYQWE1W7Y",
+                "recent_variant": ""
             },
             "new": false,
             "is_favorite": false,
@@ -2787,70 +3062,8 @@
         },
         {
             "panel": {
-                "slug_title": "but-youre-not-here",
-                "external_id": "EPI.617477",
                 "promo_title": "",
-                "linked_resource_key": "cms:/episodes/GR49GVW86",
-                "description": "Moritani has been accused of being the perpetrator; Kotoura decides it is time to use her powers to catch the real criminal.  Not everybody agrees with her new found stance.",
                 "type": "episode",
-                "title": "But You're Not Here",
-                "id": "GR49GVW86",
-                "promo_description": "",
-                "slug": "",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -2905,8 +3118,70 @@
                         }
                     ]
                 },
+                "slug_title": "but-youre-not-here",
+                "linked_resource_key": "cms:/episodes/GR49GVW86",
+                "external_id": "EPI.617477",
+                "description": "Moritani has been accused of being the perpetrator; Kotoura decides it is time to use her powers to catch the real criminal.  Not everybody agrees with her new found stance.",
+                "streams_link": "/content/v2/cms/videos/GWMF352D8/streams",
                 "channel_id": "crunchyroll",
-                "streams_link": "/content/v2/cms/videos/GWMF352D8/streams"
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/9a8bc3fa8ebd38e19f2e9679f839701b.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "id": "GR49GVW86",
+                "promo_description": "",
+                "slug": "",
+                "title": "But You're Not Here"
             },
             "new": false,
             "is_favorite": false,
@@ -2916,10 +3191,68 @@
         },
         {
             "panel": {
-                "title": "And Then",
+                "slug": "",
                 "external_id": "EPI.734099",
-                "promo_description": "",
+                "channel_id": "crunchyroll",
+                "promo_title": "",
                 "description": "School is almost out. Both Akane and Kotaro's rivals make their intentions clear. Akane is moving to Yokohama, and Kotaro is staying Saitama. Kotaro has only his writing to go back to, but...",
+                "promo_description": "",
+                "images": {
+                    "thumbnail": [
+                        [
+                            {
+                                "height": 180,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 320
+                            },
+                            {
+                                "height": 338,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 600
+                            },
+                            {
+                                "height": 360,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 640
+                            },
+                            {
+                                "height": 450,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 800
+                            },
+                            {
+                                "height": 675,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 1200
+                            },
+                            {
+                                "height": 810,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 1440
+                            },
+                            {
+                                "height": 900,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 1600
+                            },
+                            {
+                                "height": 1080,
+                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
+                                "type": "thumbnail",
+                                "width": 1920
+                            }
+                        ]
+                    ]
+                },
+                "title": "And Then",
+                "streams_link": "/content/v2/cms/videos/GKKF3NK13/streams",
                 "type": "episode",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
@@ -2988,67 +3321,9 @@
                         }
                     ]
                 },
-                "linked_resource_key": "cms:/episodes/GYE5ZV2GR",
-                "promo_title": "",
-                "channel_id": "crunchyroll",
                 "id": "GYE5ZV2GR",
-                "images": {
-                    "thumbnail": [
-                        [
-                            {
-                                "height": 180,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 320
-                            },
-                            {
-                                "height": 338,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/600x338/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 600
-                            },
-                            {
-                                "height": 360,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/640x360/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 640
-                            },
-                            {
-                                "height": 450,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/800x450/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 800
-                            },
-                            {
-                                "height": 675,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 1200
-                            },
-                            {
-                                "height": 810,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1440x810/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 1440
-                            },
-                            {
-                                "height": 900,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1600x900/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 1600
-                            },
-                            {
-                                "height": 1080,
-                                "source": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1920x1080/catalog/crunchyroll/b92c186e3acd86300fe0aa94dd8b4144.jpe",
-                                "type": "thumbnail",
-                                "width": 1920
-                            }
-                        ]
-                    ]
-                },
                 "slug_title": "and-then",
-                "slug": "",
-                "streams_link": "/content/v2/cms/videos/GKKF3NK13/streams"
+                "linked_resource_key": "cms:/episodes/GYE5ZV2GR"
             },
             "new": false,
             "is_favorite": false,
@@ -3058,9 +3333,70 @@
         },
         {
             "panel": {
-                "streams_link": "/content/v2/cms/videos/G4GF72J8G/streams",
+                "description": "Handsome young master calligrapher Handa Seishuu has been exiled to a far-western island for punching a critic. He plans to focus on his writing in solitude, but rambunctious little Naru won't leave him alone...",
+                "streams_link": "/content/v2/cms/videos/G1QF4NK27/streams",
+                "id": "G9DUE8K70",
                 "slug": "",
-                "slug_title": "cheerful-child",
+                "episode_metadata": {
+                    "audio_locale": "en-US",
+                    "availability_ends": "9998-11-30T08:00:00Z",
+                    "availability_notes": "",
+                    "availability_starts": "2022-11-01T18:00:00Z",
+                    "available_date": null,
+                    "available_offline": true,
+                    "closed_captions_available": false,
+                    "duration_ms": 1372147,
+                    "eligible_region": "ZA",
+                    "episode": "1",
+                    "episode_air_date": "2014-07-06T02:20:00+09:00",
+                    "episode_number": 1,
+                    "extended_maturity_rating": {},
+                    "free_available_date": "9998-11-30T08:00:00Z",
+                    "identifier": "GYMGD89VY|S1|E1",
+                    "is_clip": false,
+                    "is_dubbed": true,
+                    "is_mature": false,
+                    "is_premium_only": true,
+                    "is_subbed": true,
+                    "mature_blocked": false,
+                    "maturity_ratings": [
+                        "TV-14"
+                    ],
+                    "premium_available_date": "2022-11-01T18:00:00Z",
+                    "premium_date": null,
+                    "season_id": "G609CX47J",
+                    "season_number": 1,
+                    "season_slug_title": "barakamon-english-dub",
+                    "season_title": "Barakamon (English Dub)",
+                    "sequence_number": 1,
+                    "series_id": "GYMGD89VY",
+                    "series_slug_title": "barakamon",
+                    "series_title": "Barakamon",
+                    "subtitle_locales": [],
+                    "upload_date": "2014-07-06T02:20:00+09:00",
+                    "versions": [
+                        {
+                            "audio_locale": "ja-JP",
+                            "guid": "GY3V7W2ER",
+                            "is_premium_only": true,
+                            "media_guid": "G4GF72J8G",
+                            "original": true,
+                            "season_guid": "G6VN3M0ZR",
+                            "variant": ""
+                        },
+                        {
+                            "audio_locale": "en-US",
+                            "guid": "G9DUE8K70",
+                            "is_premium_only": true,
+                            "media_guid": "G1QF4NK27",
+                            "original": false,
+                            "season_guid": "G609CX47J",
+                            "variant": ""
+                        }
+                    ]
+                },
+                "title": "Cheerful Child",
+                "type": "episode",
                 "images": {
                     "thumbnail": [
                         [
@@ -3115,79 +3451,12 @@
                         ]
                     ]
                 },
-                "id": "GY3V7W2ER",
-                "external_id": "EPI.656707",
-                "title": "Cheerful Child",
-                "channel_id": "crunchyroll",
-                "description": "Handsome young master calligrapher Handa Seishuu has been exiled to a far-western island for punching a critic. He plans to focus on his writing in solitude, but rambunctious little Naru won't leave him alone...",
-                "promo_description": "",
-                "linked_resource_key": "cms:/episodes/GY3V7W2ER",
+                "external_id": "EPI.876809",
                 "promo_title": "",
-                "type": "episode",
-                "episode_metadata": {
-                    "audio_locale": "ja-JP",
-                    "availability_ends": "9998-11-30T08:00:00Z",
-                    "availability_notes": "",
-                    "availability_starts": "2014-07-05T20:00:00Z",
-                    "available_date": null,
-                    "available_offline": true,
-                    "closed_captions_available": false,
-                    "duration_ms": 1370134,
-                    "eligible_region": "ZA",
-                    "episode": "1",
-                    "episode_air_date": "2014-07-06T02:20:00+09:00",
-                    "episode_number": 1,
-                    "extended_maturity_rating": {},
-                    "free_available_date": "2014-07-12T19:00:00Z",
-                    "identifier": "GYMGD89VY|S1|E1",
-                    "is_clip": false,
-                    "is_dubbed": true,
-                    "is_mature": false,
-                    "is_premium_only": true,
-                    "is_subbed": true,
-                    "mature_blocked": false,
-                    "maturity_ratings": [
-                        "TV-14"
-                    ],
-                    "premium_available_date": "2014-07-05T20:00:00Z",
-                    "premium_date": null,
-                    "season_id": "G6VN3M0ZR",
-                    "season_number": 1,
-                    "season_slug_title": "barakamon",
-                    "season_title": "Barakamon",
-                    "sequence_number": 1,
-                    "series_id": "GYMGD89VY",
-                    "series_slug_title": "barakamon",
-                    "series_title": "Barakamon",
-                    "subtitle_locales": [
-                        "en-US",
-                        "es-ES",
-                        "fr-FR",
-                        "ar-SA",
-                        "de-DE"
-                    ],
-                    "upload_date": "2014-07-06T02:20:00+09:00",
-                    "versions": [
-                        {
-                            "audio_locale": "ja-JP",
-                            "guid": "GY3V7W2ER",
-                            "is_premium_only": true,
-                            "media_guid": "G4GF72J8G",
-                            "original": true,
-                            "season_guid": "G6VN3M0ZR",
-                            "variant": ""
-                        },
-                        {
-                            "audio_locale": "en-US",
-                            "guid": "G9DUE8K70",
-                            "is_premium_only": true,
-                            "media_guid": "G1QF4NK27",
-                            "original": false,
-                            "season_guid": "G609CX47J",
-                            "variant": ""
-                        }
-                    ]
-                }
+                "promo_description": "",
+                "channel_id": "crunchyroll",
+                "slug_title": "cheerful-child",
+                "linked_resource_key": "cms:/episodes/G9DUE8K70"
             },
             "new": false,
             "is_favorite": false,
@@ -3197,13 +3466,12 @@
         },
         {
             "panel": {
-                "title": "Kagura",
-                "promo_description": "",
-                "slug_title": "kagura",
-                "id": "GR9PJ2K16",
-                "channel_id": "crunchyroll",
-                "description": "After the events of the beach trip, Hayami starts to ignore Takuma at school, and Hinata continuously presses Takuma to come along with her.",
+                "external_id": "EPI.567850",
                 "promo_title": "",
+                "type": "episode",
+                "recent_variant": "",
+                "streams_link": "/content/v2/cms/videos/G1QFP3K58/streams",
+                "channel_id": "crunchyroll",
                 "episode_metadata": {
                     "audio_locale": "ja-JP",
                     "availability_ends": "9998-11-30T08:00:00Z",
@@ -3255,12 +3523,9 @@
                         }
                     ]
                 },
-                "linked_resource_key": "cms:/episodes/GR9PJ2K16",
-                "recent_variant": "",
-                "recent_audio_locale": "ja-JP",
-                "external_id": "EPI.567850",
-                "type": "episode",
+                "title": "Kagura",
                 "slug": "",
+                "slug_title": "kagura",
                 "images": {
                     "thumbnail": [
                         [
@@ -3315,7 +3580,11 @@
                         ]
                     ]
                 },
-                "streams_link": "/content/v2/cms/videos/G1QFP3K58/streams"
+                "linked_resource_key": "cms:/episodes/GR9PJ2K16",
+                "recent_audio_locale": "ja-JP",
+                "id": "GR9PJ2K16",
+                "description": "After the events of the beach trip, Hayami starts to ignore Takuma at school, and Hinata continuously presses Takuma to come along with her.",
+                "promo_description": ""
             },
             "new": false,
             "is_favorite": false,
@@ -3326,17 +3595,73 @@
         {
             "panel": {
                 "promo_description": "",
+                "linked_resource_key": "cms:/episodes/GX9UQ0J8Q",
+                "streams_link": "/content/v2/cms/videos/GJKF2V9D2/streams",
+                "external_id": "EPI.893115",
                 "slug": "",
-                "id": "GQJUG2VG2",
-                "streams_link": "/content/v2/cms/videos/GGVF2G42G/streams",
-                "title": "May Our Dream Come True!",
-                "description": "In Tokyo's Chiyoda-ku is the traditional school Otonokizaka High.Second year student Kosaka Honoka discovers the school will be closed in three years. In order to avoid being closed, the school must increase its number of prospective students.",
-                "promo_title": "",
-                "type": "episode",
                 "slug_title": "may-our-dream-come-true",
-                "linked_resource_key": "cms:/episodes/GQJUG2VG2",
-                "external_id": "EPI.893063",
-                "channel_id": "crunchyroll",
+                "title": "May Our Dream Come True!",
+                "promo_title": "",
+                "episode_metadata": {
+                    "audio_locale": "en-US",
+                    "availability_ends": "9998-11-30T08:00:00Z",
+                    "availability_notes": "",
+                    "availability_starts": "2023-03-18T00:00:00Z",
+                    "available_date": null,
+                    "available_offline": true,
+                    "closed_captions_available": false,
+                    "duration_ms": 1422891,
+                    "eligible_region": "ZA",
+                    "episode": "1",
+                    "episode_air_date": "2013-01-08T05:00:00-08:00",
+                    "episode_number": 1,
+                    "extended_maturity_rating": {},
+                    "free_available_date": "9998-11-30T08:00:00Z",
+                    "identifier": "GRZX4X5MY|S1|E1",
+                    "is_clip": false,
+                    "is_dubbed": true,
+                    "is_mature": false,
+                    "is_premium_only": true,
+                    "is_subbed": true,
+                    "mature_blocked": false,
+                    "maturity_ratings": [
+                        "TV-14"
+                    ],
+                    "premium_available_date": "2023-03-18T00:00:00Z",
+                    "premium_date": null,
+                    "season_id": "G6K5CN5DG",
+                    "season_number": 1,
+                    "season_slug_title": "love-live-school-idol-project-english-dub",
+                    "season_title": "Love Live! School Idol Project (English Dub)",
+                    "sequence_number": 1,
+                    "series_id": "GRZX4X5MY",
+                    "series_slug_title": "love-live-school-idol-project",
+                    "series_title": "Love Live! School Idol Project",
+                    "subtitle_locales": [],
+                    "upload_date": "2013-01-08T05:00:00-08:00",
+                    "versions": [
+                        {
+                            "audio_locale": "ja-JP",
+                            "guid": "GQJUG2VG2",
+                            "is_premium_only": true,
+                            "media_guid": "GGVF2G42G",
+                            "original": true,
+                            "season_guid": "GYNQCJPVD",
+                            "variant": ""
+                        },
+                        {
+                            "audio_locale": "en-US",
+                            "guid": "GX9UQ0J8Q",
+                            "is_premium_only": true,
+                            "media_guid": "GJKF2V9D2",
+                            "original": false,
+                            "season_guid": "G6K5CN5DG",
+                            "variant": ""
+                        }
+                    ]
+                },
+                "id": "GX9UQ0J8Q",
+                "type": "episode",
                 "images": {
                     "thumbnail": [
                         [
@@ -3391,67 +3716,8 @@
                         ]
                     ]
                 },
-                "episode_metadata": {
-                    "audio_locale": "ja-JP",
-                    "availability_ends": "9998-11-30T08:00:00Z",
-                    "availability_notes": "",
-                    "availability_starts": "2023-03-18T00:00:00Z",
-                    "available_date": null,
-                    "available_offline": true,
-                    "closed_captions_available": false,
-                    "duration_ms": 1420011,
-                    "eligible_region": "ZA",
-                    "episode": "1",
-                    "episode_air_date": "2013-01-08T05:00:00-08:00",
-                    "episode_number": 1,
-                    "extended_maturity_rating": {},
-                    "free_available_date": "9998-11-30T08:00:00Z",
-                    "identifier": "GRZX4X5MY|S1|E1",
-                    "is_clip": false,
-                    "is_dubbed": true,
-                    "is_mature": false,
-                    "is_premium_only": true,
-                    "is_subbed": true,
-                    "mature_blocked": false,
-                    "maturity_ratings": [
-                        "TV-14"
-                    ],
-                    "premium_available_date": "2023-03-18T00:00:00Z",
-                    "premium_date": null,
-                    "season_id": "GYNQCJPVD",
-                    "season_number": 1,
-                    "season_slug_title": "love-live-school-idol-project",
-                    "season_title": "Love Live! School Idol Project",
-                    "sequence_number": 1,
-                    "series_id": "GRZX4X5MY",
-                    "series_slug_title": "love-live-school-idol-project",
-                    "series_title": "Love Live! School Idol Project",
-                    "subtitle_locales": [
-                        "en-US",
-                        "pt-BR"
-                    ],
-                    "upload_date": "2013-01-08T05:00:00-08:00",
-                    "versions": [
-                        {
-                            "audio_locale": "ja-JP",
-                            "guid": "GQJUG2VG2",
-                            "is_premium_only": true,
-                            "media_guid": "GGVF2G42G",
-                            "original": true,
-                            "season_guid": "GYNQCJPVD",
-                            "variant": ""
-                        },
-                        {
-                            "audio_locale": "en-US",
-                            "guid": "GX9UQ0J8Q",
-                            "is_premium_only": true,
-                            "media_guid": "GJKF2V9D2",
-                            "original": false,
-                            "season_guid": "G6K5CN5DG",
-                            "variant": ""
-                        }
-                    ]
-                }
+                "channel_id": "crunchyroll",
+                "description": "In Tokyo's Chiyoda-ku is the traditional school Otonokizaka High.Second year student Kosaka Honoka discovers the school will be closed in three years. In order to avoid being closed, the school must increase its number of prospective students."
             },
             "new": false,
             "is_favorite": false,
@@ -3461,6 +3727,6 @@
         }
     ],
     "meta": {
-        "total_before_filter": 24
+        "total_before_filter": 26
     }
 }

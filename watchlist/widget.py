@@ -89,6 +89,11 @@ class WatchList:
 			end = start + WATCHLIST_TITLE_PER_ROW
 			list_layout.addWidget(self.createRowWidget(watchlist.data[start:end], series), 0, Qt.AlignTop)
 
+		if last_row != 0:
+			start = num_rows * WATCHLIST_TITLE_PER_ROW
+			end = start + last_row
+			list_layout.addWidget(self.createRowWidget(watchlist.data[start:end], series), 0, Qt.AlignTop)
+
 		scroll = QScrollArea()
 		scroll.setWidgetResizable(True)
 		scroll.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -148,6 +153,11 @@ class WatchList:
 			tile = Tile(title, s)
 			self.tiles.append(tile)
 			row_layout.addWidget(tile.widget, 0, Qt.AlignLeft)
+
+		for i in range(WATCHLIST_TITLE_PER_ROW - len(titles)):
+			w = QWidget()
+			w.setFixedSize(g.scale(c.TILE_WIDTH), g.scale(c.TILE_HEIGHT))
+			row_layout.addWidget(w, 0, Qt.AlignLeft)
 
 		row_layout.addStretch(1)
 
