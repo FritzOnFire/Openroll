@@ -272,6 +272,7 @@ class Data:
 	is_favorite: bool = None
 	fully_watched: bool = None
 	never_watched: bool = None
+	# This is in seconds
 	playhead: int = None
 
 	def __init__(self, json) -> None:
