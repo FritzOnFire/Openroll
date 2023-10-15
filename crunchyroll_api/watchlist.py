@@ -1,4 +1,5 @@
 from crunchyroll_api.common_responce_classes import Image
+from utils.utils import msToTime
 
 class EpisodeVersion:
 	audio_locale: str = None
@@ -313,11 +314,24 @@ class Data:
 	def episodeComment(self) -> str:
 		comment = ""
 		if self.playhead == 0:
-			comment = "Up next"
+			if self.panel.episode_metadata.episode_number == 1:
+				comment = "Start Watching"
+			else:
+				comment = "Up next"
 		else:
 			comment = "Continue"
 
 		return f"{comment}: {self.panel.episode_metadata.seasonAndEpisodeShortHand()}"
+
+	def durationComment(self) -> str:
+		comment = ""
+		duration = self.panel.episode_metadata.duration_ms
+		if self.playhead > 0:
+			duration -= self.playhead * 1000
+			comment += " left"
+
+		return f"{msToTime(duration)}{comment}"
+
 
 class Meta:
 	total_before_filter: int = None

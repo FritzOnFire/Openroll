@@ -180,6 +180,8 @@ class Tile:
 		""")
 		self.thumbnail_hover.setScaledContents(True)
 
+		self.createDurationOnThumbnail(title)
+
 		self.thumbnail = QLabel(self.thumbnail_widget)
 		self.thumbnail.setFixedSize(g.scale(c.THUMB_WIDTH), g.scale(c.THUMB_HEIGHT))
 		self.thumbnail.setStyleSheet("""
@@ -215,6 +217,63 @@ class Tile:
 			qpm = QPixmap()
 			qpm.loadFromData(thumbnail_raw)
 			self.thumbnail_hover.setPixmap(qpm)
+
+	def createDurationOnThumbnail(self, title: WatchlistClasses.Data) -> QLabel:
+		thumbnail_layout = QVBoxLayout(self.thumbnail_widget)
+		thumbnail_layout.setContentsMargins(0, 0, 0, 0)
+		thumbnail_layout.setSpacing(0)
+
+		# Create the duration label
+		duration_label = QLabel(title.durationComment(), self.thumbnail_widget)
+		duration_label.setFixedHeight(g.scale(14 + 5))
+		font = duration_label.font()
+		font.setPixelSize(g.scale(14))
+		font.setWeight(QFont.Weight.Medium)
+		duration_label.setStyleSheet("""
+			QLabel {
+				color: #ffffff;
+				background-color: rgba(0,0,0,60%);
+				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+		"""
+		f"""
+				margin-right: {g.scale(4)}px;
+		"""
+		"""
+			}
+		""")
+		duration_label.setContentsMargins(g.scale(5), g.scale(3), g.scale(5), g.scale(3))
+
+		thumbnail_layout.addWidget(duration_label, 1, Qt.AlignBottom | Qt.AlignRight)
+
+		# Create progress bar
+		progress_bar = QProgressBar(self.thumbnail_widget)
+		progress_bar.setFixedSize(g.scale(c.THUMB_WIDTH), g.scale(4))
+		progress_bar.setStyleSheet("""
+			QProgressBar {
+				background-color: rgba(0,0,0,60%);
+				border: none;
+			}
+			QProgressBar::chunk {
+				background-color: #f47521;
+				border: none;
+			}
+		""")
+
+		progress_bar.setRange(0, title.panel.episode_metadata.duration_ms)
+		progress_bar.setValue(title.playhead * 1000)
+		progress_bar.setTextVisible(False)
+
+		# We still make the progress bar, as it is the easiest way to add the
+		# space below the duration label on the thumbnail
+		if title.playhead == 0:
+			progress_bar.setStyleSheet("""
+				QProgressBar {
+					background-color: rgba(0,0,0,0%);
+					border: none;
+				}
+			""")
+
+		thumbnail_layout.addWidget(progress_bar, 0, Qt.AlignBottom | Qt.AlignLeft)
 
 	def createEpisodeComment(self, parent: QWidget, title: WatchlistClasses.Data) -> QLabel:
 		comment_label = QLabel(title.episodeComment(), parent)
