@@ -92,6 +92,22 @@ class WatchList:
 			QScrollArea {
 				background-color: #000000;
 			}
+			QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical
+			{
+				background: none;
+				border: none;
+			}
+			QScrollBar:vertical {
+				width: 8px;
+				margin-right: 2px;
+				background-color: #141519;
+				border-radius: 3px;
+			}
+			QScrollBar::handle:vertical {
+				min-height: 10px;
+				background-color: #f47521;
+				border-radius: 3px;
+			}
 		""")
 
 		scroll.setWidget(list_widget)
