@@ -8,9 +8,11 @@ import global_vars.vars as g
 from login.window import LoginWindow
 from app.window import MainWindow
 
-os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
+# Opting out of high DPI support as it messes with my OCD when it is not perfect
+
+# os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
 app = QApplication(sys.argv)
-app.setAttribute(Qt.AA_UseHighDpiPixmaps)
+# app.setAttribute(Qt.AA_UseHighDpiPixmaps)
 
 # This is necessary since PyQT stomps over the locale settings needed by libmpv.
 # This needs to happen after importing PyQT before creating the first mpv.MPV
@@ -20,6 +22,10 @@ import locale
 locale.setlocale(locale.LC_NUMERIC, 'C')
 
 g.init()
+
+# Assume the DPI of the first screen is our DPI
+screen = app.screens()[0]
+g.setScaleFactor(screen.physicalDotsPerInch())
 
 if g.cr_config.cookies == None:
 	loginW = LoginWindow()

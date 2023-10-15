@@ -6,6 +6,8 @@ from player.widget import Player
 from utils.layout import cleanLayout
 from utils.layout import addCloseButton, addMoveOnDrag
 
+import global_vars.vars as g
+
 class MainWindow(QMainWindow):
 	can_drag: bool = True
 
@@ -13,7 +15,7 @@ class MainWindow(QMainWindow):
 		super().__init__(parent)
 
 		# Set the size of the main window
-		self.setGeometry(0, 0, 1280, 720)
+		self.setGeometry(0, 0, g.scale(1280), g.scale(720))
 
 		self.setWindowTitle('Openroll')
 		self.setWindowFlag(Qt.FramelessWindowHint)

@@ -1,6 +1,8 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 
+import global_vars.vars as g
+
 def cleanLayout(layout: QBoxLayout):
 	for i in reversed(range(layout.count())):
 		layout.itemAt(i).widget().setParent(None)
@@ -29,21 +31,22 @@ def addCloseButton(window: QMainWindow):
 	window.close_button.clicked.connect(window.close)
 
 def setCloseButtonOffset(window: QMainWindow):
-	offset = window.frameGeometry().width() - 21 - 5
+	offset = window.frameGeometry().width() - g.scale(21 + 5)
 
 	window.close_button.setStyleSheet("""
 		QPushButton {
 			color: #ffffff;
-			font-size: 20px;
 			border: none;
-			padding-bottom: 1px;
-			max-width: 21px;
-			min-width: 21px;
-			max-height: 21px;
-			min-height: 21px;
-			margin-top: 5px;
 	"""
-	f"		margin-left: {offset}px;"
+	f"""	font-size: {g.scale(20)}px;
+			padding-bottom: {g.scale(1)}px;
+			max-width: {g.scale(21)}px;
+			min-width: {g.scale(21)}px;
+			max-height: {g.scale(21)}px;
+			min-height: {g.scale(21)}px;
+			margin-top: {g.scale(5)}px;
+			margin-left: {offset}px;
+	"""
 	"""
 		}
 		QPushButton:hover {

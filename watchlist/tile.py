@@ -1,13 +1,16 @@
 import threading
 import requests
 
+from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+from PyQt5.QtSvg import QSvgWidget
 
 import crunchyroll_api.watchlist as WatchlistClasses
 import crunchyroll_api.series as SeriesClasses
 import watchlist.constants as c
+
+import global_vars.vars as g
 
 from utils.layout import underLineLabel, removeUnderLineLabel, makeInvisible, makeVisible
 from utils.thumbnail import getThumbnail
@@ -26,7 +29,7 @@ class Tile:
 		self.session = requests.Session()
 
 		self.widget = QWidget()
-		self.widget.setFixedSize(c.TILE_WIDTH, c.TILE_HEIGHT)
+		self.widget.setFixedSize(g.scale(c.TILE_WIDTH), g.scale(c.TILE_HEIGHT))
 		self.widget.setContentsMargins(0, 0, 0, 0)
 		self.widget.setStyleSheet("""
 			QWidget:hover {
@@ -36,23 +39,26 @@ class Tile:
 
 		self.layout = QVBoxLayout(self.widget)
 		self.layout.setSpacing(0)
-		self.layout.setContentsMargins(c.TILE_MARGIN, c.TILE_MARGIN, c.TILE_MARGIN, c.TILE_MARGIN)
+		m = g.scale(c.TILE_MARGIN)
+		self.layout.setContentsMargins(m, m, m, m)
 
 		self.createThumbnail(self.widget, title, series)
 		self.layout.addWidget(self.thumbnail_widget, 0, Qt.AlignLeft)
 
 		# Add the series title
 		title_label = QLabel(self.widget)
-		title_label.setContentsMargins(0, 12, 0, 4)
-		title_label.setFixedWidth(c.THUMB_WIDTH)
+		title_label.setContentsMargins(0, g.scale(12), 0, g.scale(4))
+		title_label.setFixedWidth(g.scale(c.THUMB_WIDTH))
+		title_label.setMaximumHeight(g.scale(60))
+		title_label.setMinimumHeight(g.scale(24))
+		font = title_label.font()
+		font.setPixelSize(g.scale(16))
+		font.setWeight(QFont.Weight.DemiBold)
+		title_label.setFont(font)
 		title_label.setStyleSheet("""
 			QLabel {
 				color: #ffffff;
 				background-color: #00000000;
-				font-size: 16px;
-				font-weight: 600;
-				max-height: 60px;
-				min-height: 24px;
 				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 			}
 		""")
@@ -86,27 +92,29 @@ class Tile:
 		footer_layout.setSpacing(0)
 
 		media_type = QLabel("Series", footer)
+		media_type.setFixedHeight(g.scale(19))
+		font = media_type.font()
+		font.setPixelSize(g.scale(14))
+		font.setWeight(QFont.Weight.DemiBold)
+		media_type.setFont(font)
 		media_type.setStyleSheet("""
 			QLabel {
 				color: #2abdbb;
 				background-color: #00000000;
-				font-size: 14px;
-				font-weight: 600;
-				max-height: 19px;
-				min-height: 19px;
 				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 			}
 		""")
 		footer_layout.addWidget(media_type)
 
 		diamond = QLabel("◆", footer)
+		diamond.setFixedHeight(g.scale(15))
+		font = diamond.font()
+		font.setPixelSize(g.scale(9))
+		diamond.setFont(font)
 		diamond.setStyleSheet("""
 			QLabel {
 				color: #a0a0a0;
 				background-color: #00000000;
-				font-size: 9px;
-				max-height: 15px;
-				min-height: 15px;
 				padding-left: 1px;
 				padding-right: 1px;
 			}
@@ -115,46 +123,37 @@ class Tile:
 		footer_layout.addWidget(diamond)
 
 		sub_dub = QLabel(title.panel.episode_metadata.subAndDubComment(), footer)
+		sub_dub.setFixedHeight(g.scale(18))
+		font = sub_dub.font()
+		font.setPixelSize(g.scale(14))
+		font.setWeight(QFont.Weight.Medium)
+		sub_dub.setFont(font)
 		sub_dub.setStyleSheet("""
 			QLabel {
 				color: #a0a0a0;
 				background-color: #00000000;
-				font-size: 14px;
-				font-weight: 500;
-				max-height: 18px;
-				min-height: 18px;
 				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 			}
 		""")
 		footer_layout.addWidget(sub_dub, 1, Qt.AlignLeft)
 
-		heart = QLabel(footer)
-		heart.setPixmap(QPixmap('./assets/heart.svg'))
-		heart.setScaledContents(True)
-		heart.setMaximumSize(32, 24)
-		heart.setMinimumSize(32, 24)
+		heart = QSvgWidget('./assets/heart.svg', footer)
+		heart.setFixedSize(g.scale(24), g.scale(24))
 
 		effect = QGraphicsColorizeEffect()
-		effect.setColor(QColor('#ffffff'))
+		effect.setColor(QColor('#a0a0a0'))
 		effect.setStrength(1.0)
 		heart.setGraphicsEffect(effect)
 
-		heart.setStyleSheet("""
-			QLabel {
-				margin-right: 8px;
-			}
-		""")
-
 		footer_layout.addWidget(heart, 0, Qt.AlignRight)
 
-		trash_can = QLabel(footer)
-		trash_can.setPixmap(QPixmap('./assets/trash_can.svg'))
-		trash_can.setScaledContents(True)
-		trash_can.setMaximumSize(24, 24)
-		trash_can.setMinimumSize(24, 24)
+		footer_layout.addSpacing(g.scale(8))
+
+		trash_can = QSvgWidget('./assets/trash_can.svg', footer)
+		trash_can.setFixedSize(g.scale(24), g.scale(24))
 
 		effect = QGraphicsColorizeEffect()
-		effect.setColor(QColor('#ffffff'))
+		effect.setColor(QColor('#a0a0a0'))
 		effect.setStrength(1.0)
 		trash_can.setGraphicsEffect(effect)
 
@@ -164,39 +163,27 @@ class Tile:
 
 	def createThumbnail(self, parent: QWidget, title: WatchlistClasses.Data, series: SeriesClasses.Data):
 		self.thumbnail_widget = QWidget(parent)
+		self.thumbnail_widget.setFixedSize(g.scale(c.THUMB_WIDTH), g.scale(c.THUMB_HEIGHT))
 		self.thumbnail_widget.setStyleSheet("""
 			QLabel {
-				max-width: 240px;
-				min-width: 240px;
-				max-height: 135px;
-				min-height: 135px;
 				background-color: #323232;
 			}
 		""")
-		self.thumbnail_widget.setFixedSize(c.THUMB_WIDTH, c.THUMB_HEIGHT)
 
 		# Create hover first as it needs to be behind the thumbnail
 		self.thumbnail_hover = QLabel(self.thumbnail_widget)
-		self.thumbnail_hover.setFixedSize(c.THUMB_WIDTH, c.THUMB_HEIGHT)
+		self.thumbnail_hover.setFixedSize(g.scale(c.THUMB_WIDTH), g.scale(c.THUMB_HEIGHT))
 		self.thumbnail_hover.setStyleSheet("""
 			QLabel {
-				max-width: 240px;
-				min-width: 240px;
-				max-height: 135px;
-				min-height: 135px;
 				background-color: #323232;
 			}
 		""")
 		self.thumbnail_hover.setScaledContents(True)
 
 		self.thumbnail = QLabel(self.thumbnail_widget)
-		self.thumbnail.setFixedSize(c.THUMB_WIDTH, c.THUMB_HEIGHT)
+		self.thumbnail.setFixedSize(g.scale(c.THUMB_WIDTH), g.scale(c.THUMB_HEIGHT))
 		self.thumbnail.setStyleSheet("""
 			QLabel {
-				max-width: 240px;
-				min-width: 240px;
-				max-height: 135px;
-				min-height: 135px;
 				background-color: #323232;
 			}
 		""")
@@ -231,14 +218,14 @@ class Tile:
 
 	def createEpisodeComment(self, parent: QWidget, title: WatchlistClasses.Data) -> QLabel:
 		comment_label = QLabel(title.episodeComment(), parent)
+		comment_label.setFixedHeight(g.scale(18))
+		font = comment_label.font()
+		font.setPixelSize(g.scale(14))
+		font.setWeight(QFont.Weight.Medium)
 		comment_label.setStyleSheet("""
 			QLabel {
 				color: #a0a0a0;
 				background-color: #00000000;
-				font-size: 14px;
-				font-weight: 500;
-				max-height: 18px;
-				min-height: 18px;
 				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
 			}
 		""")

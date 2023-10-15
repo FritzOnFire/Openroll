@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
+from PyQt5.QtSvg import QSvgWidget
 
 import crunchyroll_api.watchlist as WatchlistClasses
 import crunchyroll_api.series as SeriesClasses
@@ -25,11 +26,8 @@ class WatchList:
 		title_layout = QHBoxLayout(title_widget)
 
 		# Add list.svg in front of the title
-		title_icon = QLabel(title_widget)
-		title_icon.setPixmap(QPixmap('./assets/list.svg'))
-		title_icon.setScaledContents(True)
-		title_icon.setMaximumSize(32, 32)
-		title_icon.setMinimumSize(32, 32)
+		title_icon = QSvgWidget('./assets/list.svg', title_widget)
+		title_icon.setFixedSize(g.scale(32), g.scale(32))
 
 		effect = QGraphicsColorizeEffect()
 		effect.setColor(QColor('#ffffff'))
@@ -42,11 +40,16 @@ class WatchList:
 		self.title_label.setStyleSheet("""
 			QLabel {
 				color: #ffffff;
-				font-size: 28px;
 				font-weight: 500;
-				max-height: 36px;
-				min-height: 36px;
 				font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+		"""
+		f"""
+				font-size: {g.scale(28)}px;
+				max-height: {g.scale(36)}px;
+				min-height: {g.scale(36)}px;
+				padding-bottom: {g.scale(3)}px;
+		"""
+		"""
 			}
 		""")
 		title_layout.addWidget(self.title_label)
@@ -75,7 +78,7 @@ class WatchList:
 
 		list_layout = QVBoxLayout(list_widget)
 		list_layout.setContentsMargins(0, 0, 0, 0)
-		list_layout.setSpacing(c.TILE_GAP)
+		list_layout.setSpacing(g.scale(c.TILE_GAP))
 
 		num_rows = int(watchlist.total / WATCHLIST_TITLE_PER_ROW)
 		# num_rows = 1
@@ -105,15 +108,23 @@ class WatchList:
 				border: none;
 			}
 			QScrollBar:vertical {
-				width: 8px;
-				margin-right: 2px;
 				background-color: #141519;
-				border-radius: 3px;
+		"""
+		f"""
+				width: {g.scale(6)}px;
+				margin-right: {g.scale(2)}px;
+				border-radius: {g.scale(2)}px;
+		"""
+		"""
 			}
 			QScrollBar::handle:vertical {
-				min-height: 10px;
 				background-color: #f47521;
-				border-radius: 3px;
+		"""
+		f"""
+				min-height: {g.scale(10)}px;
+				border-radius: {g.scale(2)}px;
+		"""
+		"""
 			}
 		""")
 
@@ -126,7 +137,7 @@ class WatchList:
 
 		row_layout = QHBoxLayout(row_widget)
 		row_layout.setContentsMargins(0, 0, 0, 0)
-		row_layout.setSpacing(c.TILE_GAP)
+		row_layout.setSpacing(g.scale(c.TILE_GAP))
 
 		row_layout.addStretch(1)
 
