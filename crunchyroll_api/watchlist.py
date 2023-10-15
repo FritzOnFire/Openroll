@@ -195,6 +195,11 @@ class EpisodeMetadata:
 		else:
 			return ""
 
+	def getGUID(self) -> str:
+		if len(self.versions) == 0:
+			return ""
+		return self.versions[0].guid
+
 class Images:
 	thumbnail: list[list[Image]] = None
 
@@ -332,6 +337,11 @@ class Data:
 			comment += " left"
 
 		return f"{msToTime(duration)}{comment}"
+
+	def episodeURL(self) -> str:
+		# https://www.crunchyroll.com/watch/G31UXWQ47/the-trading-company
+		guid = self.panel.episode_metadata.getGUID()
+		return f"https://www.crunchyroll.com/watch/{guid}/{self.panel.slug_title}"
 
 
 class Meta:

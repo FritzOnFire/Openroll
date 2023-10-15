@@ -1,6 +1,9 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 
+import crunchyroll_api.watchlist as WatchlistClasses
+import crunchyroll_api.series as SeriesClasses
+
 from watchlist.widget import WatchList
 from player.widget import Player
 from utils.layout import cleanLayout
@@ -10,6 +13,11 @@ import global_vars.vars as g
 
 class MainWindow(QMainWindow):
 	can_drag: bool = True
+	stacked_layout: QStackedLayout = None
+	watchlist_widget: QWidget = None
+	watchlist_layout: QVBoxLayout = None
+	player_widget: QWidget = None
+	player_layout: QVBoxLayout = None
 
 	def __init__(self, parent=None):
 		super().__init__(parent)
@@ -39,22 +47,33 @@ class MainWindow(QMainWindow):
 		self.container.setContentsMargins(0, 0, 0, 0)
 		self.setCentralWidget(self.container)
 
-		self.top_layout = QVBoxLayout(self.container)
-		self.top_layout.setSpacing(0)
-		self.top_layout.setContentsMargins(0, 0, 0, 0)
-
 		addCloseButton(self)
+
+		self.watchlist_widget = QWidget()
+		self.watchlist_layout = QVBoxLayout(self.watchlist_widget)
+		self.watchlist_layout.setContentsMargins(0, 0, 0, 0)
+		self.watchlist_layout.setSpacing(0)
+
+		self.player_widget = QWidget()
+		self.player_layout = QVBoxLayout(self.player_widget)
+		self.player_layout.setContentsMargins(0, 0, 0, 0)
+		self.player_layout.setSpacing(0)
+
+		self.stacked_layout = QStackedLayout(self.container)
+		self.stacked_layout.addWidget(self.watchlist_widget)
+		self.stacked_layout.addWidget(self.player_widget)
 
 		# Set default widget
 		self.navigateToWatchList()
 
 	def navigateToWatchList(self):
-		cleanLayout(self.top_layout)
+		play_episode = lambda title, series: self.navigateToPlayer(title, series)
+		self.watchlist = WatchList(self.watchlist_layout, play_episode)
 
-		self.watchlist = WatchList(self.top_layout)
+		self.stacked_layout.setCurrentIndex(0)
 
-	def navigateToPlayer(self):
-		cleanLayout(self.top_layout)
+	def navigateToPlayer(self, title: WatchlistClasses.Data, series: SeriesClasses.Data):
+		self.player = Player(self.player_layout, title, series)
+		# self.player.registerEvents()
 
-		self.player = Player(self.top_layout, None, 'the-saints-magic-power-is-omnipotent')
-		self.player.registerEvents()
+		self.stacked_layout.setCurrentIndex(1)

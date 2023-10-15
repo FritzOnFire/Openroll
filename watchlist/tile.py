@@ -22,10 +22,12 @@ class Tile:
 	thumbnail: QLabel = None
 	thumbnail_hover: QLabel = None
 	session: requests.Session = None
+	play_episode: callable = None
 
 	thumbnail_thread: threading.Thread = None
 
-	def __init__(self, title: WatchlistClasses.Data, series: SeriesClasses.Data):
+	def __init__(self, title: WatchlistClasses.Data, series: SeriesClasses.Data, play_episode: callable):
+		self.play_episode = play_episode
 		self.session = requests.Session()
 
 		self.widget = QWidget()
@@ -36,6 +38,9 @@ class Tile:
 				background-color: #141519;
 			}
 		""")
+
+		# Call play_episode when the tile is clicked
+		self.widget.mousePressEvent = lambda event: self.play_episode(title, series)
 
 		self.layout = QVBoxLayout(self.widget)
 		self.layout.setSpacing(0)

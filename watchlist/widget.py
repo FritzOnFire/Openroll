@@ -15,8 +15,10 @@ WATCHLIST_TITLE_PER_ROW = 4
 
 class WatchList:
 	tiles: list[Tile] = []
+	play_episode: callable = None
 
-	def __init__(self, layout: QVBoxLayout):
+	def __init__(self, layout: QVBoxLayout, play_episode: callable):
+		self.play_episode = play_episode
 		layout.addWidget(self.createTitleWidget(), 0, Qt.AlignHCenter | Qt.AlignTop)
 
 		layout.addWidget(self.createListWidget(), 1, Qt.AlignTop)
@@ -150,7 +152,7 @@ class WatchList:
 			s = series.dataDict[title.panel.episode_metadata.series_id]
 
 			# Keep tiles around to avoid garbage collection
-			tile = Tile(title, s)
+			tile = Tile(title, s, self.play_episode)
 			self.tiles.append(tile)
 			row_layout.addWidget(tile.widget, 0, Qt.AlignLeft)
 
