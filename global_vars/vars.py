@@ -12,25 +12,17 @@ def init():
 	global crunchyroll
 	crunchyroll = CrunchyrollAPI(config.device_id, cr_config)
 
-def setScaleFactor(dpi: float):
+def setScaleFactor(height: int):
 	if config.disable_scale_factor:
 		print("Scale factor disabled by config")
 		return
 
-	# *Sad hardcoded DPI values noises*
+	# *Sad hardcoded value noises*
 	global scaleFactor
 
-	# Should cater for a 1080p screen
-	if dpi < 50:
-		scaleFactor = 1.0
-
-	# Should cater for a 1440p screen
-	elif dpi < 108:
-		scaleFactor = 1.5
-
-	# Should cater for a 4k screen
-	else:
+	if height == 2160:
 		scaleFactor = 2.0
+	scaleFactor = 1.0
 
 def scale(value: float):
 	"""

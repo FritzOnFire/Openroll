@@ -23,9 +23,9 @@ locale.setlocale(locale.LC_NUMERIC, 'C')
 
 g.init()
 
-# Assume the DPI of the first screen is our DPI
+# Assume the height of the first screen is our height
 screen = app.screens()[0]
-g.setScaleFactor(screen.physicalDotsPerInch())
+g.setScaleFactor(screen.availableVirtualSize().height())
 
 if g.cr_config.cookies == None:
 	loginW = LoginWindow()
