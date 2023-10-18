@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-import os
+
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 
@@ -25,7 +25,7 @@ g.init()
 
 # Assume the height of the first screen is our height
 screen = app.screens()[0]
-g.setScaleFactor(screen.availableVirtualSize().height())
+g.setScaleFactor(screen.virtualSize().height())
 
 if g.cr_config.cookies == None:
 	loginW = LoginWindow()

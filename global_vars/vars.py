@@ -17,12 +17,16 @@ def setScaleFactor(height: int):
 		print("Scale factor disabled by config")
 		return
 
-	# *Sad hardcoded value noises*
-	global scaleFactor
+	sf = 1.0
 
+	# *Sad hardcoded value noises*
 	if height == 2160:
-		scaleFactor = 2.0
-	scaleFactor = 1.0
+		sf = 2.0
+	elif height == 1440:
+		sf = 1.5
+
+	global scaleFactor
+	scaleFactor = sf
 
 def scale(value: float):
 	"""

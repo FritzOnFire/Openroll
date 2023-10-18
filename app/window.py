@@ -6,7 +6,6 @@ import crunchyroll_api.series as SeriesClasses
 
 from watchlist.widget import WatchList
 from player.widget import Player
-from utils.layout import cleanLayout
 from utils.layout import addCloseButton, addMoveOnDrag
 
 import global_vars.vars as g
@@ -47,8 +46,6 @@ class MainWindow(QMainWindow):
 		self.container.setContentsMargins(0, 0, 0, 0)
 		self.setCentralWidget(self.container)
 
-		addCloseButton(self)
-
 		self.watchlist_widget = QWidget()
 		self.watchlist_layout = QVBoxLayout(self.watchlist_widget)
 		self.watchlist_layout.setContentsMargins(0, 0, 0, 0)
@@ -58,10 +55,16 @@ class MainWindow(QMainWindow):
 		self.player_layout = QVBoxLayout(self.player_widget)
 		self.player_layout.setContentsMargins(0, 0, 0, 0)
 		self.player_layout.setSpacing(0)
+		# TODO: Remove temporary fixed size
+		self.player_widget.setFixedSize(g.scale(1280), g.scale(720))
 
 		self.stacked_layout = QStackedLayout(self.container)
 		self.stacked_layout.addWidget(self.watchlist_widget)
 		self.stacked_layout.addWidget(self.player_widget)
+
+		# TODO: Figure out how to add this earlier and keep it on top of
+		# everything
+		addCloseButton(self)
 
 		# Set default widget
 		self.navigateToWatchList()

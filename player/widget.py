@@ -7,28 +7,34 @@ from PyQt5.QtCore import *
 import crunchyroll_api.watchlist as WatchlistClasses
 import crunchyroll_api.series as SeriesClasses
 
+import global_vars.constants as gc
 import global_vars.vars as g
 
+from player.yt_dlp_config import YTDLPConfig
+from player.mpv_config import MPVConfig
 from player.playlist import Playlist
 
 class Player:
+	yt_dlp_config: YTDLPConfig = None
+	mpv_config: MPVConfig = None
 	player: mpv.MPV = None
 	counter: int = 0
 
 	def __init__(self, layout: QVBoxLayout, title: WatchlistClasses.Data, series: SeriesClasses.Data):
+		self.yt_dlp_config = YTDLPConfig()
+		self.mpv_config = MPVConfig()
 
 		self.mpv_container = QWidget()
 
-		# MPV container height is relative to the width of the window
-		height = int(layout.geometry().width() * 0.5625)
-		self.mpv_container.setFixedSize(layout.geometry().width(), height)
+		height = min(layout.geometry().width() * 0.5625, layout.geometry().height() * 0.7)
+		self.mpv_container.setFixedSize(layout.geometry().width(), int(height))
 
 		self.player = mpv.MPV(
 			wid=str(int(self.mpv_container.winId())),
-			vo='x11', # You may not need this
 			ytdl=True,
 			log_handler=print,
-			loglevel='warn')
+			loglevel='warn',
+			config_dir=gc.mpv_config_dir)
 
 		self.playlist = Playlist(self.player, title, series)
 		self.playlist.setPlaylist()

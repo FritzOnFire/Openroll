@@ -2,6 +2,7 @@ import os
 import json
 from datetime import datetime
 
+import global_vars.constants as gc
 from utils.config import checkBaseDir
 from crunchyroll_api import constants as c
 
@@ -19,7 +20,7 @@ class CRConfig:
 			return
 
 		# Load the config file
-		conf_file = open(os.path.expanduser('~/.config/openroll/cr_config.json'), 'r')
+		conf_file = open(gc.cr_config_file, 'r')
 		config = json.loads(conf_file.read())
 		conf_file.close()
 
@@ -36,12 +37,12 @@ class CRConfig:
 			self.cookies = config['cookies']
 
 	def checkCRConfigFile(self):
-		return os.path.exists(os.path.expanduser('~/.config/openroll/cr_config.json'))
+		return os.path.exists(gc.cr_config_file)
 
 	def save(self):
 		# Create the config directory
 		if checkBaseDir() == False:
-			os.mkdir(os.path.expanduser('~/.config/openroll'))
+			os.mkdir(gc.config_dir)
 
 		data = {
 			'access_token': self.access_token,
@@ -55,11 +56,11 @@ class CRConfig:
 			data['cookies'] = self.cookies
 
 		# Create the config file
-		conf_file = open(os.path.expanduser('~/.config/openroll/cr_config.json'), 'w')
+		conf_file = open(gc.cr_config_file, 'w')
 		json_raw = json.dumps(data, indent=4)
 		json_raw = json_raw.replace('    ', '\t')
 		conf_file.write(json_raw)
 		conf_file.close()
 
 		# Set the permissions
-		os.chmod(os.path.expanduser('~/.config/openroll/cr_config.json'), 0o600)
+		os.chmod(gc.cr_config_file, 0o600)
