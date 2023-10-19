@@ -31,6 +31,7 @@ class Player:
 
 		self.player = mpv.MPV(
 			wid=str(int(self.mpv_container.winId())),
+			config=True,
 			ytdl=True,
 			log_handler=print,
 			loglevel='warn',

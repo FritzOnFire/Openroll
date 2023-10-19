@@ -87,7 +87,7 @@ class MPVConfig:
 			'slang': self.slang,
 			'alang': self.alang,
 			'ytdl-raw-options': self.ytdl_raw_options,
-			'vf-add': self.vf_add,
+			# 'vf-add': self.vf_add,
 			'include': self.include
 		}
 

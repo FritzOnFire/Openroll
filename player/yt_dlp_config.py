@@ -22,7 +22,7 @@ class YTDLPConfig:
 			self.save()
 			return
 
-		conf_file = open(yt_dlp_config_dir + '/config', 'r')
+		conf_file = open(yt_dlp_config_dir + '/yt-dlp.conf', 'r')
 		conf_file_lines = conf_file.readlines()
 		conf_file.close()
 
@@ -40,7 +40,7 @@ class YTDLPConfig:
 		return os.path.exists(yt_dlp_config_dir)
 
 	def checkConfigFile(self):
-		return os.path.exists(yt_dlp_config_dir + '/config')
+		return os.path.exists(yt_dlp_config_dir + '/yt-dlp.conf')
 
 	def save(self):
 		# Create the config directory
@@ -51,7 +51,7 @@ class YTDLPConfig:
 			os.mkdir(yt_dlp_config_dir)
 
 		# Create the config file
-		conf_file = open(yt_dlp_config_dir + '/config', 'w')
+		conf_file = open(yt_dlp_config_dir + '/yt-dlp.conf', 'w')
 
 		if self.concurrent_fragments:
 			conf_file.write('--concurrent-fragments ' + str(self.concurrent_fragments))
@@ -65,8 +65,8 @@ class YTDLPConfig:
 			conf_file.close(' ')
 
 		if self.user_agent:
-			conf_file.write('--user-agent ' + self.user_agent)
+			conf_file.write('--user-agent "' + self.user_agent + '"')
 			conf_file.write(' ')
 
 		# Set the permissions
-		os.chmod(yt_dlp_config_dir + '/config', 0o600)
+		os.chmod(yt_dlp_config_dir + '/yt-dlp.conf', 0o600)
