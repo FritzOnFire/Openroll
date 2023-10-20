@@ -11,17 +11,19 @@ import global_vars.constants as gc
 import global_vars.vars as g
 
 from player.yt_dlp_config import YTDLPConfig
-from player.mpv_config import MPVConfig
+from player.mpv_config import MPVConfig, MPVInput
 from player.playlist import Playlist
 
 class Player:
 	yt_dlp_config: YTDLPConfig = None
+	mpv_input: MPVInput = None
 	mpv_config: MPVConfig = None
 	player: mpv.MPV = None
 	counter: int = 0
 
 	def __init__(self, layout: QVBoxLayout, title: WatchlistClasses.Data, series: SeriesClasses.Data):
 		self.yt_dlp_config = YTDLPConfig()
+		self.mpv_input = MPVInput()
 		self.mpv_config = MPVConfig()
 
 		self.mpv_container = QWidget()
